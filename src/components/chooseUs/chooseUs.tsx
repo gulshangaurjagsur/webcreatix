@@ -7,8 +7,8 @@ const ChooseUs = (props: any) => {
     <div className={styles.chooseUs} id="benefits">
       <div className="container">
         <div className={styles.textContainer}>
-          <h2 dangerouslySetInnerHTML={{ __html: compData?.heading }}></h2>
-          <h4>{compData?.description}</h4>
+          <div className={styles.heading} dangerouslySetInnerHTML={{ __html: compData?.heading }}></div>
+          <div className={styles.description}>{compData?.description}</div>
         </div>
         <div className="row">
           <div className="col-md-6 col-sm-6 col-xs-12 text-left">

@@ -5,9 +5,9 @@ const Portfolio = (props: any) => {
   return (
     <div className={styles.portfolio} id="portfolio">
       <div className="container">
-        <h2>
+        <h4>
           <strong>{compData?.heading}</strong>
-        </h2>
+        </h4>
         <div className="row">
           {compData?.item?.map((item: any, index: number) => (
             <div key={index} className="col-md-4 col-sm-6 col-xs-12">

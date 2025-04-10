@@ -6,7 +6,7 @@ const Services = (props: any) => {
     <div className={styles.services} id="services">
       <div className="container">
         <h2 dangerouslySetInnerHTML={{ __html: compData?.heading }}></h2>
-        <h4>{compData?.subHeading}</h4>
+        {compData?.subHeading && <h4>{compData?.subHeading}</h4>}
         <div className="row">
           {compData?.item?.map((item: any, index: number) => (
             <div

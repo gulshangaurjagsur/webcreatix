@@ -5,10 +5,10 @@ const Message = (props: any) => {
   return (
     <div id="message-block" className={styles.messageWrapper}>
       <div className={styles.textWrapper}>
-        <h2
+        <span
           dangerouslySetInnerHTML={{
             __html: compData?.heading,
-          }}></h2>
+          }}></span>
         <em>{compData?.quote}</em>
       </div>
     </div>

@@ -9,20 +9,20 @@ const Footer = (props: any) => {
         <div className="container">
           <div className="row">
             <div className={` col-md-6 col-sm-6 ${styles.text} `}>
-              <h2>Contact Us</h2>{" "}
+              <div className={styles.textHeading}>Contact Us</div>{" "}
 
               <p>
               Need IT assistance? Contact us now and experience top-notch technology solutions.
               </p>
-              <h4>
+              <div className={styles.headingText}>
                 Office Location
-              </h4>
+              </div>
               <img src="../../../images/india-flag.webp" title="India" alt="WebCreatix" />
               <p>23, Gangotri Apt, Sector 12, Dwarka New Delhi, India</p>
 
-              <h4>
+              <div className={styles.headingText}>
                 For quick information, write to
-              </h4>
+              </div>
           
               <a href="mailto:  info@webcreatix.com"> <i className="fa fa-envelope" aria-hidden="true"></i>  info@webcreatix.com</a>
             
@@ -37,7 +37,7 @@ const Footer = (props: any) => {
       <div className="container">
         <div className="row">
           <div className={`col-md-4 col-sm-6 ${styles.footerWrapperCol}`}>
-            <h2>{compData?.about?.heading}</h2>
+            <div className={styles.heading}>{compData?.about?.heading}</div>
             <div
               dangerouslySetInnerHTML={{
                 __html: compData?.about?.description,
@@ -45,7 +45,7 @@ const Footer = (props: any) => {
           </div>
           <div
             className={`col-md-4 col-sm-6 ${styles.footerWrapperCol} ${styles.servicesFooter} `}>
-            <h2>{compData?.service?.heading}</h2>
+            <div className={styles.heading}>{compData?.service?.heading}</div>
             {compData?.service?.links?.map((item: any, index: number) => (
               <a href={item?.url} key={index}>
                 {item?.label}
@@ -53,7 +53,7 @@ const Footer = (props: any) => {
             ))}
           </div>
           <div className={`col-md-4 col-sm-6 ${styles.footerWrapperCol} `}>
-            <h2>{compData?.contact?.heading}</h2>
+            <div className={styles.heading}>{compData?.contact?.heading}</div>
             <address
               dangerouslySetInnerHTML={{
                 __html: compData?.contact?.address,

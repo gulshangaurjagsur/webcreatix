@@ -22,8 +22,8 @@ const MainBanner = (props: any) => {
             <img src={item?.imageSource}  alt="WebCreatix" />
             <div className="container">
               <div className={styles.textContainer}>
-                <h2 dangerouslySetInnerHTML={{ __html: item?.heading }}></h2>
-                <h3 dangerouslySetInnerHTML={{ __html: item?.subHeading }}></h3>
+                <div className={styles.heading} dangerouslySetInnerHTML={{ __html: item?.heading }}></div>
+                <div className={styles.subHeading} dangerouslySetInnerHTML={{ __html: item?.subHeading }}></div>
                 <div className={styles.buttonWrapper}>
                   <a href={item?.url1}>{item?.label1}</a>
                   <a href={item?.url2}>{item?.label2}</a>

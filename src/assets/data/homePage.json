@@ -72,24 +72,24 @@
         "heading": "Digital <em>Transformation</em>",
         "subHeading": "Web Design, App Design, Social Media Marketing, and SEO WebCreatix.com",
         "label1": "WebSite Design",
-        "url1": "/",
+        "url1": "/services/web-design-development",
         "label2": "App Development",
-        "url2": "/",
+        "url2": "/services/mobile-app-development",
         "label3": "Social Media",
-        "url3": "/",
+        "url3": "/services/social-media-marketing",
         "label4": "SEO",
-        "url4": "/"
+        "url4": "/services/seo-services"
       }
       
     ]
   },
   "overview": {
-    "heading": "<span>WebCreatix</span> Inspires",
+    "heading": "<span>WebCreatix Inspires:<br /></span> Expert Web Design & Development, Social Media Marketing, and SEO Services",
     "description": "<b>At WebCreatix, we deliver a wide range of services and solutions designed to help businesses streamline operations, reduce costs, and stay ahead in the digital era.</b> With deep expertise in information technology, business strategy, and outsourcing, we craft tailored solutions to meet the unique needs of each client.<br /><br />Our commitment lies in delivering high-quality, value-driven services that empower our clients to thrive. By staying at the forefront of emerging technologies and industry trends, we help businesses overcome complex challenges and achieve sustainable growth."
   },
   "services": {
-    "heading": "Our <strong>services</strong>",
-    "subHeading": "Interact with Our Services Today!",
+    "heading": "Our <strong>Web Design & Development Services, Social Media Marketing Strategy, SEO Services</strong> for Business Growth",
+    "subHeading": "",
     "item": [
       {
         "serviceIcon": "fa-code",

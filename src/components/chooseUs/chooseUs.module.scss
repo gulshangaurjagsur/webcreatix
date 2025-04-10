@@ -71,10 +71,11 @@
 }
 .textContainer {
   text-align: center;
-  h2 {
+  .heading {
     font-size: 30px;
   }
-  h4 {
+  .description {
     font-size: 18px;
+    margin-bottom: 50px;
   }
 }

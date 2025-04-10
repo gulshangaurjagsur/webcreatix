@@ -5,7 +5,7 @@ const Overview = (props: any) => {
   return (
     <div id="about" className={styles.overviewWrapper}>
       <div className="container">
-        <h2 dangerouslySetInnerHTML={{ __html: compData?.heading }}></h2>
+        <h1 dangerouslySetInnerHTML={{ __html: compData?.heading }}></h1>
         {compData?.subHeading && (
           <h3 dangerouslySetInnerHTML={{ __html: compData?.subHeading }}></h3>
         )}

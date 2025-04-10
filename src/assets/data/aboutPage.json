@@ -165,35 +165,6 @@
       }
     ]
   },
-  "portfolio": {
-    "heading": "Industries",
-    "item": [
-      {
-        "imageSource": "images/travel.webp",
-        "caption": "Travel"
-      },
-      {
-        "imageSource": "images/bank.webp",
-        "caption": "Banking & Financial"
-      },
-      {
-        "imageSource": "images/automotive.webp",
-        "caption": "Automotive"
-      },
-      {
-        "imageSource": "images/agriculture.webp",
-        "caption": "Agriculture"
-      },
-      {
-        "imageSource": "images/ecommerce.webp",
-        "caption": "E-Commerce"
-      },
-      {
-        "imageSource": "images/realty.webp",
-        "caption": "Realty"
-      }
-    ]
-  },
   "chooseUs": {
     "heading": "Why to <strong>choose us</strong>",
     "description": "We are an IT service and consulting company with the vision to deliver excellence and the skills to build your business success. Our services, knowledge and experience are essential tools that you can count on to help your business thrive in today's market.",

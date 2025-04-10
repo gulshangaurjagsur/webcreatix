@@ -2,7 +2,7 @@
     "footer": {
     "about": {
       "heading": "About us",
-      "description": "<p>WebCreatix is a leading IT services and consultancy company, offering end-to-end technology solutions across various domains.<br /><br />We are committed to delivering high-quality work while ensuring exceptional service standards.<br /><br />Our mission is straightforward: to help our clients achieve their objectives through innovative IT solutions.</p>"
+      "description": "<p>WebCreatix specializes in <b>web design & development</b>, <b>social media marketing</b>, and <b>SEO services</b>.<br /><br />We deliver innovative solutions to help businesses enhance their online presence and achieve their digital goals.</p>"
     },
     "service": {
       "heading": "Services",
@@ -39,14 +39,6 @@
           {
             "label": "Branding",
             "url": "/services/branding"
-          },
-          {
-            "label": "Software Development",
-            "url": "/services/custom-software-development"
-          },
-          {
-            "label": "Maintenance & Support",
-            "url": "/services/maintenance-support"
           }
       ]
     },

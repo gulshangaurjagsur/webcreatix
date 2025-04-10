@@ -10,11 +10,12 @@
     flex: 0 0 100% !important;
   }
 
-  h2 {
-    font: 400 21px;
+  .heading {
+    font-size:22px;
     margin: 0 0 8px;
     color: #c2c1c1;
     text-transform: uppercase;
+    font-weight: bold;
   }
   p {
     margin-bottom: 20px;
@@ -76,7 +77,7 @@
       color: #000;
       font-size: 1rem;
       padding-top: 1rem;
-      h2 {
+      .textHeading {
         line-height: 1.6;
         margin-bottom: 20px;
         color: #e54a1a;
@@ -86,7 +87,7 @@
         text-transform: none;
         font-weight: bold;
       }
-      h4{
+      .headingText{
         font-size: 18px;
         margin-bottom: 7px;
         font-weight: 600;

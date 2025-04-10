@@ -4,7 +4,7 @@ const Banner = (props: any) => {
   const { compData } = props;
   return (
     <div className={styles.bannerWrapper}>
-      <img src={compData?.imageSource} className="img-fluid" alt="WebCreatix" />
+      <img src={compData?.imageSource} className="img-fluid" alt={compData?.imageAlt} />
     </div>
   );
 };

@@ -67,34 +67,44 @@
   },
   "banner": {
     "webDevelopment": {
-      "imageSource": "/images/Bigdata.webp"
+      "imageSource": "/images/Bigdata.webp",
+      "imageAlt": "Professional Web Design and Development Services - Web Creatix"
     },
     "mobileAppDevelopment": {
-      "imageSource": "/images/Bigdata.webp"
+      "imageSource": "/images/Bigdata.webp",
+      "imageAlt": "Custom Mobile App Development Solutions - Web Creatix"
     },
     "graphicDesign": {
-      "imageSource": "/images/Bigdata.webp"
+      "imageSource": "/images/Bigdata.webp",
+      "imageAlt": "Creative Graphic Design Services - Web Creatix"
     },
     "uiUxDesign": {
-      "imageSource": "/images/Bigdata.webp"
+      "imageSource": "/images/Bigdata.webp",
+      "imageAlt": "UI/UX Design, User Experience Services - Web Creatix"
     },
     "eCommerce": {
-      "imageSource": "/images/Bigdata.webp"
+      "imageSource": "/images/Bigdata.webp",
+      "imageAlt": "E-commerce website design/develop - Web Creatix"
     },
     "socialMediaMarketing": {
-      "imageSource": "/images/Bigdata.webp"
+      "imageSource": "/images/Bigdata.webp",
+      "imageAlt": "Social Media, facebook/whatsapp marketing service - Web Creatix"
     },
     "seoServices": {
-      "imageSource": "/images/Bigdata.webp"
+      "imageSource": "/images/Bigdata.webp",
+      "imageAlt": "Seearch Engine Optimization, SEO Services - Web Creatix"
     },
     "branding": {
-      "imageSource": "/images/Bigdata.webp"
+      "imageSource": "/images/Bigdata.webp",
+      "imageAlt": "Website, Mobile App Branding Services - Web Creatix"
     },
     "customSoftwareDevelopment": {
-      "imageSource": "/images/Bigdata.webp"
+      "imageSource": "/images/Bigdata.webp",
+      "imageAlt": "Custom  Software Development Services - Web Creatix"
     },
     "maintenance": {
-      "imageSource": "/images/Bigdata.webp"
+      "imageSource": "/images/Bigdata.webp",
+      "imageAlt": "Website, Mobile App, Software Maintenance Services - Web Creatix"
     }
   },
   "overview": {
