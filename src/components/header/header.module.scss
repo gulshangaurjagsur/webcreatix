@@ -53,6 +53,12 @@
   letter-spacing: 1px;
   transition: all 0.3s ease;
   color: #fff;
+  a{
+    &:hover{
+      text-decoration: none;
+      color:aqua;
+    }
+  }
   }
 
   nav .links {

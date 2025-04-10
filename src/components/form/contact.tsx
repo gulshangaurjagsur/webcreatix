@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 const ContactForm = (props: any) => {
   const { compData } = props;
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -11,30 +12,28 @@ const ContactForm = (props: any) => {
     description: "",
     agreement: false,
   });
+
   const [errors, setErrors] = useState({
     name: "",
     email: "",
     phone: "",
     agreement: "",
   });
+
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // Handle input change
+  // Input change handler
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target;
-  
-    const newValue = type === "checkbox" 
-      ? (e.target as HTMLInputElement).checked 
-      : value;
-  
+    const newValue = type === "checkbox" ? (e.target as HTMLInputElement).checked : value;
+
     setFormData({
       ...formData,
       [name]: newValue,
     });
   };
-  
 
-  // Validate form fields
+  // Validation
   const validateForm = () => {
     const newErrors = { name: "", email: "", phone: "", agreement: "" };
 
@@ -52,21 +51,42 @@ const ContactForm = (props: any) => {
     if (!formData.agreement) newErrors.agreement = "You must agree to the terms";
 
     setErrors(newErrors);
-    return Object.values(newErrors).every((error) => !error); // Return true if no errors
+    return Object.values(newErrors).every((error) => !error);
   };
 
-  // Handle form submission
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  // Submit handler with fetch (AJAX)
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (validateForm()) {
-      console.log("Form Data:", formData);
-      setIsSubmitted(true); // Redirect to Thank You page
-    } else {
-      console.log("Form has errors");
+
+    if (!validateForm()) return;
+
+    try {
+      const response = await fetch("https://formspree.io/f/mdkeydbz", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          description: formData.description,
+        }),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        console.error("Form submission error");
+      }
+    } catch (error) {
+      console.error("Submission failed:", error);
     }
   };
 
-  // Redirect to Thank You page after submission
+  // Success message
   if (isSubmitted) {
     return (
       <div className={styles.thankYou}>
@@ -81,7 +101,7 @@ const ContactForm = (props: any) => {
       <div className={styles.compWrapper}>
         <div className="container">
           <div className={styles.formContainer}>
-            {/* Name Field */}
+            {/* Name */}
             <div className="form-floating">
               <input
                 type="text"
@@ -96,7 +116,7 @@ const ContactForm = (props: any) => {
               {errors.name && <div className="invalid-feedback">{errors.name}</div>}
             </div>
 
-            {/* Email Field */}
+            {/* Email */}
             <div className="form-floating">
               <input
                 type="email"
@@ -111,7 +131,7 @@ const ContactForm = (props: any) => {
               {errors.email && <div className="invalid-feedback">{errors.email}</div>}
             </div>
 
-            {/* Phone Field */}
+            {/* Phone */}
             <div className="form-floating">
               <input
                 type="text"
@@ -126,7 +146,7 @@ const ContactForm = (props: any) => {
               {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
             </div>
 
-            {/* Company Field */}
+            {/* Company */}
             <div className="form-floating">
               <input
                 type="text"
@@ -140,7 +160,7 @@ const ContactForm = (props: any) => {
               <label htmlFor="company">Company/Organization</label>
             </div>
 
-            {/* Description Field */}
+            {/* Description */}
             <div className={`form-floating textArea`}>
               <textarea
                 className="form-control"
@@ -153,7 +173,7 @@ const ContactForm = (props: any) => {
               <label htmlFor="description">How can we help you?</label>
             </div>
 
-            {/* Agreement Checkbox */}
+            {/* Agreement */}
             <div className={`form-check ${styles.agreement}`}>
               <input
                 className={`form-check-input ${errors.agreement ? "is-invalid" : ""}`}
@@ -169,7 +189,7 @@ const ContactForm = (props: any) => {
               {errors.agreement && <div className="invalid-feedback">{errors.agreement}</div>}
             </div>
 
-            {/* Submit Button */}
+            {/* Submit */}
             <div className={styles.buttonWrapper}>
               <button type="submit" className="btn btn-primary">
                 Submit
