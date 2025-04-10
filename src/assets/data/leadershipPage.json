@@ -110,53 +110,5 @@
         "name": "Research Areas"
       }
     ]
-  },
-  "footer": {
-    "about": {
-      "heading": "About us",
-      "description": "<p>WebCreatix is a leading IT service and consultancy company providing end-to-end technology solutions in various fields to its clients. We pride ourselves on delivering high quality work without compromising quality of service.</p><p>Our goal is simple: Helping our clients achieve one or multiple objectives through IT solutions.</p>"
-    },
-    "service": {
-      "heading": "Services",
-      "links": [
-        {
-          "label": "Data & Analytics",
-          "url": "/services/data-analytics"
-        },
-        {
-          "label": "Artificial Intelligence",
-          "url": "/services/artificial-intelligence"
-        },
-        {
-          "label": "Blockchain",
-          "url": "/services/blockchain"
-        },
-        {
-          "label": "Application Services",
-          "url": "/services/application-services"
-        },
-        {
-          "label": "CRM Solutions",
-          "url": "/services/crm-solution"
-        },
-        {
-          "label": "IT Consulting",
-          "url": "/services/it-consulting"
-        },
-        {
-          "label": "Customer Experience & Design",
-          "url": "/services/customer-experience"
-        },
-        {
-          "label": "DevOps",
-          "url": "/services/devops"
-        }
-      ]
-    },
-    "contact": {
-      "heading": "Our Contacts",
-      "address": "23, Gangotri Apt, Sector 12, Dwarka<br/> New Delhi, India<br />Phone: +91 9999289454<br />Email: <a href='mailto:info@webcreatix.com'>info@webcreatix.com</a><br />"
-    },
-    "copyRight": "WebCreatix"
   }
 }

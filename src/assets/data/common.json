@@ -1,0 +1,59 @@
+{
+    "footer": {
+    "about": {
+      "heading": "About us",
+      "description": "<p>WebCreatix is a leading IT services and consultancy company, offering end-to-end technology solutions across various domains.<br /><br />We are committed to delivering high-quality work while ensuring exceptional service standards.<br /><br />Our mission is straightforward: to help our clients achieve their objectives through innovative IT solutions.</p>"
+    },
+    "service": {
+      "heading": "Services",
+      "links": [
+        {
+            "label": "Web Design & Development",
+            "url": "/services/web-design-development"
+          },
+          {
+            "label": "Mobile App Development",
+            "url": "/services/mobile-app-development"
+          },
+          {
+            "label": "Graphic Designing",
+            "url": "/services/graphic-designing"
+          },
+          {
+            "label": "UI/UX Design",
+            "url": "/services/ui-ux-design"
+          },
+          {
+            "label": "E-Commerce Solutions",
+            "url": "/services/ecommerce-solutions"
+          },
+          {
+            "label": "Social Media Marketing",
+            "url": "/services/social-media-marketing"
+          },
+          {
+            "label": "SEO Services",
+            "url": "/services/seo-services"
+          },
+         
+          {
+            "label": "Branding",
+            "url": "/services/branding"
+          },
+          {
+            "label": "Software Development",
+            "url": "/services/custom-software-development"
+          },
+          {
+            "label": "Maintenance & Support",
+            "url": "/services/maintenance-support"
+          }
+      ]
+    },
+    "contact": {
+      "heading": "Our Contacts",
+      "address": "23, Gangotri Apt, Sector 12, Dwarka<br/> New Delhi, India<br />Phone: +91 9999289454<br />Email: <a href='mailto:info@webcreatix.com'>info@webcreatix.com</a><br />"
+    },
+    "copyRight": "WebCreatix."
+  }
+}

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import contactData from "../assets/data/contactPage.json";
+import commonData from "../assets/data/common.json";
 import Footer from "@component/components/footer/footer";
 import Overview from "@component/components/overview/Overview";
 import Banner from "@component/components/banner/banner";
@@ -30,7 +31,7 @@ export default function Contact() {
         <Header compData={contactData?.header} />
         <Banner compData={contactData?.banner} />
         <Overview compData={contactData?.overview} />
-        <Footer compData={contactData?.footer} />
+        <Footer compData={commonData?.footer} />
       </main>
     </>
   );

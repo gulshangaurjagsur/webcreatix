@@ -258,53 +258,6 @@
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "close": "Close",
     "accept": "Accept"
-  },
-  "footer": {
-    "about": {
-      "heading": "About us",
-      "description": "<p>WebCreatix is a leading IT service and consultancy company providing end-to-end technology solutions in various fields to its clients. We pride ourselves on delivering high quality work without compromising quality of service.</p><p>Our goal is simple: Helping our clients achieve one or multiple objectives through IT solutions.</p>"
-    },
-    "service": {
-      "heading": "Services",
-      "links": [
-        {
-          "label": "Data & Analytics",
-          "url": "/services/data-analytics"
-        },
-        {
-          "label": "Artificial Intelligence",
-          "url": "/services/artificial-intelligence"
-        },
-        {
-          "label": "Blockchain",
-          "url": "/services/blockchain"
-        },
-        {
-          "label": "Application Services",
-          "url": "/services/application-services"
-        },
-        {
-          "label": "CRM Solutions",
-          "url": "/services/crm-solution"
-        },
-        {
-          "label": "IT Consulting",
-          "url": "/services/it-consulting"
-        },
-        {
-          "label": "Customer Experience & Design",
-          "url": "/services/customer-experience"
-        },
-        {
-          "label": "DevOps",
-          "url": "/services/devops"
-        }
-      ]
-    },
-    "contact": {
-      "heading": "Our Contacts",
-      "address": "23, Gangotri Apt, Sector 12, Dwarka<br/> New Delhi, India<br />Phone: +91 9999289454<br />Email: <a href='mailto:info@webcreatix.com'>info@webcreatix.com</a><br />"
-    },
-    "copyRight": "WebCreatix"
   }
+  
 }

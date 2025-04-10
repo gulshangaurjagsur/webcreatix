@@ -1,5 +1,6 @@
 import Head from "next/head";
 import industriesData from "../assets/data/industriesPage.json";
+import commonData from "../assets/data/common.json";
 import Footer from "@component/components/footer/footer";
 import Banner from "@component/components/banner/banner";
 import dynamic from "next/dynamic";
@@ -34,7 +35,7 @@ export default function Industries() {
         <Overview compData={industriesData?.overview} />
         {/* <ContactForm /> */}
         <IndustriesCard compData={industriesData?.card} />
-        <Footer compData={industriesData?.footer} />
+        <Footer compData={commonData?.footer} />
       </main>
     </>
   );

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import servicesData from "../../assets/data/services.json";
+import commonData from "../../assets/data/common.json";
 import Footer from "@component/components/footer/footer";
 import Overview from "@component/components/overview/Overview";
 import Banner from "@component/components/banner/banner";
@@ -31,7 +32,7 @@ export default function WebDesignDevelopment() {
         <Banner compData={servicesData?.banner?.webDevelopment} />
         <Overview compData={servicesData?.overview?.webDevelopment} />
         <Technology compData={servicesData?.technology?.webDevelopment} />
-        <Footer compData={servicesData?.footer} />
+        <Footer compData={commonData?.footer} />
       </main>
     </>
   );

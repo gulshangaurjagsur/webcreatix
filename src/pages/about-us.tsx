@@ -1,5 +1,6 @@
 import Head from "next/head";
 import aboutData from "../assets/data/aboutPage.json";
+import commonData from "../assets/data/common.json";
 import Footer from "@component/components/footer/footer";
 import Overview from "@component/components/overview/Overview";
 import Banner from "@component/components/banner/banner";
@@ -34,7 +35,7 @@ export default function WhyWebCreatix() {
         <Benefits compData={aboutData?.benefits} />
         <WhyChoose compData={aboutData?.whyChoose} />
         <Message compData={aboutData?.message} />
-        <Footer compData={aboutData?.footer} />
+        <Footer compData={commonData?.footer} />
       </main>
     </>
   );

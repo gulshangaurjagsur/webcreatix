@@ -1,6 +1,7 @@
 import Head from "next/head";
 import MainBanner from "@component/components/mainBanner/mainBanner";
 import homeData from "../assets/data/homePage.json";
+import commonData from "../assets/data/common.json";
 import Overview from "@component/components/overview/Overview";
 import Services from "@component/components/services/services";
 import Message from "@component/components/message/message";
@@ -46,7 +47,7 @@ export default function Home() {
         <ChooseUs compData={homeData?.chooseUs} />
         <Achievements compData={homeData?.achievements} />
         <Footer
-          compData={homeData?.footer}
+          compData={commonData?.footer}
           contactData={homeData?.achievements}
         />
         <Cookie compData={homeData?.cookie} />

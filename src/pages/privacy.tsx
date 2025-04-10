@@ -1,5 +1,6 @@
 import Head from "next/head";
 import privacyData from "../assets/data/privacyPage.json";
+import commonData from "../assets/data/common.json";
 import Footer from "@component/components/footer/footer";
 import Overview from "@component/components/overview/Overview";
 import Banner from "@component/components/banner/banner";
@@ -28,7 +29,7 @@ export default function Privacy() {
         <Header compData={privacyData?.header} />
         <Banner compData={privacyData?.banner} />
         <Overview compData={privacyData?.overview} />
-        <Footer compData={privacyData?.footer} />
+        <Footer compData={commonData?.footer} />
       </main>
     </>
   );

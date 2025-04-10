@@ -1,5 +1,6 @@
 import Head from "next/head";
 import servicesData from "../../assets/data/services.json";
+import commonData from "../../assets/data/common.json";
 import Footer from "@component/components/footer/footer";
 import Overview from "@component/components/overview/Overview";
 import Banner from "@component/components/banner/banner";
@@ -29,7 +30,7 @@ export default function EcommerceSolution() {
         <Banner compData={servicesData?.banner?.eCommerce} />
         <Overview compData={servicesData?.overview?.eCommerce} />
         <Technology compData={servicesData?.technology?.eCommerce} />
-        <Footer compData={servicesData?.footer} />
+        <Footer compData={commonData?.footer} />
       </main>
     </>
   );
