@@ -1,0 +1,42 @@
+.industriesWrapper {
+  .industries {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f4f6ff;
+    &.reverse {
+      flex-direction: row-reverse;
+      background-color: #fdf8f8;
+    }
+    @media (max-width: 768px) {
+      gap: 2rem;
+    }
+    .imageWrapper {
+      width: 48%;
+      position: relative;
+      @media (max-width: 768px) {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .textWrapper {
+      width: 52%;
+      color: #333;
+      padding: 0 3rem;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      h3 {
+        font-size: 1.75rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+      h4 {
+        font-size: 1.15rem;
+        margin-bottom: 1.4rem;
+        font-weight: 600;
+      }
+    }
+  }
+}

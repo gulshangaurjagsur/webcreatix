@@ -1,0 +1,310 @@
+{
+  "header": {
+    "items": [
+      {
+        "label": "Home",
+        "url": "/"
+      },
+      {
+        "label": "About Us",
+        "url": "/about-us"
+      },
+      {
+        "label": "Services",
+        "subLinks": [
+          {
+            "label": "Web Design & Development",
+            "url": "/services/web-design-development"
+          },
+          {
+            "label": "Mobile App Development",
+            "url": "/services/mobile-app-development"
+          },
+          {
+            "label": "Graphic Designing",
+            "url": "/services/graphic-designing"
+          },
+          {
+            "label": "UI/UX Design",
+            "url": "/services/ui-ux-design"
+          },
+          {
+            "label": "E-Commerce Solutions",
+            "url": "/services/ecommerce-solutions"
+          },
+          {
+            "label": "Social Media Marketing",
+            "url": "/services/social-media-marketing"
+          },
+          {
+            "label": "SEO Services",
+            "url": "/services/seo-services"
+          },
+         
+          {
+            "label": "Branding",
+            "url": "/services/branding"
+          },
+          {
+            "label": "Software Development",
+            "url": "/services/custom-software-development"
+          },
+          {
+            "label": "Maintenance & Support",
+            "url": "/services/maintenance-support"
+          }
+        ]
+      },
+      {
+        "label": "Industries",
+        "url": "/industries"
+      },
+      {
+        "label": "Contact",
+        "url": "/contact"
+      }
+    ]
+  },
+  "banner": {
+    "imageSource": "images/contact.jpg"
+  },
+  "overview": {
+    "heading": "<span>About</span> WebCreatix",
+    "subHeading": "Your Trusted Digital Partner for Growth-Driven Solutions",
+    "description": "At WebCreatix, we thrive on innovation, creativity, and results. We help businesses accelerate their digital journey with custom web development, engaging mobile applications, strategic digital marketing, and impactful branding. Our mission is simple — to build future-ready digital experiences that deliver measurable value.<br /><br />We believe in tailored solutions. Our experienced team works closely with clients to understand their needs and craft strategies that align with their goals. From startups to enterprises, we empower businesses with the tools and technologies they need to scale efficiently in today’s competitive landscape."
+  },
+  "benefits": [
+    {
+      "icon": "&#127760;",
+      "subHeading": "Strategic Options",
+      "description": "Crafting multiple innovative paths to help you achieve business excellence."
+    },
+    {
+      "icon": "&#128200;",
+      "subHeading": "Revenue Growth",
+      "description": "Engaging users and boosting conversions to maximize your digital revenue streams."
+    },
+    {
+      "icon": "&#128202;",
+      "subHeading": "Growth Metrics",
+      "description": "Tracking meaningful data to understand performance and accelerate growth."
+    },
+    {
+      "icon": "&#128227;",
+      "subHeading": "Market Impression",
+      "description": "Building lasting impressions with consistent brand identity and online reputation."
+    }
+  ],
+"whyChoose": {
+    "title": "Why Choose Us?",
+    "items": [
+      {
+        "icon": "&#128640;",
+        "heading": "Creative Collaboration",
+        "description": "We bring together passionate minds to brainstorm, create, and execute high-performing digital solutions."
+      },
+      {
+        "icon": "&#128295;",
+        "heading": "Perfect Execution",
+        "description": "From flawless integrations to seamless user experiences, we take pride in getting it right the first time."
+      },
+      {
+        "icon": "&#129309;",
+        "heading": "Unmatched Management",
+        "description": "Our team is built on a culture of discipline, transparency, and unmatched dedication."
+      },
+      {
+        "icon": "&#127912;",
+        "heading": "Tailored Design Solutions",
+        "description": "Whether it's a corporate website or an eCommerce platform, our UI/UX experts bring your vision to life."
+      },
+      {
+        "icon": "&#128226;",
+        "heading": "Data-Driven Digital Marketing",
+        "description": "We craft unique strategies to increase your website's visibility, engagement, and audience reach."
+      }
+    ]
+  },
+  "message": {
+    "heading": "Let's turn your ideas into impactful digital solutions. <strong>Because we don't just build websites — we build your brand's digital future.</strong>",
+    "quote": "WebCreatix"
+  },
+  "team": {
+    "heading": "Meet <strong>the team</strong>",
+    "subHeading": "",
+    "item": [
+      {
+        "imageSource": "images/deepak_img.png",
+        "name": "Deepak Arora",
+        "designation": "CEO",
+        "socialImageSource": ""
+      },
+      {
+        "imageSource": "images/gulshan_img.jpg",
+        "name": "Gulshan Gaur",
+        "designation": "DIRECTOR, USER EXPERIENCE DESIGN",
+        "socialImageSource": ""
+      },
+      {
+        "imageSource": "images/team.webp",
+        "name": "Rohit Makkar",
+        "designation": "DIRECTOR, SAP DEVELOPMENT & CRM SOLUTIONS",
+        "socialImageSource": ""
+      },
+      {
+        "imageSource": "images/team.webp",
+        "name": "Tarun Arora",
+        "designation": "CREATIVE DIRECTOR",
+        "socialImageSource": ""
+      },
+      {
+        "imageSource": "images/team.webp",
+        "name": "Priya Arora",
+        "designation": "DIRECTOR, MANAGEMENT",
+        "socialImageSource": ""
+      }
+    ]
+  },
+  "portfolio": {
+    "heading": "Industries",
+    "item": [
+      {
+        "imageSource": "images/travel.webp",
+        "caption": "Travel"
+      },
+      {
+        "imageSource": "images/bank.webp",
+        "caption": "Banking & Financial"
+      },
+      {
+        "imageSource": "images/automotive.webp",
+        "caption": "Automotive"
+      },
+      {
+        "imageSource": "images/agriculture.webp",
+        "caption": "Agriculture"
+      },
+      {
+        "imageSource": "images/ecommerce.webp",
+        "caption": "E-Commerce"
+      },
+      {
+        "imageSource": "images/realty.webp",
+        "caption": "Realty"
+      }
+    ]
+  },
+  "chooseUs": {
+    "heading": "Why to <strong>choose us</strong>",
+    "description": "We are an IT service and consulting company with the vision to deliver excellence and the skills to build your business success. Our services, knowledge and experience are essential tools that you can count on to help your business thrive in today's market.",
+    "imageSource": "images/why-us.webp",
+    "item": [
+      {
+        "header": "Customer First",
+        "body": "<p> We are a customer-centric organization. We provide outstanding customer service and satisfaction to our clients.</p><p> Our clients trust us to help them make informed IT decisions,and we go the extra mile to ensure that the outcome of our engagements meet or exceed their needs.</p>",
+        "eventKey": "0"
+      },
+      {
+        "header": "Experience and Expertise",
+        "body": "<p>We have the experience, expertise and knowledge to take your internal IT landscape from good to great. We can service your technology needs, implement a new strategy that will help you reach your full potential and reduce risk for the future.</p>",
+        "eventKey": "1"
+      },
+      {
+        "header": "Application Portfolio Assessment",
+        "body": "<p>The IT and consultancy services are the core of your business. Let us do the everything, from business valuation to start-up planning and implementation, data analysis who works with what and what should be done in future. You should enjoy this wonderful journey of your company.</p>",
+        "eventKey": "2"
+      },
+      {
+        "header": "Cost Effective Solution",
+        "body": "<p>Our IT and consultancy services have been proven to result in cost effective solutions that meet the unique needs of our clients. We invest time to understand the focus of your business and deliver outcomes that help you implement cutting edge technologies, increase revenue, and reduce risk.</p>",
+        "eventKey": "3"
+      },
+      {
+        "header": "Committed to Quality",
+        "body": "<p>As a quality driven organisation, we believe that high quality services make all the difference. Our mission is to provide world class IT services that deliver real value to our customers.</p>",
+        "eventKey": "4"
+      },
+      {
+        "header": "Focus on Research and Innovation",
+        "body": "<p>Research and innovation are the cornerstones of our success as a business. By identifying emerging trends and technologies, we are able to develop solutions that can be implemented rapidly and efficiently.</p>",
+        "eventKey": "4"
+      }
+    ]
+  },
+  "achievements": {
+    "heading": "Some facts about us",
+    "item": [
+      {
+        "number": "26",
+        "name": "Project Done"
+      },
+      {
+        "number": "18",
+        "name": "Team Members"
+      },
+      {
+        "number": "12",
+        "name": "Client Associated"
+      },
+      {
+        "number": "3",
+        "name": "Research Areas"
+      }
+    ]
+  },
+  "cookie": {
+    "heading": "Welcome to the Official Site of WebCreatix.com",
+    "imageSource": "images/logo.png",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "close": "Close",
+    "accept": "Accept"
+  },
+  "footer": {
+    "about": {
+      "heading": "About us",
+      "description": "<p>WebCreatix is a leading IT service and consultancy company providing end-to-end technology solutions in various fields to its clients. We pride ourselves on delivering high quality work without compromising quality of service.</p><p>Our goal is simple: Helping our clients achieve one or multiple objectives through IT solutions.</p>"
+    },
+    "service": {
+      "heading": "Services",
+      "links": [
+        {
+          "label": "Data & Analytics",
+          "url": "/services/data-analytics"
+        },
+        {
+          "label": "Artificial Intelligence",
+          "url": "/services/artificial-intelligence"
+        },
+        {
+          "label": "Blockchain",
+          "url": "/services/blockchain"
+        },
+        {
+          "label": "Application Services",
+          "url": "/services/application-services"
+        },
+        {
+          "label": "CRM Solutions",
+          "url": "/services/crm-solution"
+        },
+        {
+          "label": "IT Consulting",
+          "url": "/services/it-consulting"
+        },
+        {
+          "label": "Customer Experience & Design",
+          "url": "/services/customer-experience"
+        },
+        {
+          "label": "DevOps",
+          "url": "/services/devops"
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Our Contacts",
+      "address": "23, Gangotri Apt, Sector 12, Dwarka<br/> New Delhi, India<br />Phone: +91 9999289454<br />Email: <a href='mailto:info@webcreatix.com'>info@webcreatix.com</a><br />"
+    },
+    "copyRight": "WebCreatix"
+  }
+}

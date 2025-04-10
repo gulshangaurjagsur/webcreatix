@@ -1,0 +1,123 @@
+.footerWrapper {
+  background: #061b32;
+  color: #b0b0b0;
+  font-size: 14px;
+  // :global(.form-check),
+  // :global(.recaptcha) {
+  //   display: none;
+  // }
+  :global(.textArea) {
+    flex: 0 0 100% !important;
+  }
+
+  h2 {
+    font: 400 21px;
+    margin: 0 0 8px;
+    color: #c2c1c1;
+    text-transform: uppercase;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  li {
+    margin-bottom: 6px;
+  }
+  .footerWrapperCol {
+    padding-bottom: 22px;
+    padding-right: 50px;
+    a {
+      color: #fff;
+      &:hover {
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+  address {
+    line-height: 1.7;
+  }
+  .servicesFooter a {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .copyRight {
+    background: #272626;
+    color: #fff;
+    font-size: 12px;
+    padding: 15px 0;
+    text-align: center;
+
+    .inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    a {
+      color: #fff;
+      &:hover {
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+  .contactWrapper {
+    position: relative;
+    min-height: 457px;
+    height: auto;
+    padding: 40px 0;
+    z-index: 0;
+    // background: #292f34 url(../../../public/images/contact-us.jpg) no-repeat fixed;
+    position: relative;
+    margin-bottom: 60px;
+    background-size: 100%;
+    background: #f6f6f6;
+    color: #000;
+
+    .text {
+      color: #000;
+      font-size: 1rem;
+      padding-top: 1rem;
+      h2 {
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #e54a1a;
+        font-size: 2rem;
+        display: inline-block;
+        width: 90%;
+        text-transform: none;
+        font-weight: bold;
+      }
+      h4{
+        font-size: 18px;
+        margin-bottom: 7px;
+        font-weight: 600;
+      }
+      img{
+        margin-left: -28px;
+        margin-right: -22px;
+      }
+      a {
+        text-decoration:none;
+        color: #000;
+        i {
+          color: #e85425;
+        }
+      }
+
+    }
+
+    .formWrapper {
+      background-color: #fff;
+      border-radius: 0.5rem;
+      padding: 2rem 1rem;
+      @media (max-width: 767px) {
+        margin: 2rem auto 0 auto;
+        width: 90%;
+      }
+      h4 {
+        color: #e54a1a;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

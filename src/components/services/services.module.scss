@@ -1,0 +1,51 @@
+.services {
+  background: #f6f6f6;
+  padding: 60px 0 70px;
+  text-align: center;
+  h3 {
+    color: #e54a1a;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+  .row {
+    padding-top: 44px;
+  }
+  .item {
+    padding-top: 1rem;
+    // min-height: 26rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  :global(.fa) {
+    font-size: 38px;
+    text-align: center;
+    padding: 28px 0 0;
+    background: #e85425;
+    color: #fff;
+    width: 99px;
+    height: 99px;
+    line-height: 1;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 29px;
+    :global(:after) {
+      bottom: -8px;
+      width: 0;
+      height: 0;
+      left: 50%;
+      margin-left: -9px;
+      z-index: 2;
+      content: " ";
+      display: block;
+      position: absolute;
+      border-top: 9px solid #e85425;
+      border-right: 9px solid transparent;
+      border-left: 9px solid transparent;
+    }
+  }
+  p {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+}

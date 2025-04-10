@@ -1,0 +1,44 @@
+.messageWrapper {
+  position: relative;
+  min-height: 457px;
+  height: auto;
+  padding: 0 0 50px;
+  z-index: 0;
+  background: #292f34 url(../../../public/images/quote.webp) no-repeat fixed;
+  position: relative;
+  .textWrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    h2 {
+      z-index: 2;
+      color: #fff;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 42px;
+      position: relative;
+      padding: 0;
+      /* margin: 150px 0 14px; */
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+      ::after {
+        display: none;
+      }
+      strong {
+        color: #18bbff;
+        display: block;
+      }
+    }
+    em {
+      font: 300 15px;
+      text-transform: uppercase;
+      color: #fff;
+      position: relative;
+      z-index: 2;
+      display: block;
+    }
+  }
+}

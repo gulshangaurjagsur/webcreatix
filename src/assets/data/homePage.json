@@ -1,0 +1,280 @@
+{
+  "header": {
+    "items": [
+      {
+        "label": "Home",
+        "url": "/"
+      },
+      {
+        "label": "About Us",
+        "url": "/about-us"
+      },
+      {
+        "label": "Services",
+        "subLinks": [
+          {
+            "label": "Web Design & Development",
+            "url": "/services/web-design-development"
+          },
+          {
+            "label": "Mobile App Development",
+            "url": "/services/mobile-app-development"
+          },
+          {
+            "label": "Graphic Designing",
+            "url": "/services/graphic-designing"
+          },
+          {
+            "label": "UI/UX Design",
+            "url": "/services/ui-ux-design"
+          },
+          {
+            "label": "E-Commerce Solutions",
+            "url": "/services/ecommerce-solutions"
+          },
+          {
+            "label": "Social Media Marketing",
+            "url": "/services/social-media-marketing"
+          },
+          {
+            "label": "SEO Services",
+            "url": "/services/seo-services"
+          },
+         
+          {
+            "label": "Branding",
+            "url": "/services/branding"
+          },
+          {
+            "label": "Software Development",
+            "url": "/services/custom-software-development"
+          },
+          {
+            "label": "Maintenance & Support",
+            "url": "/services/maintenance-support"
+          }
+        ]
+      },
+      {
+        "label": "Industries",
+        "url": "/industries"
+      },
+      {
+        "label": "Contact",
+        "url": "/contact"
+      }
+    ]
+  },
+  "mainBanner": {
+    "item": [
+      {
+        "imageSource": "images/artificial-intelligence-main.webp",
+        "heading": "Digital <em>Transformation</em>",
+        "subHeading": "Web Design, App Design, Social Media Marketing, and SEO WebCreatix.com",
+        "label1": "WebSite Design",
+        "url1": "/",
+        "label2": "App Development",
+        "url2": "/",
+        "label3": "Social Media",
+        "url3": "/",
+        "label4": "SEO",
+        "url4": "/"
+      }
+      
+    ]
+  },
+  "overview": {
+    "heading": "<span>WebCreatix</span> Inspires",
+    "description": "<b>At WebCreatix, we deliver a wide range of services and solutions designed to help businesses streamline operations, reduce costs, and stay ahead in the digital era.</b> With deep expertise in information technology, business strategy, and outsourcing, we craft tailored solutions to meet the unique needs of each client.<br /><br />Our commitment lies in delivering high-quality, value-driven services that empower our clients to thrive. By staying at the forefront of emerging technologies and industry trends, we help businesses overcome complex challenges and achieve sustainable growth."
+  },
+  "services": {
+    "heading": "Our <strong>services</strong>",
+    "subHeading": "Interact with Our Services Today!",
+    "item": [
+      {
+        "serviceIcon": "fa-code",
+        "serviceName": "Website Development",
+        "serviceDescription": "Build responsive, scalable websites for a strong online presence."
+      },
+      {
+        "serviceIcon": "fa-mobile",
+        "serviceName": "Mobile App Development",
+        "serviceDescription": "Create intuitive, high-performing mobile applications."
+      },
+
+      {
+        "serviceIcon": "fa-laptop",
+        "serviceName": "Web Design & Development",
+        "serviceDescription": "Design modern, user-focused websites for all devices."
+      },
+      {
+        "serviceIcon": "fa-paint-brush",
+        "serviceName": "Graphics Designing",
+        "serviceDescription": "Deliver impactful visuals to boost brand identity."
+      },
+      {
+        "serviceIcon": "fa-shopping-cart",
+        "serviceName": "E-Commerce Website Solutions",
+        "serviceDescription": "Develop secure, conversion-optimized online stores."
+      },
+      {
+        "serviceIcon": "fa-search",
+        "serviceName": "Search Engine Optimization",
+        "serviceDescription": "Boost search visibility with smart SEO strategies."
+      },
+      {
+        "serviceIcon": "fa-thumbs-up",
+        "serviceName": "Social Media Marketing",
+        "serviceDescription": "Grow brand engagement with result-driven campaigns."
+      }
+    ]
+  },
+  "message": {
+    "heading": "We don't just build websites <strong>we build digital experiences.</strong>",
+    "quote": "WebCreatix"
+  },
+
+  "portfolio": {
+    "heading": "Industries",
+    "item": [
+      {
+        "imageSource": "images/travel.jpg",
+        "caption": "Tour and Travels"
+      },
+      {
+        "imageSource": "images/bank.jpg",
+        "caption": "Banking Services"
+      },
+      {
+        "imageSource": "images/education.jpg",
+        "caption": "Education"
+      },
+      {
+        "imageSource": "images/e-commerce.jpg",
+        "caption": "E-Commerce"
+      },
+      {
+        "imageSource": "images/healthcare.jpg",
+        "caption": "Health Care"
+      },
+      
+      {
+        "imageSource": "images/realty.jpg",
+        "caption": "Real Estate"
+      }
+    ]
+  },
+  "chooseUs": {
+    "heading": "Why to <strong>choose us</strong>",
+    "description": "We are a technology services and consulting company driven by a vision to deliver excellence and empower your business for success. With a strong foundation of expertise, innovation, and industry knowledge, we provide solutions that help your business grow, adapt, and lead in today’s competitive digital landscape.",
+    "imageSource": "images/why-us.png",
+    "item": [
+      {
+        "header": "Putting Customers First",
+        "body": "<p>We prioritize your needs at every step. Our client-first approach ensures exceptional service, satisfaction, and trust-building throughout our partnership.</p><p>We work closely with you to make informed decisions and go the extra mile to exceed expectations.</p>",
+        "eventKey": "0"
+      },
+      {
+        "header": "Proven Expertise",
+        "body": "<p>With years of hands-on experience, we bring the right mix of skill and strategy to elevate your IT landscape. From managing systems to driving innovation — we’re your trusted tech partner.</p>",
+        "eventKey": "1"
+      },
+      {
+        "header": "Smart Application Assessment",
+        "body": "<p>We help assess, strategize, and transform your digital ecosystem. From startup planning to data analysis, we empower your business with insights and direction for long-term success.</p>",
+        "eventKey": "2"
+      },
+      {
+        "header": "Value-Driven Solutions",
+        "body": "<p>We deliver cost-effective, high-impact IT solutions tailored to your unique needs. Our goal is to help you innovate, boost revenue, and minimize risk through smart implementation.</p>",
+        "eventKey": "3"
+      },
+      {
+        "header": "Uncompromised Quality",
+        "body": "<p>Quality is at the heart of everything we do. We’re committed to delivering reliable, top-tier services that provide measurable value to your business.</p>",
+        "eventKey": "4"
+      },
+      {
+        "header": "Driven by Innovation",
+        "body": "<p>We embrace research and innovation to stay ahead of the curve. By identifying emerging technologies early, we craft agile solutions that position your business for tomorrow.</p>",
+        "eventKey": "5"
+      }
+    ]
+  },
+  "achievements": {
+    "heading": "Some facts about us",
+    "item": [
+      {
+        "number": "26",
+        "name": "Project Done"
+      },
+      {
+        "number": "18",
+        "name": "Team Members"
+      },
+      {
+        "number": "12",
+        "name": "Client Associated"
+      },
+      {
+        "number": "3",
+        "name": "Research Areas"
+      }
+    ]
+  },
+  "cookie": {
+    "heading": "Welcome to the Official Site of WebCreatix.com",
+    "imageSource": "",
+    "description": "We use cookies to enhance your browsing experience and to collect information about how you use our website. By continuing to use our website, you consent to the use of cookies in accordance with our <a href='/privacy'>cookie policy</a>. You can manage your cookie preferences through your browser settings. Please note that disabling cookies may limit your ability to use certain features of our website.",
+    "close": "Close",
+    "accept": "Accept"
+  },
+  "footer": {
+    "about": {
+      "heading": "About us",
+      "description": "<p>WebCreatix is a leading IT service and consultancy company providing end-to-end technology solutions in various fields to its clients. We pride ourselves on delivering high quality work without compromising quality of service.</p><p>Our goal is simple: Helping our clients achieve one or multiple objectives through IT solutions.</p>"
+    },
+    "service": {
+      "heading": "Services",
+      "links": [
+        {
+          "label": "Data & Analytics",
+          "url": "/services/data-analytics"
+        },
+        {
+          "label": "Artificial Intelligence",
+          "url": "/services/artificial-intelligence"
+        },
+        {
+          "label": "Blockchain",
+          "url": "/services/blockchain"
+        },
+        {
+          "label": "Application Services",
+          "url": "/services/application-services"
+        },
+        {
+          "label": "CRM Solutions",
+          "url": "/services/crm-solution"
+        },
+        {
+          "label": "IT Consulting",
+          "url": "/services/it-consulting"
+        },
+        {
+          "label": "Customer Experience & Design",
+          "url": "/services/customer-experience"
+        },
+        {
+          "label": "DevOps",
+          "url": "/services/devops"
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Our Contacts",
+      "address": "23, Gangotri Apt, Sector 12, Dwarka<br/> New Delhi, India<br />Phone: +91 9999289454<br />Email: <a href='mailto:info@webcreatix.com'>info@webcreatix.com</a><br />"
+    },
+    "copyRight": "WebCreatix."
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "header": {
+    "items": [
+      {
+        "label": "Home",
+        "url": "/"
+      },
+      {
+        "label": "About Us",
+        "url": "/about-us"
+      },
+      {
+        "label": "Services",
+        "subLinks": [
+          {
+            "label": "Web Design & Development",
+            "url": "/services/web-design-development"
+          },
+          {
+            "label": "Mobile App Development",
+            "url": "/services/mobile-app-development"
+          },
+          {
+            "label": "Graphic Designing",
+            "url": "/services/graphic-designing"
+          },
+          {
+            "label": "UI/UX Design",
+            "url": "/services/ui-ux-design"
+          },
+          {
+            "label": "E-Commerce Solutions",
+            "url": "/services/ecommerce-solutions"
+          },
+          {
+            "label": "Social Media Marketing",
+            "url": "/services/social-media-marketing"
+          },
+          {
+            "label": "SEO Services",
+            "url": "/services/seo-services"
+          },
+         
+          {
+            "label": "Branding",
+            "url": "/services/branding"
+          },
+          {
+            "label": "Software Development",
+            "url": "/services/custom-software-development"
+          },
+          {
+            "label": "Maintenance & Support",
+            "url": "/services/maintenance-support"
+          }
+        ]
+      },
+      {
+        "label": "Industries",
+        "url": "/industries"
+      },
+      {
+        "label": "Contact",
+        "url": "/contact"
+      }
+    ]
+  },
+  "banner": {
+    "imageSource": "images/industries.jpg"
+  },
+  "overview": {
+    "heading": "<span>About</span> WebCreatix",
+    "subHeading": "Your Trusted Digital Partner for Growth-Driven Solutions",
+    "description": "At WebCreatix, we thrive on innovation, creativity, and results. We help businesses accelerate their digital journey with custom web development, engaging mobile applications, strategic digital marketing, and impactful branding. Our mission is simple — to build future-ready digital experiences that deliver measurable value.<br /><br />We believe in tailored solutions. Our experienced team works closely with clients to understand their needs and craft strategies that align with their goals. From startups to enterprises, we empower businesses with the tools and technologies they need to scale efficiently in today’s competitive landscape."
+  },
+  "card": {
+    "item": [
+      {
+        "imageSource": "images/travel.jpg",
+        "heading": "Travel Technology Services",
+        "data": "WebCreatix helps travel businesses redefine the customer journey with tech-driven solutions. Whether it's seamless booking engines, itinerary planners, or immersive travel portals, we enable brands to deliver personalized experiences and build lasting customer relationships across the globe."
+      },
+      {
+        "imageSource": "images/banking.jpg",
+        "heading": "Banking & Financial Solutions",
+        "data": "At WebCreatix, we build secure, scalable, and customer-centric digital solutions for the banking and financial sector. From intuitive mobile banking apps to robust fintech platforms, our services help institutions streamline operations, enhance user trust, and stay ahead in a rapidly evolving digital economy.",
+        "reverse": true
+      },
+      {
+        "imageSource": "images/e-commerce.jpg",
+        "heading": "E-commerce Solution",
+        "data": "At WebCreatix, we craft powerful and scalable e-commerce solutions that drive sales and deliver seamless shopping experiences. From custom storefront designs to secure payment integration and inventory management, we empower businesses to grow in the competitive digital marketplace. Our solutions help you engage customers, boost conversions, and manage your online store with ease."
+      },
+      {
+        "imageSource": "images/realty.jpg",
+        "heading": "Real Estate Tech Solutions",
+        "data": "At WebCreatix, we specialize in delivering innovative technology solutions tailored for the realty industry. From advanced property management systems to immersive virtual tours, we empower real estate businesses to streamline operations and enhance customer experiences.",
+        "reverse": true
+      },
+      {
+        "imageSource": "images/education.jpg",
+        "heading": "Education Technology Services",
+        "data": "At WebCreatix, we design smart, engaging, and scalable digital solutions for the education sector. From e-learning platforms and virtual classrooms to student management systems, we help institutions modernize their learning experiences. Our goal is to empower educators and learners through intuitive tech that enhances knowledge delivery and academic performance."
+      },
+      {
+        "imageSource": "images/healthcare.jpg",
+        "heading": "Healthcare Technology Services",
+        "data": "WebCreatix provides smart, reliable, and secure technology solutions for the healthcare sector. Whether it's developing telemedicine platforms, patient management systems, or health record integrations, we focus on improving operational efficiency and patient care. Our tech-driven approach ensures compliance, data security, and user-friendly experiences for providers and patients alike.",
+        "reverse": true
+      }
+    ]
+  },
+  "footer": {
+    "about": {
+      "heading": "About us",
+      "description": "<p>WebCreatix is a leading IT service and consultancy company providing end-to-end technology solutions in various fields to its clients. We pride ourselves on delivering high quality work without compromising quality of service.</p><p>Our goal is simple: Helping our clients achieve one or multiple objectives through IT solutions.</p>"
+    },
+    "service": {
+      "heading": "Services",
+      "links": [
+        {
+          "label": "Data & Analytics",
+          "url": "/services/data-analytics"
+        },
+        {
+          "label": "Artificial Intelligence",
+          "url": "/services/artificial-intelligence"
+        },
+        {
+          "label": "Blockchain",
+          "url": "/services/blockchain"
+        },
+        {
+          "label": "Application Services",
+          "url": "/services/application-services"
+        },
+        {
+          "label": "CRM Solutions",
+          "url": "/services/crm-solution"
+        },
+        {
+          "label": "IT Consulting",
+          "url": "/services/it-consulting"
+        },
+        {
+          "label": "Customer Experience & Design",
+          "url": "/services/customer-experience"
+        },
+        {
+          "label": "DevOps",
+          "url": "/services/devops"
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Our Contacts",
+      "address": "23, Gangotri Apt, Sector 12, Dwarka<br/> New Delhi, India<br />Phone: +91 9999289454<br />Email: <a href='mailto:info@webcreatix.com'>info@webcreatix.com</a><br />"
+    },
+    "copyRight": "WebCreatix"
+  }
+}

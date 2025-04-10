@@ -1,0 +1,80 @@
+/* Choose us block */
+.chooseUs {
+  padding: 60px 0;
+  img{max-width:350px;}
+  button {
+    outline: none;
+  }
+  :global(.accordion-item) {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+}
+.chooseUs h4 {
+  margin: 35px 0;
+}
+.chooseUs h4 a {
+  color: #1ea9e3;
+}
+.chooseUs .panel-group {
+  padding-top: 50px;
+}
+.chooseUs .panel-default {
+  border-radius: 0 !important;
+  border: none;
+  background: none;
+  margin-bottom: 0 !important;
+  padding-bottom: 14px;
+}
+.chooseUs .panel-default > .panel-heading {
+  border: none;
+  background: none;
+  padding: 0;
+}
+.chooseUs .panel-default > .panel-heading + .panel-collapse .panel-body {
+  border: none;
+  padding: 0 0 0 32px;
+}
+.chooseUs .panel-default h5 {
+  font: 300 19px;
+  padding: 0;
+  margin: 0 0 5px;
+}
+.chooseUs .panel-default .accordion-toggle:before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  background: #e54a1a url(../../../public/images/toggle-icons.png) no-repeat 6px
+    10px;
+  border-radius: 50% !important;
+  margin-right: 10px;
+  position: relative;
+  top: 4px;
+}
+.chooseUs .panel-default .collapsed:before {
+  background: #495764 url(../../../public/images/toggle-icons.png) no-repeat 6px -148px;
+}
+.chooseUs .panel-default .panel-title:hover .collapsed:before {
+  background-color: #e54a1a;
+}
+.chooseUs .panel-default .accordion-toggle,
+.chooseUs .panel-default .accordion-toggle:focus,
+.chooseUs .panel-default .accordion-toggle:hover,
+.chooseUs .panel-default .accordion-toggle:active {
+  color: #e54a1a;
+  text-decoration: none;
+}
+.chooseUs .panel-default .collapsed {
+  color: #5f6f7e;
+}
+.textContainer {
+  text-align: center;
+  h2 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+}

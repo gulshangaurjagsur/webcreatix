@@ -1,0 +1,144 @@
+{
+  "header": {
+    "items": [
+      {
+        "label": "Home",
+        "url": "/"
+      },
+      {
+        "label": "About Us",
+        "url": "/about-us"
+      },
+      {
+        "label": "Services",
+        "subLinks": [
+          {
+            "label": "Web Design & Development",
+            "url": "/services/web-design-development"
+          },
+          {
+            "label": "Mobile App Development",
+            "url": "/services/mobile-app-development"
+          },
+          {
+            "label": "Graphic Designing",
+            "url": "/services/graphic-designing"
+          },
+          {
+            "label": "UI/UX Design",
+            "url": "/services/ui-ux-design"
+          },
+          {
+            "label": "E-Commerce Solutions",
+            "url": "/services/ecommerce-solutions"
+          },
+          {
+            "label": "Social Media Marketing",
+            "url": "/services/social-media-marketing"
+          },
+          {
+            "label": "SEO Services",
+            "url": "/services/seo-services"
+          },
+         
+          {
+            "label": "Branding",
+            "url": "/services/branding"
+          },
+          {
+            "label": "Software Development",
+            "url": "/services/custom-software-development"
+          },
+          {
+            "label": "Maintenance & Support",
+            "url": "/services/maintenance-support"
+          }
+        ]
+      },
+      {
+        "label": "Industries",
+        "url": "/industries"
+      },
+      {
+        "label": "Contact",
+        "url": "/contact"
+      }
+    ]
+  },
+  "banner": {
+    "imageSource": "images/privacy.jpg"
+  },
+  "overview": {
+    "heading": "<span>Privacy</span> Policy",
+    "description": "At WebCreatix, we are committed to protecting your privacy. We collect basic personal information such as your name, email, and usage data to improve our services, communicate effectively, and enhance your overall experience. All data is stored securely, and we never sell or rent your information to third parties.<br /><br />Cookies are used to personalize content and analyze traffic, and you can control their usage through browser settings. We may share data with trusted service providers under strict confidentiality. By using our website, you consent to our data practices as described.<br /><br />For any questions or to request access or deletion of your data, please contact us at <a href=\"mailto:info@webcreatix.com\">info@webcreatix.com</a>. This policy may be updated occasionally, and all changes will be posted on this page.<br /><br />By accessing and using WebCreatix, you agree to abide by our terms and conditions. All content, including designs, text, graphics, and code, is the intellectual property of WebCreatix and may not be copied or redistributed without written permission. Our services are provided \"as is\" without warranties of any kind, and we are not liable for any damages arising from the use of our website or services.<br /><br />Users are responsible for maintaining the confidentiality of their account details and agree not to engage in any unlawful or harmful activity on the site. We reserve the right to modify or terminate services at any time without prior notice. Continued use of our website implies acceptance of these terms."
+  },
+  "achievements": {
+    "heading": "Some facts about us",
+    "item": [
+      {
+        "number": "26",
+        "name": "Project Done"
+      },
+      {
+        "number": "18",
+        "name": "Team Members"
+      },
+      {
+        "number": "12",
+        "name": "Client Associated"
+      },
+      {
+        "number": "3",
+        "name": "Research Areas"
+      }
+    ]
+  },
+  "footer": {
+    "about": {
+      "heading": "About us",
+      "description": "<p>WebCreatix is a leading IT service and consultancy company providing end-to-end technology solutions in various fields to its clients. We pride ourselves on delivering high quality work without compromising quality of service.</p><p>Our goal is simple: Helping our clients achieve one or multiple objectives through IT solutions.</p>"
+    },
+    "service": {
+      "heading": "Services",
+      "links": [
+        {
+          "label": "Data & Analytics",
+          "url": "/services/data-analytics"
+        },
+        {
+          "label": "Artificial Intelligence",
+          "url": "/services/artificial-intelligence"
+        },
+        {
+          "label": "Blockchain",
+          "url": "/services/blockchain"
+        },
+        {
+          "label": "Application Services",
+          "url": "/services/application-services"
+        },
+        {
+          "label": "CRM Solutions",
+          "url": "/services/crm-solution"
+        },
+        {
+          "label": "IT Consulting",
+          "url": "/services/it-consulting"
+        },
+        {
+          "label": "Customer Experience & Design",
+          "url": "/services/customer-experience"
+        },
+        {
+          "label": "DevOps",
+          "url": "/services/devops"
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Our Contacts",
+      "address": "23, Gangotri Apt, Sector 12, Dwarka<br/> New Delhi, India<br />Phone: +91 9999289454<br />Email: <a href='mailto:info@webcreatix.com'>info@webcreatix.com</a><br />"
+    },
+    "copyRight": "WebCreatix"
+  }
+}

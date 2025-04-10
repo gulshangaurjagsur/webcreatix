@@ -1,0 +1,33 @@
+.modalWrapper {
+  margin: 60px 0;
+  p {
+    font-size: 14px;
+  }
+
+  img {
+    width: 100px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+  }
+  :global(.modal-title) {
+    width: 100%;
+    text-align: center;
+  }
+  @media (min-width: 992px) {
+    :global(.modal-dialog) {
+      width: 60%;
+    }
+  }
+
+  :global(.btn-primary) {
+    background: #e94d1c;
+    &:hover {
+      background: #cc3304;
+    }
+  }
+  button {
+    border-radius: 0;
+    border: none;
+  }
+}

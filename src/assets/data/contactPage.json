@@ -1,0 +1,144 @@
+{
+  "header": {
+    "items": [
+      {
+        "label": "Home",
+        "url": "/"
+      },
+      {
+        "label": "About Us",
+        "url": "/about-us"
+      },
+      {
+        "label": "Services",
+        "subLinks": [
+          {
+            "label": "Web Design & Development",
+            "url": "/services/web-design-development"
+          },
+          {
+            "label": "Mobile App Development",
+            "url": "/services/mobile-app-development"
+          },
+          {
+            "label": "Graphic Designing",
+            "url": "/services/graphic-designing"
+          },
+          {
+            "label": "UI/UX Design",
+            "url": "/services/ui-ux-design"
+          },
+          {
+            "label": "E-Commerce Solutions",
+            "url": "/services/ecommerce-solutions"
+          },
+          {
+            "label": "Social Media Marketing",
+            "url": "/services/social-media-marketing"
+          },
+          {
+            "label": "SEO Services",
+            "url": "/services/seo-services"
+          },
+         
+          {
+            "label": "Branding",
+            "url": "/services/branding"
+          },
+          {
+            "label": "Software Development",
+            "url": "/services/custom-software-development"
+          },
+          {
+            "label": "Maintenance & Support",
+            "url": "/services/maintenance-support"
+          }
+        ]
+      },
+      {
+        "label": "Industries",
+        "url": "/industries"
+      },
+      {
+        "label": "Contact",
+        "url": "/contact"
+      }
+    ]
+  },
+  "banner": {
+    "imageSource": "images/contact.jpg"
+  },
+  "overview": {
+    "heading": "<span>Contact</span> Us",
+    "description": "We'd love to hear from you! Whether you have a project in mind, need support, or simply want to say hello — our team is here to help. Fill out the form below with your details and message, and we'll get back to you as soon as possible. You can also reach out to us via email or phone for urgent inquiries. Let's create something amazing together!"
+  },
+  "achievements": {
+    "heading": "Some facts about us",
+    "item": [
+      {
+        "number": "26",
+        "name": "Project Done"
+      },
+      {
+        "number": "18",
+        "name": "Team Members"
+      },
+      {
+        "number": "12",
+        "name": "Client Associated"
+      },
+      {
+        "number": "3",
+        "name": "Research Areas"
+      }
+    ]
+  },
+  "footer": {
+    "about": {
+      "heading": "About us",
+      "description": "<p>WebCreatix is a leading IT service and consultancy company providing end-to-end technology solutions in various fields to its clients. We pride ourselves on delivering high quality work without compromising quality of service.</p><p>Our goal is simple: Helping our clients achieve one or multiple objectives through IT solutions.</p>"
+    },
+    "service": {
+      "heading": "Services",
+      "links": [
+        {
+          "label": "Data & Analytics",
+          "url": "/services/data-analytics"
+        },
+        {
+          "label": "Artificial Intelligence",
+          "url": "/services/artificial-intelligence"
+        },
+        {
+          "label": "Blockchain",
+          "url": "/services/blockchain"
+        },
+        {
+          "label": "Application Services",
+          "url": "/services/application-services"
+        },
+        {
+          "label": "CRM Solutions",
+          "url": "/services/crm-solution"
+        },
+        {
+          "label": "IT Consulting",
+          "url": "/services/it-consulting"
+        },
+        {
+          "label": "Customer Experience & Design",
+          "url": "/services/customer-experience"
+        },
+        {
+          "label": "DevOps",
+          "url": "/services/devops"
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Our Contacts",
+      "address": "23, Gangotri Apt, Sector 12, Dwarka<br/> New Delhi, India<br />Phone: +91 9999289454<br />Email: <a href='mailto:info@webcreatix.com'>info@webcreatix.com</a><br />"
+    },
+    "copyRight": "WebCreatix"
+  }
+}

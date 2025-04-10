@@ -1,0 +1,477 @@
+{
+  "header": {
+    "items": [
+      {
+        "label": "Home",
+        "url": "/"
+      },
+      {
+        "label": "About Us",
+        "url": "/about-us"
+      },
+      {
+        "label": "Services",
+        "subLinks": [
+          {
+            "label": "Web Design & Development",
+            "url": "/services/web-design-development"
+          },
+          {
+            "label": "Mobile App Development",
+            "url": "/services/mobile-app-development"
+          },
+          {
+            "label": "Graphic Designing",
+            "url": "/services/graphic-designing"
+          },
+          {
+            "label": "UI/UX Design",
+            "url": "/services/ui-ux-design"
+          },
+          {
+            "label": "E-Commerce Solutions",
+            "url": "/services/ecommerce-solutions"
+          },
+          {
+            "label": "Social Media Marketing",
+            "url": "/services/social-media-marketing"
+          },
+          {
+            "label": "SEO Services",
+            "url": "/services/seo-services"
+          },
+         
+          {
+            "label": "Branding",
+            "url": "/services/branding"
+          },
+          {
+            "label": "Software Development",
+            "url": "/services/custom-software-development"
+          },
+          {
+            "label": "Maintenance & Support",
+            "url": "/services/maintenance-support"
+          }
+        ]
+      },
+      {
+        "label": "Industries",
+        "url": "/industries"
+      },
+      {
+        "label": "Contact",
+        "url": "/contact"
+      }
+    ]
+  },
+  "banner": {
+    "webDevelopment": {
+      "imageSource": "/images/Bigdata.webp"
+    },
+    "mobileAppDevelopment": {
+      "imageSource": "/images/Bigdata.webp"
+    },
+    "graphicDesign": {
+      "imageSource": "/images/Bigdata.webp"
+    },
+    "uiUxDesign": {
+      "imageSource": "/images/Bigdata.webp"
+    },
+    "eCommerce": {
+      "imageSource": "/images/Bigdata.webp"
+    },
+    "socialMediaMarketing": {
+      "imageSource": "/images/Bigdata.webp"
+    },
+    "seoServices": {
+      "imageSource": "/images/Bigdata.webp"
+    },
+    "branding": {
+      "imageSource": "/images/Bigdata.webp"
+    },
+    "customSoftwareDevelopment": {
+      "imageSource": "/images/Bigdata.webp"
+    },
+    "maintenance": {
+      "imageSource": "/images/Bigdata.webp"
+    }
+  },
+  "overview": {
+    "webDevelopment": {
+      "heading": "<span>Web</span> Design & Development",
+      "subHeading": "Build Stunning, High-Performance Websites That Convert",
+      "description": "<p>At WebCreatix, we offer end-to-end web design and development services tailored to your business goals. From intuitive UI/UX design to robust backend systems, we craft secure, scalable, and user-friendly websites that not only look great but also perform flawlessly. Whether it's a corporate website, e-commerce platform, or custom web application, we ensure an impactful online presence with seamless user experiences and fast load times.</p>"
+    },
+    "mobileAppDevelopment": {
+      "heading": "<span>Mobile App</span> Development",
+      "subHeading": "Transform Your Idea into a Powerful Mobile Experience",
+      "description": "<p>We develop intuitive and feature-rich mobile applications for both Android and iOS platforms. Our mobile solutions are designed to drive user engagement and maximize performance.</p>"
+    },
+    "graphicDesign": {
+      "heading": "<span>Graphics</span> Designing",
+      "subHeading": "Visuals That Speak Louder Than Words",
+      "description": "<p>We create eye-catching designs that communicate your message clearly and leave a lasting impact—from logos and brochures to social media creatives.</p>"
+    },
+    "uiUxDesign": {
+      "heading": "<span>UI/UX</span> Design",
+      "subHeading": "Designing Intuitive Experiences That Delight and Convert",
+      "description": "<p>At WebCreatix, we craft user-centric interfaces that not only look beautiful but also deliver seamless experiences. Our design philosophy blends creativity with usability, ensuring your product engages users from the very first interaction.</p>"
+    },
+    "eCommerce": {
+      "heading": "<span>E-Commerce Website</span> Solutions",
+      "subHeading": "Drive Sales with Custom E-Commerce Platforms",
+      "description": "<p>From product catalog to secure checkout, we develop seamless e-commerce solutions that help you manage inventory, track sales, and increase conversions.</p>"
+    },
+    "socialMediaMarketing": {
+      "heading": "<span>Social Media</span> Marketing",
+      "subHeading": "Engage and Grow Your Audience on Every Platform",
+      "description": "<p>We create targeted campaigns and eye-catching content to grow your brand's presence across platforms like Facebook, Instagram, LinkedIn, and more.</p>"
+    },
+    "seoServices": {
+      "heading": "<span>Search</span> Engine Optimization",
+      "subHeading": "Boost Your Online Visibility with Expert SEO Strategies",
+      "description": "<p>At WebCreatix, we help your business climb search engine rankings and attract organic traffic with data-driven, white-hat SEO techniques. Our approach ensures long-term growth by optimizing your website's content, structure, and authority to meet ever-evolving search engine algorithms.</p>"
+    },
+    "branding": {
+      "heading": "<span>Branding</span>",
+      "subHeading": "Create a Lasting Impression with Strategic Branding Solutions",
+      "description": "<p>At WebCreatix, we help businesses craft a unique identity that resonates with their audience. From logos and color palettes to complete brand guidelines, we design cohesive visual and verbal branding that builds trust, improves recognition, and strengthens your market presence.</p>"
+    },
+    "customSoftwareDevelopment": {
+      "heading": "<span>Custom Software</span> Development",
+      "subHeading": "Tailored Software Solutions That Solve Real Business Challenges",
+      "description": "<p>We build custom software applications that align with your business processes, improve efficiency, and scale as you grow. At WebCreatix, we blend innovation with functionality to deliver robust desktop, web, or mobile solutions—from scratch.</p>"
+    },
+    "maintenance": {
+      "heading": "<span>Maintenance & Support</span>",
+      "subHeading": "Reliable Website & App Maintenance to Keep You Running Smoothly",
+      "description": "<p>We don't just build—we maintain. Our ongoing support ensures your website or application is secure, up-to-date, and functioning at its best. From performance tuning to regular backups and security patches, we've got your back.</p>"
+    }
+  },
+  "technology": {
+    "webDevelopment": {
+      "heading": "Future-Ready Tech Stack for Modern Web Solutions",
+      "subHeading": "Framework Includes",
+      "description": [
+        {
+          "tool": "UI/UX Design:",
+          "detail": "Figma, Adobe XD, Sketch — for wireframes, mockups, and design systems."
+        },
+        {
+          "tool": "Front-End Development:",
+          "detail": "React, Next.js, HTML5, CSS3, Tailwind CSS, JavaScript"
+        },
+        {
+          "tool": "Back-End Development:",
+          "detail": "Node.js, Express, PHP, Laravel — powering dynamic and secure web apps."
+        },
+        {
+          "tool": "CMS Platforms:",
+          "detail": "WordPress, Strapi — for easy content management and scalability."
+        },
+        {
+          "tool": "Version Control & Deployment:",
+          "detail": "GitHub, Bitbucket, Vercel, Netlify — ensuring smooth CI/CD workflows."
+        },
+        {
+          "tool": "Hosting Solutions:",
+          "detail": "AWS, DigitalOcean, Hostinger — fast, secure, and reliable cloud infrastructure."
+        }
+      ]
+    },
+    "mobileAppDevelopment": {
+      "heading": "Future-Ready Technologies for Scalable Mobile Apps",
+      "subHeading": "Framework Includes",
+      "description": [
+        {
+          "tool": "Frameworks:",
+          "detail": "React Native, Flutter"
+        },
+        {
+          "tool": "Languages:",
+          "detail": "Dart, Java, Kotlin"
+        },
+        {
+          "tool": "Back-End:",
+          "detail": "Firebase, Node.js, REST APIs"
+        },{
+          "tool": "App Optimization:",
+          "detail": "Performance tuning, offline support"
+        },{
+          "tool": "Testing:",
+          "detail": "Appium, BrowserStack"
+        }
+      ]
+    },
+    "graphicDesign": {
+      "heading": "Creative Tools & Techniques",
+      "subHeading": "Framework Includes",
+      "description": [
+        {
+          "tool": "Design Software:",
+          "detail": "Adobe Photoshop, Illustrator, Canva"
+        },
+        {
+          "tool": "Branding Assets:",
+          "detail": "Logo design, business cards, letterheads"
+        },
+        {
+          "tool": "Social Media Design:",
+          "detail": "Post templates, banners, ad creatives"
+        },
+        {
+          "tool": "Print Design:",
+          "detail": "Flyers, brochures, packaging"
+        }
+      ]
+    },
+    "uiUxDesign": {
+      "heading": "Future-Ready Technologies for Scalable UI/UX Design",
+      "subHeading": "Framework Includes",
+      "description": [
+        {
+          "tool": "UI Design:",
+          "detail": "Figma, Adobe XD, Sketch Modern responsive layouts, visual hierarchy, interactive prototypes"
+        },
+        {
+          "tool": "UX Strategy:",
+          "detail": "Wireframes, User Flows, Personas Journey mapping, information architecture, usability optimization"
+        },
+        {
+          "tool": "Testing & Iteration:",
+          "detail": "A/B Testing, Heuristic Evaluation, Heatmaps Data-backed refinements for continuous improvement"
+        }
+      ]
+    },
+    "eCommerce": {
+      "heading": "Future-Ready E-Commerce Technologies",
+      "subHeading": "Framework Includes",
+      "description": [
+        {
+          "tool": "Platforms:",
+          "detail": "Shopify, WooCommerce, Magento"
+        },
+        {
+          "tool": "Custom Stores:",
+          "detail": "React + Headless CMS"
+        },
+        {
+          "tool": "Payment Integrations:",
+          "detail": "Razorpay, Stripe, PayPal"
+        },
+        {
+          "tool": "Logistics & Tracking:",
+          "detail": "Shiprocket, Delhivery, EasyPost"
+        }
+      ]
+    },
+    "socialMediaMarketing": {
+      "heading": "Marketing Tools & Tactics",
+      "subHeading": "",
+      "description": [
+        {
+          "tool": "Platforms:",
+          "detail": "Meta Ads, LinkedIn Ads, Twitter Ads"
+        },
+        {
+          "tool": "Scheduling Tools:",
+          "detail": "Buffer, Hootsuite"
+        },
+        {
+          "tool": "Content Strategy:",
+          "detail": "Calendar planning, Hashtag research"
+        },
+        {
+          "tool": "Performance Tracking:",
+          "detail": "Insights, Engagement analytics"
+        }
+      ]
+    },
+    "seoServices": {
+      "heading": "Future-Ready Technologies for Scalable SEO",
+      "subHeading": "",
+      "description": [
+        {
+          "tool": "On-Page SEO:",
+          "detail": "Meta Tags, Schema Markup, Keyword Integration Content audits, internal linking, and structured URLs for better indexing"
+        },
+        {
+          "tool": "Off-Page SEO:",
+          "detail": "Backlinks, Guest Posts, Citations Authority building through ethical link-building and social signals"
+        },
+        {
+          "tool": "Technical SEO:",
+          "detail": "Mobile-First, Speed Optimization, Crawlability XML Sitemaps, Robots.txt, and Core Web Vitals enhancement"
+        },
+        {
+          "tool": "Analytics & Reporting:",
+          "detail": "Google Analytics, Search Console In-depth traffic analysis, monthly performance reports, and conversion tracking"
+        }
+      ]
+    },
+    "branding": {
+      "heading": "Our Branding Services Include:",
+      "subHeading": "",
+      "description": [
+        {
+          "tool": "Logo Design & Brand Identity",
+          "detail": ""
+        },
+        {
+          "tool": "Brand Guidelines & Typography",
+          "detail": ""
+        },
+        {
+          "tool": "Business Cards & Stationery Design",
+          "detail": ""
+        },
+        {
+          "tool": "Social Media Branding",
+          "detail": ""
+        },
+        {
+          "tool": "Rebranding & Brand Refresh",
+          "detail": ""
+        }
+      ]
+    },
+    "customSoftwareDevelopment": {
+      "heading": "Tech Expertise & Use Cases",
+      "subHeading": "Framework Includes",
+      "description": [
+        {
+          "tool": "JavaScript, Node.js, React Native:",
+          "detail": "For high-performance web & mobile apps"
+        },
+        {
+          "tool": "Python, Django:",
+          "detail": "Data-driven backend solutions"
+        },
+        {
+          "tool": "PHP, Laravel:",
+          "detail": "Secure and robust server-side development"
+        },
+        {
+          "tool": "API Integration:",
+          "detail": "Seamless connectivity with external services"
+        },
+        {
+          "tool": "Cloud & Database:",
+          "detail": "MongoDB, MySQL, Firebase for scalable storage"
+        },
+        {
+          "tool": "Business Automation Tools:",
+          "detail": "Optimize processes and workflows"
+        },
+        {
+          "tool": "Custom CRMs & ERPs:",
+          "detail": "Centralized platforms for teams and operations"
+        },
+        {
+          "tool": "SaaS Platforms:",
+          "detail": "Subscription-based software for digital products"
+        },
+        {
+          "tool": "Booking & Inventory Systems:",
+          "detail": "Real-time management for resources and logistics"
+        }
+      ]
+    },
+    "maintenance": {
+      "heading": "Services Offered:",
+      "subHeading": "",
+      "description": [
+        {
+          "tool": "Website Monitoring & Performance Optimization",
+          "detail": ""
+        },
+        {
+          "tool": "Bug Fixes & Security Updates",
+          "detail": ""
+        },
+        {
+          "tool": "Content & Feature Updates",
+          "detail": ""
+        },
+        {
+          "tool": "Monthly Backups",
+          "detail": ""
+        },
+        {
+          "tool": "Emergency Support",
+          "detail": ""
+        }
+      ]
+    }
+  },
+  "achievements": {
+    "heading": "Some facts about us",
+    "item": [
+      {
+        "number": "26",
+        "name": "Project Done"
+      },
+      {
+        "number": "18",
+        "name": "Team Members"
+      },
+      {
+        "number": "12",
+        "name": "Client Associated"
+      },
+      {
+        "number": "3",
+        "name": "Research Areas"
+      }
+    ]
+  },
+  "footer": {
+    "about": {
+      "heading": "About us",
+      "description": "<p>WebCreatix is a leading IT service and consultancy company providing end-to-end technology solutions in various fields to its clients. We pride ourselves on delivering high quality work without compromising quality of service.</p><p>Our goal is simple: Helping our clients achieve one or multiple objectives through IT solutions.</p>"
+    },
+    "service": {
+      "heading": "Services",
+      "links": [
+        {
+          "label": "Data & Analytics",
+          "url": "/services/data-analytics"
+        },
+        {
+          "label": "Artificial Intelligence",
+          "url": "/services/artificial-intelligence"
+        },
+        {
+          "label": "Blockchain",
+          "url": "/services/blockchain"
+        },
+        {
+          "label": "Application Services",
+          "url": "/services/application-services"
+        },
+        {
+          "label": "CRM Solutions",
+          "url": "/services/crm-solution"
+        },
+        {
+          "label": "IT Consulting",
+          "url": "/services/it-consulting"
+        },
+        {
+          "label": "Customer Experience & Design",
+          "url": "/services/customer-experience"
+        },
+        {
+          "label": "DevOps",
+          "url": "/services/devops"
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Our Contacts",
+      "address": "23, Gangotri Apt, Sector 12, Dwarka<br/> New Delhi, India<br />Phone: +91 9999289454<br />Email: <a href='mailto:info@webcreatix.com'>info@webcreatix.com</a><br />"
+    },
+    "copyRight": "WebCreatix"
+  }
+}

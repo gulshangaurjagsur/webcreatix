@@ -1,0 +1,25 @@
+.overviewWrapper {
+  margin: 60px 0;
+  h2 {
+    font-size: 30px;
+    text-align: center;
+    span {
+      color: #e54a1a;
+      font-weight: 500;
+    }
+  }
+  h3{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  h4 {
+    line-height: 1.5;
+    font-size: 16px;
+    a{
+      font-weight: bold;
+      color:#e54a1a;
+    }
+  }
+}

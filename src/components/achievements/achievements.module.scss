@@ -1,0 +1,39 @@
+.factsWrapper {
+  position: relative;
+  min-height: 457px;
+  height: auto;
+  z-index: 0;
+  background: #292f34 url(../../../public/images/achievements.jpg) no-repeat fixed;
+  position: relative;
+  h2 {
+    background: rgba(0, 0, 0, 0.29);
+    line-height: 37px;
+    padding: 14px 0 15px;
+    margin-bottom: 71px;
+    text-align: center;
+    color: #fff;
+  }
+  .item {
+    background: #e54a1a;
+    font: 400 20px;
+    text-transform: uppercase;
+    width: 198px;
+    height: 198px;
+    border-radius: 50% !important;
+    padding: 45px 0 0;
+    margin: 90px auto;
+    text-align: center;
+    color: #fff;
+    @media (max-width: 767px) {
+      padding: 20px 0 0;
+
+      margin-bottom: 32px;
+    }
+    strong {
+      display: block;
+      font-size: 50px;
+      text-transform: none;
+      color: #fff;
+    }
+  }
+}
