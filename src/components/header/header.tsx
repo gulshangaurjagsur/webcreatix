@@ -32,7 +32,7 @@ const Header = (props: any) => {
         </div>
         <div className="container">
           <input type="checkbox" id="nav-toggle" style={{ display: "none" }} />
-          <div className={styles.logo}><a href="/"><i className="fa fa-globe" aria-hidden="true"></i> WebCreatix</a></div>
+          <div className={styles.logo}><Link href="/"><i className="fa fa-globe" aria-hidden="true"></i> WebCreatix</Link></div>
           <ul className={styles.links}>
             {compData?.items?.map((item: any, index: number) => (
               <li key={index}>
