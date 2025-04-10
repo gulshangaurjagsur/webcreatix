@@ -3,7 +3,6 @@ import contactData from "../assets/data/contactPage.json";
 import Footer from "@component/components/footer/footer";
 import Overview from "@component/components/overview/Overview";
 import Banner from "@component/components/banner/banner";
-import ContactForm from "@component/components/form/contact";
 import dynamic from "next/dynamic";
 export default function Contact() {
   const Header = dynamic(() => import("@component/components/header/header"), {

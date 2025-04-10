@@ -4,7 +4,6 @@ import Footer from "@component/components/footer/footer";
 import Overview from "@component/components/overview/Overview";
 import Banner from "@component/components/banner/banner";
 import dynamic from "next/dynamic";
-import TextCard from "@component/components/textCard/textCard";
 import Benefits from "@component/components/benefits/Benefits";
 import WhyChoose from "@component/components/whyChoose/WhyChoose";
 import Message from "@component/components/message/message";

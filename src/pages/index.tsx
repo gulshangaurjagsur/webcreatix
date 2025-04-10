@@ -9,7 +9,6 @@ import ChooseUs from "@component/components/chooseUs/chooseUs";
 import Achievements from "@component/components/achievements/achievements";
 import Footer from "@component/components/footer/footer";
 import dynamic from "next/dynamic";
-import Team from "@component/components/team/team";
 export default function Home() {
   const Header = dynamic(() => import("@component/components/header/header"), {
     ssr: false,

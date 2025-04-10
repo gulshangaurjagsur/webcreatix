@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Header from "@component/components/header/header";
 import privacyData from "../assets/data/privacyPage.json";
 import Footer from "@component/components/footer/footer";
 import Overview from "@component/components/overview/Overview";
@@ -16,7 +15,7 @@ export default function Privacy() {
         <title>Privacy Policy | WebCreatix - Delhi Web Solutions</title>
         <meta
           name="description"
-          content="Read WebCreatix’s privacy policy. We are committed to protecting the privacy of our clients and website users across Delhi and beyond."
+          content="Read WebCreatix's privacy policy. We are committed to protecting the privacy of our clients and website users across Delhi and beyond."
         />
         <meta
           name="keywords"
