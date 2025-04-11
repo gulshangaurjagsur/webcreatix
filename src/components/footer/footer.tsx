@@ -19,7 +19,7 @@ const Footer = (props: any) => {
                 Office Location
               </div>
               <Image src="../../../images/india-flag.webp" title="India" alt="WebCreatix" />
-              <p>23, Gangotri Apt, Sector 12, Dwarka New Delhi, India</p>
+              <p>C4/5a, Bhagwati garden, Dwarka More, New Delhi, India</p>
 
               <div className={styles.headingText}>
                 For quick information, connect to
@@ -68,7 +68,7 @@ const Footer = (props: any) => {
                 __html: compData?.copyRight
               }} />
             <div>
-              <a href="#">Sitemap</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+              {/* <a href="#">Sitemap</a>&nbsp;&nbsp;|&nbsp;&nbsp; */}
               <a href="privacy">Privacy</a>
             </div>
           </div>
