@@ -5,7 +5,7 @@ const Services = (props: any) => {
   return (
     <div className={styles.services} id="services">
       <div className="container">
-        <h2 dangerouslySetInnerHTML={{ __html: compData?.heading }}></h2>
+        <h2 dangerouslySetInnerHTML={{ __html: compData?.heading }} />
         {compData?.subHeading && <h4>{compData?.subHeading}</h4>}
         <div className="row">
           {compData?.item?.map((item: any, index: number) => (
@@ -17,7 +17,7 @@ const Services = (props: any) => {
               <p
                 dangerouslySetInnerHTML={{
                   __html: item?.serviceDescription,
-                }}></p>
+                }} />
             </div>
           ))}
         </div>

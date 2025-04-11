@@ -1,3 +1,4 @@
+import { Image } from "react-bootstrap";
 import styles from "./industries.module.scss";
 import React from "react";
 const IndustriesCard = (props: any) => {
@@ -13,7 +14,7 @@ const IndustriesCard = (props: any) => {
           }
           key={index}>
           <div className={styles.imageWrapper}>
-            <img src={item?.imageSource} className="img-fluid"  alt="WebCreatix" />
+            <Image src={item?.imageSource} className="img-fluid"  alt="WebCreatix" />
           </div>
           <div className={styles.textWrapper}>
             <h3>{item?.heading}</h3>

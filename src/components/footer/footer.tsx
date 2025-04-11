@@ -1,3 +1,4 @@
+import { Image } from "react-bootstrap";
 import ContactForm from "../form/contact";
 import styles from "./footer.module.scss";
 import React from "react";
@@ -17,15 +18,14 @@ const Footer = (props: any) => {
               <div className={styles.headingText}>
                 Office Location
               </div>
-              <img src="../../../images/india-flag.webp" title="India" alt="WebCreatix" />
+              <Image src="../../../images/india-flag.webp" title="India" alt="WebCreatix" />
               <p>23, Gangotri Apt, Sector 12, Dwarka New Delhi, India</p>
 
               <div className={styles.headingText}>
-                For quick information, write to
+                For quick information, connect to
               </div>
-          
-              <a href="mailto:  info@webcreatix.com"> <i className="fa fa-envelope" aria-hidden="true"></i>  info@webcreatix.com</a>
-            
+              <a href="tel: +919999289454"><i className="fa fa-solid fa-phone"></i>  +91 9999289454</a><br />
+              <a href="mailto:info@webcreatix.com"> <i className="fa fa-envelope" aria-hidden="true"></i>  info@webcreatix.com</a>
             </div>
             <div className={` col-md-6 col-sm-6 ${styles.formWrapper} `}>
               
@@ -41,7 +41,7 @@ const Footer = (props: any) => {
             <div
               dangerouslySetInnerHTML={{
                 __html: compData?.about?.description,
-              }}></div>
+              }} />
           </div>
           <div
             className={`col-md-4 col-sm-6 ${styles.footerWrapperCol} ${styles.servicesFooter} `}>
@@ -57,14 +57,16 @@ const Footer = (props: any) => {
             <address
               dangerouslySetInnerHTML={{
                 __html: compData?.contact?.address,
-              }}></address>
+              }} />
           </div>
         </div>
       </div>
       <div className={styles.copyRight}>
         <div className="container">
           <div className={styles.inner}>
-            <div>{compData?.copyRight}</div>
+            <div dangerouslySetInnerHTML={{
+                __html: compData?.copyRight
+              }} />
             <div>
               <a href="#">Sitemap</a>&nbsp;&nbsp;|&nbsp;&nbsp;
               <a href="privacy">Privacy</a>
@@ -72,7 +74,9 @@ const Footer = (props: any) => {
           </div>
         </div>
       </div>
+      <a href="https://api.whatsapp.com/send?phone=919999289454&amp;text=Hello! I have a Question?" id="whatsapp" className={`${styles.whatsapp} fa fa-whatsapp`} rel="nofollow" target="_blank"></a>
     </div>
+    
   );
 };
 export default Footer;

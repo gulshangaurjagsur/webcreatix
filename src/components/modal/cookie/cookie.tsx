@@ -1,6 +1,6 @@
 import styles from "./cookie.module.scss";
 import React, { useState, useEffect } from "react";
-import { Modal } from "react-bootstrap";
+import { Image, Modal } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 
 const Cookie = (props: any) => {
@@ -29,7 +29,7 @@ const Cookie = (props: any) => {
     >
       <Modal.Header closeButton>
         <Modal.Title>
-          <img src={compData?.imageSource} alt="WebCreatix" />
+          <Image src={compData?.imageSource} alt="WebCreatix" />
           {compData?.heading}
         </Modal.Title>
       </Modal.Header>

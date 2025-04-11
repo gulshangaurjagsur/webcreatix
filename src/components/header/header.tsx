@@ -17,7 +17,7 @@ const Header = (props: any) => {
                   <i className="fa fa-sharp fa-regular fa-envelope"></i>
                   info@webcreatix.com
                 </a>
-                <a href="tel: +91 9999289454">
+                <a href="tel: +919999289454">
                   <i className="fa fa-solid fa-phone"></i>+91 9999289454
                 </a>
               </div>

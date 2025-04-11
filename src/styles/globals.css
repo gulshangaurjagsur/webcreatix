@@ -115,7 +115,7 @@ a:hover {
 } */
 .accordion-button:not(.collapsed){
   background: transparent;
-  color: #e54a1a;
+  color: #f05f02;
   font-weight: 600;
 }
 button{

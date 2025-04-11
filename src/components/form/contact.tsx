@@ -100,7 +100,10 @@ const ContactForm = (props: any) => {
     <form onSubmit={handleSubmit}>
       <div className={styles.compWrapper}>
         <div className="container">
+        <strong>Enquire Now</strong>
+        <p>Please fill in your contact information.</p>
           <div className={styles.formContainer}>
+            
             {/* Name */}
             <div className="form-floating">
               <input

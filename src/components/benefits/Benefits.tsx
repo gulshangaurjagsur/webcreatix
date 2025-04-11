@@ -10,11 +10,11 @@ const Benefits = (props: any) => {
         <div className="col-md-3" key={index}>
           <div className={styles.benefits}>
             <div className={styles.Icon}>
-              <span dangerouslySetInnerHTML={{ __html: item?.icon }}></span>
+              <span dangerouslySetInnerHTML={{ __html: item?.icon }} />
             </div>
             <div className={styles.content}>
-            <h4 dangerouslySetInnerHTML={{ __html: item?.subHeading }}></h4>
-            <p dangerouslySetInnerHTML={{ __html: item?.description }}></p>
+            <h4 dangerouslySetInnerHTML={{ __html: item?.subHeading }} />
+            <p dangerouslySetInnerHTML={{ __html: item?.description }} />
             </div>
           </div>
         </div>

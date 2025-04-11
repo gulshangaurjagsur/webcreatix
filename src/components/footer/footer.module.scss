@@ -80,7 +80,7 @@
       .textHeading {
         line-height: 1.6;
         margin-bottom: 20px;
-        color: #e54a1a;
+        color: #f05f02;
         font-size: 2rem;
         display: inline-block;
         width: 90%;
@@ -99,8 +99,10 @@
       a {
         text-decoration:none;
         color: #000;
+        line-height: 2;
+        font-weight: bold;
         i {
-          color: #e85425;
+          color: #f05f02;
         }
       }
 
@@ -115,10 +117,35 @@
         width: 90%;
       }
       h4 {
-        color: #e54a1a;
+        color: #f05f02;
         text-align: center;
         margin-bottom: 1rem;
       }
+    }
+  }
+  
+}
+.whatsapp{
+  position: fixed;
+  right: 21px;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  background-color: #f05f02;
+  border-radius: 100%;
+  bottom: 70px;
+  z-index: 100000000000;
+  line-height: 1.6;
+  &::before{
+    color:#fff;
+    font-size: 24px;
+    
+  }
+  &:hover{
+    text-decoration: none;
+    color:#f05f02;
+    &::before{
+      color: #000;      
     }
   }
 }

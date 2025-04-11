@@ -1,3 +1,4 @@
+import { Image } from "react-bootstrap";
 import styles from "./technology.module.scss";
 import React from "react";
 const Technology = (props: any) => {
@@ -16,7 +17,7 @@ const Technology = (props: any) => {
             </ul>
           </div>
           <div className="col-lg-4">
-            <img src="/images/services.png"  alt="WebCreatix" />
+            <Image src="/images/services.png"  alt="WebCreatix" />
           </div>
         </div>
       </div>

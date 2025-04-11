@@ -1,5 +1,12 @@
 .compWrapper {
   display: block;
+  strong{
+    font-size:24px;
+    font-weight: bold;
+    color: #000;
+    display: block;
+    margin-bottom: 5px;
+  }
   .formContainer {
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +37,7 @@
 
     .buttonWrapper {
       :global(.btn-primary) {
-        background: #e94d1c;
+        background: #f05f02;
         border: none;
         &:hover {
           background: #cc3304;

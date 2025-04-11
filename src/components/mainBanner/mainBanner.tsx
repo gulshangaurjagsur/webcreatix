@@ -3,6 +3,7 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Image } from "react-bootstrap";
 const MainBanner = (props: any) => {
   const { compData } = props;
   let settings = {
@@ -19,11 +20,11 @@ const MainBanner = (props: any) => {
       <Slider {...settings}>
         {compData?.item?.map((item: any, index: number) => (
           <div key={index} className={styles.bannerContainer}>
-            <img src={item?.imageSource}  alt="WebCreatix" />
+            <Image src={item?.imageSource}  alt="WebCreatix" />
             <div className="container">
               <div className={styles.textContainer}>
-                <div className={styles.heading} dangerouslySetInnerHTML={{ __html: item?.heading }}></div>
-                <div className={styles.subHeading} dangerouslySetInnerHTML={{ __html: item?.subHeading }}></div>
+                <div className={styles.heading} dangerouslySetInnerHTML={{ __html: item?.heading }} />
+                <div className={styles.subHeading} dangerouslySetInnerHTML={{ __html: item?.subHeading }} />
                 <div className={styles.buttonWrapper}>
                   <a href={item?.url1}>{item?.label1}</a>
                   <a href={item?.url2}>{item?.label2}</a>

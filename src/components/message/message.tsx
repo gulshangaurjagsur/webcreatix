@@ -8,7 +8,7 @@ const Message = (props: any) => {
         <span
           dangerouslySetInnerHTML={{
             __html: compData?.heading,
-          }}></span>
+          }} />
         <em>{compData?.quote}</em>
       </div>
     </div>

@@ -46,7 +46,7 @@
   width: 21px;
   height: 21px;
   display: inline-block;
-  background: #e54a1a url(../../../public/images/toggle-icons.png) no-repeat 6px
+  background: #f05f02 url(../../../public/images/toggle-icons.png) no-repeat 6px
     10px;
   border-radius: 50% !important;
   margin-right: 10px;
@@ -57,13 +57,13 @@
   background: #495764 url(../../../public/images/toggle-icons.png) no-repeat 6px -148px;
 }
 .chooseUs .panel-default .panel-title:hover .collapsed:before {
-  background-color: #e54a1a;
+  background-color: #f05f02;
 }
 .chooseUs .panel-default .accordion-toggle,
 .chooseUs .panel-default .accordion-toggle:focus,
 .chooseUs .panel-default .accordion-toggle:hover,
 .chooseUs .panel-default .accordion-toggle:active {
-  color: #e54a1a;
+  color: #f05f02;
   text-decoration: none;
 }
 .chooseUs .panel-default .collapsed {

@@ -42,7 +42,7 @@
     left: 0;
     right: 0;
     top: 0;
-    background: #f96702;
+    background: #f05f02;
     padding: 0;
     z-index: 2;
   }
@@ -88,7 +88,7 @@
   }
   @media (min-width: 768px) {
     nav .links a:hover {
-      color: #e54a1a;
+      color: #f05f02;
       background: #fff;
     }
   }
@@ -110,11 +110,11 @@
             padding: 0;
             li {
               a {
-                color: #e54a1a;
+                color: #f05f02;
                 font-size: 12px;
                 padding-left: 1.25rem;
                 &:hover {
-                  background: #e54a1a;
+                  background: #f05f02;
                   color: #fff;
                 }
               }
@@ -138,7 +138,7 @@
               font-size: 12px;
 
               &:hover {
-                background: #e54a1a;
+                background: #f05f02;
               }
             }
           }
@@ -188,7 +188,7 @@
       width: auto;
       height: auto;
       flex-direction: column;
-      background-color: #e94d1c;
+      background-color: #f05f02;
       overflow: hidden;
       transition: all 0.5s ease-in-out;
     }

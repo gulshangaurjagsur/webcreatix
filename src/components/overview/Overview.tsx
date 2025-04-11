@@ -5,11 +5,11 @@ const Overview = (props: any) => {
   return (
     <div id="about" className={styles.overviewWrapper}>
       <div className="container">
-        <h1 dangerouslySetInnerHTML={{ __html: compData?.heading }}></h1>
+        <h1 dangerouslySetInnerHTML={{ __html: compData?.heading }} />
         {compData?.subHeading && (
-          <h3 dangerouslySetInnerHTML={{ __html: compData?.subHeading }}></h3>
+          <h3 dangerouslySetInnerHTML={{ __html: compData?.subHeading }} />
         )}
-        <h4 dangerouslySetInnerHTML={{ __html: compData?.description }}></h4>
+        <h4 dangerouslySetInnerHTML={{ __html: compData?.description }} />
       </div>
     </div>
   );

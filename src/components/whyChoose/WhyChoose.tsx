@@ -10,7 +10,7 @@ const WhyChoose = (props: any) => {
           {compData?.items?.map((item: any, index: number) => (
             <div key={index}>
               <h4>
-                <span dangerouslySetInnerHTML={{ __html: item?.icon }}></span>
+                <span dangerouslySetInnerHTML={{ __html: item?.icon }} />
                 {item?.heading}
               </h4>
               <p>{item?.description}</p>

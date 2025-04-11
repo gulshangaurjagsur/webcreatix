@@ -40,7 +40,7 @@
             "label": "SEO Services",
             "url": "/services/seo-services"
           },
-         
+
           {
             "label": "Branding",
             "url": "/services/branding"
@@ -80,7 +80,6 @@
         "label4": "SEO",
         "url4": "/services/seo-services"
       }
-      
     ]
   },
   "overview": {
@@ -133,7 +132,6 @@
     "heading": "We don't just build websites <strong>we build digital experiences.</strong>",
     "quote": "WebCreatix"
   },
-
   "portfolio": {
     "heading": "Industries",
     "item": [
@@ -157,7 +155,7 @@
         "imageSource": "images/healthcare.jpg",
         "caption": "Health Care"
       },
-      
+
       {
         "imageSource": "images/realty.jpg",
         "caption": "Real Estate"
@@ -165,38 +163,38 @@
     ]
   },
   "chooseUs": {
-    "heading": "Why to <strong>choose us</strong>",
-    "description": "We are a technology services and consulting company driven by a vision to deliver excellence and empower your business for success. With a strong foundation of expertise, innovation, and industry knowledge, we provide solutions that help your business grow, adapt, and lead in today’s competitive digital landscape.",
+    "heading": "Why <strong>WebCreatix</strong>",
+    "description": "At WebCreatix, we blend creativity, code, and strategy to build impactful digital experiences. Whether you're a startup, brand, or business, our mission is to fuel your growth with modern design, smart development, and result-driven strategies. We're not just a service provider — we're your digital partner.",
     "imageSource": "images/why-us.png",
     "item": [
       {
-        "header": "Putting Customers First",
-        "body": "<p>We prioritize your needs at every step. Our client-first approach ensures exceptional service, satisfaction, and trust-building throughout our partnership.</p><p>We work closely with you to make informed decisions and go the extra mile to exceed expectations.</p>",
+        "header": "Client-Centric Approach",
+        "body": "<p>Your goals shape our process. We listen, understand, and tailor every solution to match your brand vision and business needs.</p><p>With transparent communication and personalized support, we ensure you're in the loop from day one.</p>",
         "eventKey": "0"
       },
       {
-        "header": "Proven Expertise",
-        "body": "<p>With years of hands-on experience, we bring the right mix of skill and strategy to elevate your IT landscape. From managing systems to driving innovation — we’re your trusted tech partner.</p>",
+        "header": "Full-Spectrum Web Services",
+        "body": "<p>From websites and web apps to UI kits and landing pages, we deliver everything under one roof. Our deep understanding of design and development ensures seamless execution and stunning results.</p>",
         "eventKey": "1"
       },
       {
-        "header": "Smart Application Assessment",
-        "body": "<p>We help assess, strategize, and transform your digital ecosystem. From startup planning to data analysis, we empower your business with insights and direction for long-term success.</p>",
+        "header": "SEO & Performance First",
+        "body": "<p>Our work doesn’t just look good — it performs. We build with SEO, speed, and responsiveness in mind, so your digital presence ranks high and works flawlessly across devices.</p>",
         "eventKey": "2"
       },
       {
-        "header": "Value-Driven Solutions",
-        "body": "<p>We deliver cost-effective, high-impact IT solutions tailored to your unique needs. Our goal is to help you innovate, boost revenue, and minimize risk through smart implementation.</p>",
+        "header": "Scalable & Modern Tech Stack",
+        "body": "<p>We use cutting-edge technologies like React, Next.js, Tailwind CSS, and headless CMS to future-proof your project. Our builds are modular, maintainable, and ready to scale with your business.</p>",
         "eventKey": "3"
       },
       {
-        "header": "Uncompromised Quality",
-        "body": "<p>Quality is at the heart of everything we do. We’re committed to delivering reliable, top-tier services that provide measurable value to your business.</p>",
+        "header": "Designs That Convert",
+        "body": "<p>Our UI/UX designs are not just visually appealing — they're crafted to engage users, reduce bounce, and drive actions. We combine data, psychology, and creativity to boost your conversions.</p>",
         "eventKey": "4"
       },
       {
-        "header": "Driven by Innovation",
-        "body": "<p>We embrace research and innovation to stay ahead of the curve. By identifying emerging technologies early, we craft agile solutions that position your business for tomorrow.</p>",
+        "header": "Speedy Delivery, Long-Term Value",
+        "body": "<p>We balance quality with efficiency. Our streamlined processes ensure timely deliveries without compromising on standards. Every project is built to last and evolve as your business grows.</p>",
         "eventKey": "5"
       }
     ]
@@ -229,5 +227,4 @@
     "close": "Close",
     "accept": "Accept"
   }
-  
 }
