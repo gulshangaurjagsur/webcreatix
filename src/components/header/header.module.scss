@@ -47,12 +47,19 @@
     z-index: 2;
   }
   nav .logo {
-    font-size: 36px;
-  font-weight: 800;
   display: inline-block;
   letter-spacing: 1px;
   transition: all 0.3s ease;
-  color: #fff;
+  background: #fff;
+  padding: 0 20px;
+  height: 54px;
+  @media (min-width:768px) {
+    height: 56px;
+  }
+  img{
+    width:200px;
+    padding-top: 14px;
+  }
   a{
     &:hover{
       text-decoration: none;
@@ -183,7 +190,7 @@
       z-index: 9;
       left: 0;
       right: 0;
-      top: 68px;
+      top: 54px;
       bottom: 100%;
       width: auto;
       height: auto;

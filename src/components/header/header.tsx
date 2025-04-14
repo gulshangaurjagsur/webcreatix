@@ -1,6 +1,7 @@
 import styles from "./header.module.scss";
 import React from "react";
 import Link from "next/link";
+import { Image } from "react-bootstrap";
 const Header = (props: any) => {
   const { compData } = props;
   const [click, setClick] = React.useState(false);
@@ -32,7 +33,8 @@ const Header = (props: any) => {
         </div>
         <div className="container">
           <input type="checkbox" id="nav-toggle" style={{ display: "none" }} />
-          <div className={styles.logo}><Link href="/"><i className="fa fa-globe" aria-hidden="true"></i> WebCreatix</Link></div>
+          <div className={styles.logo}><Link href="/">
+          <Image src="../../../images/logo-webcreatix.svg" alt="WebCreatix Logo, website design services in delhi" /></Link></div>
           <ul className={styles.links}>
             {compData?.items?.map((item: any, index: number) => (
               <li key={index}>
