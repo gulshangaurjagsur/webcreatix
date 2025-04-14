@@ -6,7 +6,6 @@ const Achievements = (props: any) => {
     <div id="facts-block" className={styles.factsWrapper}>
       <div className={styles.textWrapper}>
         <div className="container">
-          <hr />
           <div className="row">
             {compData?.item?.map((item: any, index: number) => (
               <div className="col-md-3 col-sm-3 col-xs-6" key={index}>
@@ -17,7 +16,6 @@ const Achievements = (props: any) => {
               </div>
             ))}
           </div>
-          <hr />
         </div>
       </div>
     </div>
