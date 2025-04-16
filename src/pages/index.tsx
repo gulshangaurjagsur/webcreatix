@@ -50,7 +50,7 @@ export default function Home() {
           compData={commonData?.footer}
           contactData={homeData?.achievements}
         />
-        <Cookie compData={homeData?.cookie} />
+        {/* <Cookie compData={homeData?.cookie} /> */}
       </main>
     </>
   );
