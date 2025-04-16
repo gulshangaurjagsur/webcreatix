@@ -136,28 +136,28 @@
     "heading": "Industries",
     "item": [
       {
-        "imageSource": "images/travel.jpg",
+        "imageSource": "/images/travel.jpg",
         "caption": "Tour and Travels"
       },
       {
-        "imageSource": "images/bank.jpg",
+        "imageSource": "/images/bank.jpg",
         "caption": "Banking Services"
       },
       {
-        "imageSource": "images/education.jpg",
+        "imageSource": "/images/education.jpg",
         "caption": "Education"
       },
       {
-        "imageSource": "images/e-commerce.jpg",
+        "imageSource": "/images/e-commerce.jpg",
         "caption": "E-Commerce"
       },
       {
-        "imageSource": "images/healthcare.jpg",
+        "imageSource": "/images/healthcare.jpg",
         "caption": "Health Care"
       },
 
       {
-        "imageSource": "images/realty.jpg",
+        "imageSource": "/images/realty.jpg",
         "caption": "Real Estate"
       }
     ]
