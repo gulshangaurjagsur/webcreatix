@@ -10,35 +10,35 @@
   "card": {
     "item": [
       {
-        "imageSource": "images/travel.jpg",
+        "imageSource": "/images/travel.jpg",
         "heading": "Travel Technology Services",
         "data": "WebCreatix helps travel businesses redefine the customer journey with tech-driven solutions. Whether it's seamless booking engines, itinerary planners, or immersive travel portals, we enable brands to deliver personalized experiences and build lasting customer relationships across the globe.",
         "imageAlt": ""
       },
       {
-        "imageSource": "images/banking.jpg",
+        "imageSource": "/images/banking.jpg",
         "heading": "Banking & Financial Solutions",
         "data": "At WebCreatix, we build secure, scalable, and customer-centric digital solutions for the banking and financial sector. From intuitive mobile banking apps to robust fintech platforms, our services help institutions streamline operations, enhance user trust, and stay ahead in a rapidly evolving digital economy.",
         "reverse": true
       },
       {
-        "imageSource": "images/e-commerce.jpg",
+        "imageSource": "/images/e-commerce.jpg",
         "heading": "E-commerce Solution",
         "data": "At WebCreatix, we craft powerful and scalable e-commerce solutions that drive sales and deliver seamless shopping experiences. From custom storefront designs to secure payment integration and inventory management, we empower businesses to grow in the competitive digital marketplace. Our solutions help you engage customers, boost conversions, and manage your online store with ease."
       },
       {
-        "imageSource": "images/realty.jpg",
+        "imageSource": "/images/realty.jpg",
         "heading": "Real Estate Tech Solutions",
         "data": "At WebCreatix, we specialize in delivering innovative technology solutions tailored for the realty industry. From advanced property management systems to immersive virtual tours, we empower real estate businesses to streamline operations and enhance customer experiences.",
         "reverse": true
       },
       {
-        "imageSource": "images/education.jpg",
+        "imageSource": "/images/education.jpg",
         "heading": "Education Technology Services",
         "data": "At WebCreatix, we design smart, engaging, and scalable digital solutions for the education sector. From e-learning platforms and virtual classrooms to student management systems, we help institutions modernize their learning experiences. Our goal is to empower educators and learners through intuitive tech that enhances knowledge delivery and academic performance."
       },
       {
-        "imageSource": "images/healthcare.jpg",
+        "imageSource": "/images/healthcare.jpg",
         "heading": "Healthcare Technology Services",
         "data": "WebCreatix provides smart, reliable, and secure technology solutions for the healthcare sector. Whether it's developing telemedicine platforms, patient management systems, or health record integrations, we focus on improving operational efficiency and patient care. Our tech-driven approach ensures compliance, data security, and user-friendly experiences for providers and patients alike.",
         "reverse": true

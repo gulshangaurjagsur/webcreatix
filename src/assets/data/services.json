@@ -105,7 +105,7 @@
   "card": {
     "item": [
       {
-        "imageSource": "images/web-design-and-development.jpg",
+        "imageSource": "/images/web-design-and-development.jpg",
         "heading": "Web Design & Development",
         "data": "At WebCreatix, we blend creative design with powerful development to build modern, user-focused websites. Our approach prioritizes aesthetics, accessibility, and performance, ensuring that your digital platform not only looks great but also converts and scales with your business needs.",
         "imageAlt":"Web Design & Development | Modern, User-Focused Websites - WebCreatix",
@@ -113,7 +113,7 @@
         "url": "services/web-design-development"
       },
       {
-        "imageSource": "images/mobile-app-development.jpg",
+        "imageSource": "/images/mobile-app-development.jpg",
         "heading": "Mobile App Development",
         "data": "We develop intuitive, high-performing mobile applications that connect brands with users on the go. Whether you need a native, hybrid, or cross-platform app, WebCreatix ensures robust functionality, sleek UI, and frictionless usability — helping you reach, engage, and retain customers in the mobile-first world.",
         "imageAlt":"Mobile App Development | High-Performance Android & iOS Apps - WebCreatix",
@@ -122,39 +122,46 @@
         "url": "services/mobile-app-development"
       },
       {
-        "imageSource": "images/graphic-design.jpg",
+        "imageSource": "/images/graphic-design.jpg",
         "heading": "Graphics Designing",
         "data": "We help businesses tell compelling visual stories through creative graphic design. From brand logos to digital creatives, brochures to social media visuals, our designs are crafted to enhance recognition, communicate your message effectively, and build a memorable brand identity.",
         "imageAlt":"Graphics Designing | Creative Visuals that Elevate Your Brand - WebCreatix",
         "label": "Read More",
         "url": "services/graphic-designing"
-        
       },
       {
-        "imageSource": "images/e-commerce-website-solution.jpg",
+        "imageSource": "/images/ui-ux-design.jpg",
+        "heading": "UI/UX Design",
+        "data": "We craft intuitive and visually compelling user experiences that enhance engagement and drive user satisfaction. From wireframes and prototypes to polished interface designs, WebCreatix ensures every digital product is user-centric, accessible, and aligned with your brand identity. Whether it's a website, app, or SaaS platform, we blend creativity with usability to deliver seamless digital interactions.",
+        "imageAlt":"UI/UX Design | Intuitive Interfaces for Better User Experience - WebCreatix",
+        "label": "Read More",
+        "url": "services/ui-ux-design",
+        "reverse": true
+      },
+      {
+        "imageSource": "/images/e-commerce-website-solution.jpg",
         "heading": "E-Commerce Website Solutions",
         "data": "WebCreatix builds secure, conversion-optimized e-commerce websites that elevate the online shopping experience. From product catalogues and payment gateways to advanced analytics and mobile responsiveness, we provide all the tools you need to grow and manage your digital storefront with ease.",
         "imageAlt":"E-Commerce Website Solutions | Secure, Conversion-Optimized Stores - WebCreatix",
         "label": "Read More",
-        "url": "services/ecommerce-solutions",
-        "reverse": true
+        "url": "services/ecommerce-solutions"
       },
       {
-        "imageSource": "images/social-media-marketing.jpg",
+        "imageSource": "/images/social-media-marketing.jpg",
         "heading": "Social Media Marketing",
         "data": "We create data-driven social media campaigns that grow engagement, build community, and drive results. From content strategy and creative visuals to targeted ad management, WebCreatix helps your brand connect with the right audience on platforms like Instagram, Facebook, LinkedIn, and more.",
         "imageAlt":"Social Media Marketing | Grow Engagement with Strategic Campaigns - WebCreatix",
         "label": "Read More",
-        "url": "services/social-media-marketing"
+        "url": "services/social-media-marketing",
+        "reverse": true
       },
       {
-        "imageSource": "images/search-engine-optimization.jpg",
+        "imageSource": "/images/search-engine-optimization.jpg",
         "heading": "Search Engine Optimization (SEO)",
         "data": "Our SEO services are designed to boost your website's visibility and ranking on search engines. We use a strategic mix of keyword research, technical optimization, content creation, and backlink building to attract organic traffic and improve your site's authority in your niche.",
         "imageAlt":"Search Engine Optimization | Boost Rankings & Drive Organic Traffic - WebCreatix",
         "label": "Read More",
-        "url": "services/seo-services",
-        "reverse": true
+        "url": "services/seo-services"
       }
     ]
   },
