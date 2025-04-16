@@ -28,7 +28,7 @@ export default function Contact() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header compData={contactData?.header} />
+        <Header compData={commonData?.header} />
         <Banner compData={contactData?.banner} />
         <Overview compData={contactData?.overview} />
         <Footer compData={commonData?.footer} />

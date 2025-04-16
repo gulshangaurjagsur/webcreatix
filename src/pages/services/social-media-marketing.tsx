@@ -26,7 +26,7 @@ export default function DataAnalytics() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header compData={servicesData?.header} />
+        <Header compData={commonData?.header} />
         <Banner compData={servicesData?.banner?.socialMediaMarketing} />
         <Overview compData={servicesData?.overview?.socialMediaMarketing} />
         <Technology compData={servicesData?.technology?.socialMediaMarketing} />

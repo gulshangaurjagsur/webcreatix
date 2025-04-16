@@ -26,7 +26,7 @@ export default function SeoServices() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header compData={servicesData?.header} />
+        <Header compData={commonData?.header} />
         <Banner compData={servicesData?.banner?.seoServices} />
         <Overview compData={servicesData?.overview?.seoServices} />
         <Technology compData={servicesData?.technology?.seoServices} />

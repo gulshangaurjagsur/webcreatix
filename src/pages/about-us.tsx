@@ -29,7 +29,7 @@ export default function WhyWebCreatix() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header compData={aboutData?.header} />
+        <Header compData={commonData?.header} />
         <Banner compData={aboutData?.banner} />
         <Overview compData={aboutData?.overview} />
         <Benefits compData={aboutData?.benefits} />

@@ -26,7 +26,7 @@ export default function GraphicDesigning() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header compData={servicesData?.header} />
+        <Header compData={commonData?.header} />
         <Banner compData={servicesData?.banner?.graphicDesign} />
         <Overview compData={servicesData?.overview?.graphicDesign} />
         <Technology compData={servicesData?.technology?.graphicDesign} />

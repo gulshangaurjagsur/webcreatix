@@ -26,7 +26,7 @@ export default function CustomSoftwareDevelopment() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header compData={servicesData?.header} />
+        <Header compData={commonData?.header} />
         <Banner compData={servicesData?.banner?.customSoftwareDevelopment} />
         <Overview
           compData={servicesData?.overview?.customSoftwareDevelopment}

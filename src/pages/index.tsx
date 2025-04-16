@@ -38,7 +38,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header compData={homeData?.header} />
+        <Header compData={commonData?.header} />
         <MainBanner compData={homeData?.mainBanner} />
         <Overview compData={homeData?.overview} />
         <Services compData={homeData?.services} />

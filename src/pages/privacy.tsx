@@ -26,7 +26,7 @@ export default function Privacy() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header compData={privacyData?.header} />
+        <Header compData={commonData?.header} />
         <Banner compData={privacyData?.banner} />
         <Overview compData={privacyData?.overview} />
         <Footer compData={commonData?.footer} />

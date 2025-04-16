@@ -28,7 +28,7 @@ export default function MaintenanceSupport() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header compData={servicesData?.header} />
+        <Header compData={commonData?.header} />
         <Banner compData={servicesData?.banner?.maintenance} />
         <Overview compData={servicesData?.overview?.maintenance} />
         <Technology compData={servicesData?.technology?.maintenance} />

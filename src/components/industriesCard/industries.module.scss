@@ -37,6 +37,15 @@
         margin-bottom: 1.4rem;
         font-weight: 600;
       }
+      a{
+        background-color: #f05f02;
+        border: none;
+        text-decoration: none;
+        font-size: 12px;
+        &:hover{
+          background-color: #cc3304;
+        }
+      }
     }
   }
 }

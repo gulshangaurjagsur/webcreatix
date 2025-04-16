@@ -30,7 +30,7 @@ export default function Industries() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header compData={industriesData?.header} />
+        <Header compData={commonData?.header} />
         <Banner compData={industriesData?.banner} />
         <Overview compData={industriesData?.overview} />
         {/* <ContactForm /> */}

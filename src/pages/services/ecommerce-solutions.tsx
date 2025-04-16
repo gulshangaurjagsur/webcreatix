@@ -26,7 +26,7 @@ export default function EcommerceSolution() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header compData={servicesData?.header} />
+        <Header compData={commonData?.header} />
         <Banner compData={servicesData?.banner?.eCommerce} />
         <Overview compData={servicesData?.overview?.eCommerce} />
         <Technology compData={servicesData?.technology?.eCommerce} />

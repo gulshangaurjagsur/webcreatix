@@ -28,7 +28,7 @@ export default function Branding() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header compData={servicesData?.header} />
+        <Header compData={commonData?.header} />
         <Banner compData={servicesData?.banner?.branding} />
         <Overview compData={servicesData?.overview?.branding} />
         <Technology compData={servicesData?.technology?.branding} />

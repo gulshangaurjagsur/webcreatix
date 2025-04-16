@@ -1,6 +1,7 @@
 import { Image } from "react-bootstrap";
 import styles from "./industries.module.scss";
 import React from "react";
+import Link from "next/link";
 const IndustriesCard = (props: any) => {
   const { compData } = props;
   return (
@@ -14,12 +15,13 @@ const IndustriesCard = (props: any) => {
           }
           key={index}>
           <div className={styles.imageWrapper}>
-            <Image src={item?.imageSource} className="img-fluid"  alt="WebCreatix" />
+            <Image src={item?.imageSource} className="img-fluid"  alt={item?.imageAlt} />
           </div>
           <div className={styles.textWrapper}>
             <h3>{item?.heading}</h3>
             <h4>{item?.subHeading}</h4>
             <p>{item?.data}</p>
+            {item?.url && <Link href={item?.url} className="btn btn-primary">{item?.label}</Link>}
           </div>
         </div>
       ))}

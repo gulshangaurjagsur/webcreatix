@@ -1,97 +1,35 @@
 {
-  "header": {
-    "items": [
-      {
-        "label": "Home",
-        "url": "/"
-      },
-      {
-        "label": "About Us",
-        "url": "/about-us"
-      },
-      {
-        "label": "Services",
-        "subLinks": [
-          {
-            "label": "Web Design & Development",
-            "url": "/services/web-design-development"
-          },
-          {
-            "label": "Mobile App Development",
-            "url": "/services/mobile-app-development"
-          },
-          {
-            "label": "Graphic Designing",
-            "url": "/services/graphic-designing"
-          },
-          {
-            "label": "UI/UX Design",
-            "url": "/services/ui-ux-design"
-          },
-          {
-            "label": "E-Commerce Solutions",
-            "url": "/services/ecommerce-solutions"
-          },
-          {
-            "label": "Social Media Marketing",
-            "url": "/services/social-media-marketing"
-          },
-          {
-            "label": "SEO Services",
-            "url": "/services/seo-services"
-          },
-         
-          {
-            "label": "Branding",
-            "url": "/services/branding"
-          },
-          {
-            "label": "Software Development",
-            "url": "/services/custom-software-development"
-          },
-          {
-            "label": "Maintenance & Support",
-            "url": "/services/maintenance-support"
-          }
-        ]
-      },
-      {
-        "label": "Industries",
-        "url": "/industries"
-      },
-      {
-        "label": "Contact",
-        "url": "/contact"
-      }
-    ]
-  },
   "banner": {
+    "ourServices": {
+      "imageSource": "/images/our-services.jpg",
+      "imageAlt": "Professional Web Design and Development Services - Web Creatix"
+    },
     "webDevelopment": {
-      "imageSource": "/images/Bigdata.webp",
+      "imageSource": "/images/web-design-and-development.jpg",
       "imageAlt": "Professional Web Design and Development Services - Web Creatix"
     },
     "mobileAppDevelopment": {
-      "imageSource": "/images/Bigdata.webp",
+      "imageSource": "/images/mobile-app-development.jpg",
       "imageAlt": "Custom Mobile App Development Solutions - Web Creatix"
     },
     "graphicDesign": {
-      "imageSource": "/images/Bigdata.webp",
+      "imageSource": "/images/graphic-design.jpg",
       "imageAlt": "Creative Graphic Design Services - Web Creatix"
     },
     "uiUxDesign": {
-      "imageSource": "/images/Bigdata.webp",
+      "imageSource": "/images/ui-ux-design.jpg",
       "imageAlt": "UI/UX Design, User Experience Services - Web Creatix"
     },
     "eCommerce": {
-      "imageSource": "/images/Bigdata.webp",
+      "imageSource": "/images/e-commerce-website-solution.jpg",
       "imageAlt": "E-commerce website design/develop - Web Creatix"
     },
     "socialMediaMarketing": {
-      "imageSource": "/images/Bigdata.webp",
+      "imageSource": "/images/social-media-marketing.jpg",
       "imageAlt": "Social Media, facebook/whatsapp marketing service - Web Creatix"
     },
     "seoServices": {
-      "imageSource": "/images/Bigdata.webp",
+      "imageSource": "/images/search-engine-optimization.jpg",
       "imageAlt": "Seearch Engine Optimization, SEO Services - Web Creatix"
     },
     "branding": {
@@ -108,6 +46,11 @@
     }
   },
   "overview": {
+    "main": {
+      "heading": "Our <span>Services</span>",
+      "subHeading": "End-to-End Digital Solutions to Empower Your Business",
+      "description": "<p>WebCreatix offers a comprehensive suite of services that help businesses build, grow, and scale in a digitally connected world. Whether you need a stunning website, a powerful mobile app, or a full-fledged digital marketing strategy — we've got you covered.<br /><br />We combine creativity, technology, and strategy to craft high-performance solutions that drive visibility, engagement, and conversion. Our services are designed to align with your business goals and deliver lasting value across every digital touchpoint.</p>"
+    },
     "webDevelopment": {
       "heading": "<span>Web</span> Design & Development",
       "subHeading": "Build Stunning, High-Performance Websites That Convert",
@@ -158,6 +101,62 @@
       "subHeading": "Reliable Website & App Maintenance to Keep You Running Smoothly",
       "description": "<p>We don't just build—we maintain. Our ongoing support ensures your website or application is secure, up-to-date, and functioning at its best. From performance tuning to regular backups and security patches, we've got your back.</p>"
     }
+  },
+  "card": {
+    "item": [
+      {
+        "imageSource": "images/web-design-and-development.jpg",
+        "heading": "Web Design & Development",
+        "data": "At WebCreatix, we blend creative design with powerful development to build modern, user-focused websites. Our approach prioritizes aesthetics, accessibility, and performance, ensuring that your digital platform not only looks great but also converts and scales with your business needs.",
+        "imageAlt":"Web Design & Development | Modern, User-Focused Websites - WebCreatix",
+        "label": "Read More",
+        "url": "services/web-design-development"
+      },
+      {
+        "imageSource": "images/mobile-app-development.jpg",
+        "heading": "Mobile App Development",
+        "data": "We develop intuitive, high-performing mobile applications that connect brands with users on the go. Whether you need a native, hybrid, or cross-platform app, WebCreatix ensures robust functionality, sleek UI, and frictionless usability — helping you reach, engage, and retain customers in the mobile-first world.",
+        "imageAlt":"Mobile App Development | High-Performance Android & iOS Apps - WebCreatix",
+        "reverse": true,
+        "label": "Read More",
+        "url": "services/mobile-app-development"
+      },
+      {
+        "imageSource": "images/graphic-design.jpg",
+        "heading": "Graphics Designing",
+        "data": "We help businesses tell compelling visual stories through creative graphic design. From brand logos to digital creatives, brochures to social media visuals, our designs are crafted to enhance recognition, communicate your message effectively, and build a memorable brand identity.",
+        "imageAlt":"Graphics Designing | Creative Visuals that Elevate Your Brand - WebCreatix",
+        "label": "Read More",
+        "url": "services/graphic-designing"
+        
+      },
+      {
+        "imageSource": "images/e-commerce-website-solution.jpg",
+        "heading": "E-Commerce Website Solutions",
+        "data": "WebCreatix builds secure, conversion-optimized e-commerce websites that elevate the online shopping experience. From product catalogues and payment gateways to advanced analytics and mobile responsiveness, we provide all the tools you need to grow and manage your digital storefront with ease.",
+        "imageAlt":"E-Commerce Website Solutions | Secure, Conversion-Optimized Stores - WebCreatix",
+        "label": "Read More",
+        "url": "services/ecommerce-solutions",
+        "reverse": true
+      },
+      {
+        "imageSource": "images/social-media-marketing.jpg",
+        "heading": "Social Media Marketing",
+        "data": "We create data-driven social media campaigns that grow engagement, build community, and drive results. From content strategy and creative visuals to targeted ad management, WebCreatix helps your brand connect with the right audience on platforms like Instagram, Facebook, LinkedIn, and more.",
+        "imageAlt":"Social Media Marketing | Grow Engagement with Strategic Campaigns - WebCreatix",
+        "label": "Read More",
+        "url": "services/social-media-marketing"
+      },
+      {
+        "imageSource": "images/search-engine-optimization.jpg",
+        "heading": "Search Engine Optimization (SEO)",
+        "data": "Our SEO services are designed to boost your website's visibility and ranking on search engines. We use a strategic mix of keyword research, technical optimization, content creation, and backlink building to attract organic traffic and improve your site's authority in your niche.",
+        "imageAlt":"Search Engine Optimization | Boost Rankings & Drive Organic Traffic - WebCreatix",
+        "label": "Read More",
+        "url": "services/seo-services",
+        "reverse": true
+      }
+    ]
   },
   "technology": {
     "webDevelopment": {

@@ -28,7 +28,7 @@ export default function WebDesignDevelopment() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header compData={servicesData?.header} />
+        <Header compData={commonData?.header} />
         <Banner compData={servicesData?.banner?.webDevelopment} />
         <Overview compData={servicesData?.overview?.webDevelopment} />
         <Technology compData={servicesData?.technology?.webDevelopment} />

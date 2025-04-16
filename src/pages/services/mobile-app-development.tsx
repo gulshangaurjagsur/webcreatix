@@ -28,7 +28,7 @@ export default function MobileAppDevelopment() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header compData={servicesData?.header} />
+        <Header compData={commonData?.header} />
         <Banner compData={servicesData?.banner?.mobileAppDevelopment} />
         <Overview compData={servicesData?.overview?.mobileAppDevelopment} />
         <Technology compData={servicesData?.technology?.mobileAppDevelopment} />
