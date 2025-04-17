@@ -1,17 +1,14 @@
 import Head from "next/head";
 import servicesData from "../../assets/data/services.json";
 import commonData from "../../assets/data/common.json";
+import Header from "@component/components/header/header";
 import Footer from "@component/components/footer/footer";
 import Banner from "@component/components/banner/banner";
 import dynamic from "next/dynamic";
 import IndustriesCard from "@component/components/industriesCard/industries";
 import Overview from "@component/components/overview/Overview";
-import Technology from "@component/components/technology/Technology";
 
 export default function Industries() {
-  const Header = dynamic(() => import("@component/components/header/header"), {
-    ssr: false,
-  });
   return (
     <>
       <Head>

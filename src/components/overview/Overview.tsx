@@ -9,7 +9,7 @@ const Overview = (props: any) => {
         {compData?.subHeading && (
           <h3 dangerouslySetInnerHTML={{ __html: compData?.subHeading }} />
         )}
-        <h4 dangerouslySetInnerHTML={{ __html: compData?.description }} />
+        <p dangerouslySetInnerHTML={{ __html: compData?.description }} />
       </div>
     </div>
   );
