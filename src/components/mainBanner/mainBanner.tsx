@@ -7,13 +7,13 @@ const MainBanner = (props: any) => {
     <div id="promo-block" className={styles.sliderWrapper}>
       <div className={styles.bannerContainer}>
       <div className={styles.imageWrapper}>
-        <Image
+        {/* <Image
           src={compData?.imageSource}
           alt={compData?.imgAlt}
           fill
           priority
           style={{ objectFit: "cover" }}
-        />
+        /> */}
       </div>
             <div className="container">
               <div className={styles.textContainer}>

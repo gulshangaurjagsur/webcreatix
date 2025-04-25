@@ -1,6 +1,6 @@
 {
   "mainBanner": {
-    "imageSource": "/images/artificial-intelligence-main.webp",
+    "imageSource": "/images/bannerbg.png",
     "imgAlt": "Web Design, App Design, Social Media Marketing, and SEO WebCreatix.com",
     "heading": "Digital <em>Transformation</em>",
     "subHeading": "Web Design, App Design, Social Media Marketing, and SEO WebCreatix.com",
@@ -14,7 +14,7 @@
     "url4": "/services/seo-services"
   },
   "overview": {
-    "heading": "<span>WebCreatix</span> Inspires:<br /> Expert Web Design & Development, Social Media Marketing, and SEO Services",
+    "heading": "<span>WebCreatix prompt</span><br /> Expert Web Design & Development, Social Media Marketing, and SEO Services",
     "description": "<b>At WebCreatix, we deliver a wide range of services and solutions designed to help businesses streamline operations, reduce costs, and stay ahead in the digital era.</b> With deep expertise in information technology, business strategy, and outsourcing, we craft tailored solutions to meet the unique needs of each client.<br /><br />Our commitment lies in delivering high-quality, value-driven services that empower our clients to thrive. By staying at the forefront of emerging technologies and industry trends, we help businesses overcome complex challenges and achieve sustainable growth."
   },
   "services": {
