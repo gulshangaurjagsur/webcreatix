@@ -15,18 +15,17 @@
   }
   .item {
     background: #f05f02;
-    font: 400 20px;
     text-transform: uppercase;
-    width: 198px;
-    height: 198px;
+    width: 180px;
+    height: 180px;
     border-radius: 50% !important;
-    padding: 45px 0 0;
     margin: 90px auto;
     text-align: center;
     color: #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     @media (max-width: 767px) {
-      padding: 20px 0 0;
-
       margin-bottom: 32px;
     }
     strong {
@@ -34,6 +33,7 @@
       font-size: 50px;
       text-transform: none;
       color: #fff;
+      line-height: 1;
     }
   }
 }

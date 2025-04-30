@@ -10,8 +10,7 @@ const Achievements = (props: any) => {
             {compData?.item?.map((item: any, index: number) => (
               <div className="col-md-3 col-sm-3 col-xs-6" key={index}>
                 <div className={styles.item}>
-                  <strong>{item?.number}</strong>
-                  {item?.name}
+                  <strong>{item?.number}</strong><span>{item?.name}</span>
                 </div>
               </div>
             ))}
