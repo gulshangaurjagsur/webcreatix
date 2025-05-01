@@ -21,7 +21,7 @@ const Footer = (props: any) => {
                 title="India"
                 alt="WebCreatix"
               />
-              <p>C4/5a, Bhagwati Garden, Dwarka More, New Delhi, India</p>
+              <p>C4/5A, Bhagwati Garden, Dwarka More, New Delhi, India</p>
               <div className={styles.headingText}>
                 For quick information, connect to
               </div>
