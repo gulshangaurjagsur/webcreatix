@@ -11,10 +11,11 @@ export default function WhyWebCreatix() {
       <Head>
         <title>FlightVala</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="robots" content="noindex, nofollow" />
       </Head>
       <main>
       <div className="bannerWrapper">
-      <Image src="../../../images/tripify.png" className="img-fluid" alt="FlightVala" />
+      <Image src="../../../images/tripify.png" className="img-fluid" alt="WebCreatix" />
     </div>
       </main>
     </>
