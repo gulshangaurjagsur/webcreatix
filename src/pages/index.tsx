@@ -1,5 +1,6 @@
 import Head from "next/head";
 import MainBanner from "@component/components/mainBanner/mainBanner";
+import cityData from "../data/cities.json"
 import homeData from "../assets/data/homePage.json";
 import commonData from "../assets/data/common.json";
 import Overview from "@component/components/overview/Overview";
@@ -10,6 +11,7 @@ import ChooseUs from "@component/components/chooseUs/chooseUs";
 import Achievements from "@component/components/achievements/achievements";
 import Footer from "@component/components/footer/footer";
 import dynamic from "next/dynamic";
+import PanIndiaServices from "@component/components/panIndiaServices/PanIndiaServices";
 export default function Home() {
   const Header = dynamic(() => import("@component/components/header/header"), {
     ssr: false,
@@ -46,6 +48,7 @@ export default function Home() {
         <Portfolio compData={homeData?.portfolio} />
         <ChooseUs compData={homeData?.chooseUs} />
         <Achievements compData={homeData?.achievements} />
+        <PanIndiaServices data={cityData} />
         <Footer
           compData={commonData?.footer}
         />

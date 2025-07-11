@@ -1,23 +1,56 @@
 {
   "website-designing-company-in-delhi": {
-  "city": "Delhi",
-  "title": "Website Designing Company in Delhi | Web Design & Development Experts",
-  "meta": "Top website designing company in Delhi offering modern web design, responsive development, and reliable IT solutions tailored for businesses in Delhi NCR.",
-  "heading1": "Website Designing Company in Delhi",
-  "heading2": "Best Web Design & Development Services in Delhi NCR",
-  "description": "<p>Looking for a trusted <b>Website Designing Company in Delhi</b>? We provide modern, user-friendly, and SEO-ready websites tailored to your business goals. As a leading <b>web development company in Delhi</b>, our team builds visually appealing and performance-driven websites using the latest technologies like HTML5, CSS3, React, and Next.js.</p><p>We work closely with clients across <b>Delhi NCR</b> to deliver websites that not only look great but also perform excellently across all devices. Whether you're a startup, SME, or enterprise, we craft digital experiences that convert visitors into customers. Along with <b>web design and development in Delhi</b>, we also offer supporting services like <b>SEO optimization</b>, <b>domain registration</b>, <b>website hosting</b>, and <b>content updates</b>.</p><p>Choose us for quality, creativity, and commitment — everything you need to stand out in the competitive digital space of <b>Delhi</b>.</p>",
-  "imageSource": "https://placehold.co/1400x600/3b82d1/3b82d1?text=",
-  "imageAlt": "Website Designing Company in Delhi"
-
+    "city": "Delhi",
+    "title": "Website Designing Company in Delhi | Web Design & Development Experts",
+    "meta": "Top website designing company in Delhi offering modern web design, responsive development, and reliable IT solutions tailored for businesses in Delhi NCR.",
+    "heading1": "Website Designing Company in Delhi",
+    "heading2": "Best Web Design & Development Services in Delhi NCR",
+    "description": "<p>Looking for a trusted <b>Website Designing Company in Delhi</b>? We provide modern, user-friendly, and SEO-ready websites tailored to your business goals. As a leading <b>web development company in Delhi</b>, our team builds visually appealing and performance-driven websites using the latest technologies like HTML5, CSS3, React, and Next.js.</p><p>We work closely with clients across <b>Delhi NCR</b> to deliver websites that not only look great but also perform excellently across all devices. Whether you're a startup, SME, or enterprise, we craft digital experiences that convert visitors into customers. Along with <b>web design and development in Delhi</b>, we also offer supporting services like <b>SEO optimization</b>, <b>domain registration</b>, <b>website hosting</b>, and <b>content updates</b>.</p><p>Choose us for quality, creativity, and commitment — everything you need to stand out in the competitive digital space of <b>Delhi</b>.</p>",
+    "imageSource": "https://placehold.co/1400x600/3b82d1/3b82d1?text=",
+    "imageAlt": "Website Designing Company in Delhi"
   },
-  "website-designing-company-in-mumbai": {
-    "city": "Mumbai",
-    "title": "",
-    "meta": "",
-    "heading1": "",
-    "heading2": "",
-    "description": "",
-    "imageSource": "/images/city.jpg",
-    "imageAlt": ""
+
+  "website-designing-company-in-agra": {
+    "city": "Agra",
+    "title": "Website Designing Company in Agra | Web Development Experts",
+    "meta": "Professional website designing company in Agra offering modern web solutions, SEO-ready designs, and development for businesses in Agra and nearby areas like Sikandra and Dayalbagh.",
+    "heading1": "Website Designing Company in Agra",
+    "heading2": "Affordable Web Design Services in Agra, Sikandra & Dayalbagh",
+    "description": "<p>Looking for a reliable <b>Website Designing Company in Agra</b>? We deliver responsive, SEO-friendly, and result-oriented websites. Our expert team specializes in building fast, mobile-optimized sites using the latest tech stack including HTML5, CSS3, React, and Next.js.</p><p>We serve clients across Agra and nearby areas like <b>Sikandra</b>, <b>Dayalbagh</b>, and <b>Tajnagri</b>, offering a complete digital solution — from <b>web development</b> and <b>UI/UX design</b> to <b>SEO services</b> and <b>hosting</b>.</p><p>Grow your local business online with a strong web presence in Agra’s digital marketplace. Choose us for creative, scalable, and affordable solutions in <b>Agra</b>.</p>",
+    "imageSource": "https://placehold.co/1400x600/3b82d1/3b82d1?text=",
+    "imageAlt": "Website Designing Company in Agra"
+  },
+
+  "website-designing-company-in-aligarh": {
+    "city": "Aligarh",
+    "title": "Website Designing Company in Aligarh | Custom Web Solutions",
+    "meta": "Aligarh-based web design company offering digital solutions including mobile-friendly websites, SEO, and custom development in areas like Ramghat Road and Quarsi.",
+    "heading1": "Website Designing Company in Aligarh",
+    "heading2": "Creative Web Design Services in Aligarh & Ramghat Road",
+    "description": "<p>Searching for a trusted <b>Website Designing Company in Aligarh</b>? We design SEO-optimized, lightweight, and secure websites tailored for your business goals. Our developers use Next.js, React, and other modern frameworks.</p><p>We work with businesses across <b>Aligarh</b>, especially in localities like <b>Ramghat Road</b>, <b>Quarsi</b>, and <b>Atrauli</b>. We offer full-stack services like <b>web development</b>, <b>e-commerce setup</b>, <b>local SEO</b>, and <b>content updates</b>.</p><p>Partner with us to build your online presence in the growing digital economy of <b>Aligarh</b>.</p>",
+    "imageSource": "https://placehold.co/1400x600/3b82d1/3b82d1?text=",
+    "imageAlt": "Website Designing Company in Aligarh"
+  },
+
+  "website-designing-company-in-hathras": {
+    "city": "Hathras",
+    "title": "Website Designing Company in Hathras | Trusted IT Partner",
+    "meta": "Leading web design company in Hathras offering affordable websites, SEO, and digital marketing for small businesses in Sasni and Mursan.",
+    "heading1": "Website Designing Company in Hathras",
+    "heading2": "Reliable Web Development in Hathras, Sasni & Mursan",
+    "description": "<p>Want a stunning and budget-friendly website? Our <b>Website Designing Company in Hathras</b> delivers responsive designs, local SEO, and lightning-fast websites to help small businesses grow.</p><p>We cater to areas like <b>Sasni</b>, <b>Mursan</b>, and <b>Hathras Junction</b>, offering services such as <b>web development</b>, <b>website redesign</b>, <b>domain registration</b>, and <b>email hosting</b>.</p><p>Make your digital presence stronger with expert solutions from our web professionals in <b>Hathras</b>.</p>",
+    "imageSource": "https://placehold.co/1400x600/3b82d1/3b82d1?text=",
+    "imageAlt": "Website Designing Company in Hathras"
+  },
+
+  "website-designing-company-in-mathura": {
+    "city": "Mathura",
+    "title": "Website Designing Company in Mathura | Digital Growth Partner",
+    "meta": "Top website development agency in Mathura delivering SEO-optimized web design, eCommerce development, and branding solutions in Vrindavan and Govardhan.",
+    "heading1": "Website Designing Company in Mathura",
+    "heading2": "Web Development for Mathura, Vrindavan & Govardhan Businesses",
+    "description": "<p>Our <b>Website Designing Company in Mathura</b> specializes in visually stunning, SEO-focused websites for businesses of all sizes. Whether you're a tour operator, temple, or retail store, we craft the perfect digital experience.</p><p>We proudly serve <b>Mathura</b>, <b>Vrindavan</b>, and <b>Govardhan</b> with services like <b>web design</b>, <b>online branding</b>, <b>Google My Business setup</b>, and <b>speed optimization</b>.</p><p>Let us be your digital partner in building trust, traffic, and conversions across the holy city of <b>Mathura</b>.</p>",
+    "imageSource": "https://placehold.co/1400x600/3b82d1/3b82d1?text=",
+    "imageAlt": "Website Designing Company in Mathura"
   }
 }
