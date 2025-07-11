@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "yarn next-sitemap && cp out/sitemap.xml public/sitemap.xml && cp out/robots.txt public/robots.txt"
   },
   "dependencies": {
     "@types/node": "18.14.6",
