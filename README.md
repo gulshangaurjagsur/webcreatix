@@ -56,5 +56,8 @@ ________________________________________
 4.git push origin main
 
 ## after deployment for seo purpose
-1.go to https://search.google.com/search-console
+1.go to 
+https://search.google.com/search-console
+https://www.bing.com/webmasters
+
 2.ReSubmit : `https://webcreatix.com/sitemap.xml`
