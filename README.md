@@ -37,3 +37,24 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 # webcreatix
+
+
+______________________________
+seo learning
+
+Verify
+- Visit https://webcreatix.com/sitemap.xml → Should open correctly
+- Check newly added city pages are accessible
+- Test URLs in [Google URL Inspection Tool](https://search.google.com/search-console)
+
+________________________________________
+
+## deployment process
+1.git add
+2.yarn build && yarn export
+3.git commit -m "modify"
+4.git push origin main
+
+## after deployment for seo purpose
+1.go to https://search.google.com/search-console
+2.ReSubmit : `https://webcreatix.com/sitemap.xml`

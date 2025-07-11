@@ -37,6 +37,7 @@ export default function Home() {
           content="Web development Delhi, Digital agency Delhi, SEO services Delhi, Web design company in Delhi NCR, Delhi website designers, WebCreatix"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="msvalidate.01" content="17BCDA0DB4C568BD36728FD7EECE8ABF" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
