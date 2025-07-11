@@ -1,0 +1,28 @@
+.commonContact {
+  border: 1px solid #c2c2c2;
+  background-color: #ededed;
+  padding: 20px 0;
+  @media (min-width: 768px) {
+    border-radius: 8px;
+    .form-floating {
+      flex: 0 0 100% !important;
+    }
+  }
+}
+.cityPages {
+  padding: 20px 0;
+  h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    @media (min-width: 768px) {
+      font-size: 36px;
+    }
+  }
+  h2 {
+    font-size: 18px;
+    margin-bottom: 32px;
+    @media (min-width: 768px) {
+      font-size: 22px;
+    }
+  }
+}

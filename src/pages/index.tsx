@@ -48,7 +48,6 @@ export default function Home() {
         <Achievements compData={homeData?.achievements} />
         <Footer
           compData={commonData?.footer}
-          contactData={homeData?.achievements}
         />
         {/* <Cookie compData={homeData?.cookie} /> */}
       </main>

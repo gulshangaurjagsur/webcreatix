@@ -2,10 +2,16 @@ import { Image } from "react-bootstrap";
 import ContactForm from "../form/contact";
 import styles from "./footer.module.scss";
 import React from "react";
-const Footer = (props: any) => {
-  const { compData } = props;
+const Footer = (props: { compData: any; showContactSection?: boolean }) => {
+  const { compData, showContactSection = true,  } = props;
+  interface FooterProps {
+  compData: any;
+  showContactSection?: boolean;
+  contactData?: any; // 👈 Add this line
+}
   return (
     <div className={styles.footerWrapper} id="contact">
+      {showContactSection  && (
       <div className={styles.contactWrapper}>
         <div className="container">
           <div className="row">
@@ -41,7 +47,8 @@ const Footer = (props: any) => {
           </div>
         </div>
       </div>
-      <div className="container">
+      )}
+      <div className={`container ${styles.footerMain} `}>
         <div className="row">
           <div className={`col-md-4 col-sm-6 ${styles.footerWrapperCol}`}>
             <div className={styles.heading}>{compData?.about?.heading}</div>
