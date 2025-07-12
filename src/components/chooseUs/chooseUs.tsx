@@ -1,6 +1,6 @@
 import styles from "./chooseUs.module.scss";
 import React from "react";
-import { Image } from "react-bootstrap";
+import Image from "next/image";
 import Accordion from "react-bootstrap/Accordion";
 const ChooseUs = (props: any) => {
   const { compData } = props;
@@ -17,6 +17,8 @@ const ChooseUs = (props: any) => {
               src={compData?.imageSource}
               className="img-responsive"
               alt="WebCreatix"
+              width={350}
+              height={295}
             />
           </div>
           <div className="col-md-6 col-sm-6 col-xs-12 text-left">

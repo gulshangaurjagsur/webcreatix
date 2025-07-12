@@ -82,6 +82,7 @@
   font-style: normal;
   font-weight: 500;
   font-stretch: 100%;
+  font-display: swap;
 }
 html,
 body {
