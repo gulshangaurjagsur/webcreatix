@@ -1,9 +1,5 @@
-// pages/tripify.tsx
-
 import Head from 'next/head';
-
-
-export default function TripifyPage() {
+export default function FlightBookingPage() {
   return (
     <>
       <Head>
