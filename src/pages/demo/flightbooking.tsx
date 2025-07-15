@@ -10,7 +10,7 @@ export default function FlightBookingPage() {
       </Head>
 
       <div style={{ margin: 0 }}>
-        <img src="/images/tripify.png" alt="Tripify" />
+        <img src="/images/demo.png" alt="demo" />
       </div>
     </>
   );
