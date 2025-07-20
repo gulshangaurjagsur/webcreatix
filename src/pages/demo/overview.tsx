@@ -10,7 +10,7 @@ export default function FlightOverviewPage() {
       </Head>
 
       <div style={{ margin: 0 }}>
-        <a href="payment" style={{ border: "none" }}><img src="/images/temp/3.png" alt="demo" /></a>
+        <a href="demo/payment" style={{ border: "none" }}><img src="/images/temp/3.png" alt="demo" /></a>
       </div>
     </>
   );
