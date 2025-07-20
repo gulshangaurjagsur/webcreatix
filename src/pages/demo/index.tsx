@@ -10,7 +10,7 @@ export default function FlightBookingPage() {
       </Head>
 
       <div style={{ margin: 0 }}>
-        <a href="flightresult" style={{ border: "none" }}><img src="/images/demo.png" alt="demo" /></a>
+        <a href="result" style={{ border: "none" }}><img src="/images/temp/1.png" alt="demo" /></a>
       </div>
     </>
   );

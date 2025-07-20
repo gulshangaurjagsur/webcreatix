@@ -1,16 +1,16 @@
 import Head from 'next/head';
-export default function FlightOverviewPage() {
+export default function FlightPaymentPage() {
   return (
     <>
       <Head>
-        <title>flight Overview</title>
+        <title>Payment</title>
         <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
         <meta httpEquiv="Pragma" content="no-cache" />
         <meta httpEquiv="Expires" content="0" />
       </Head>
 
       <div style={{ margin: 0 }}>
-        <img src="/images/overview.png" alt="demo" />
+        <a href="#" style={{ border: "none" }}><img src="/images/temp/4.png" alt="demo" /></a>
       </div>
     </>
   );
