@@ -17,6 +17,7 @@ const Header = dynamic(() => import("@component/components/header/header"), {
 interface CityData {
   name: string;
   title: string;
+  meta: string;
   description: string;
   banner: string;
   heading1: string;
@@ -32,7 +33,7 @@ export default function WebDesignPage({ cityData }: Props) {
     <>
       <Head>
         <title>{cityData.title}</title>
-        <meta name="description" content={cityData.description} />
+        <meta name="description" content={cityData.meta} />
       </Head>
       <Header compData={commonData?.header} />
       <CityBanner compData={cityData} />
