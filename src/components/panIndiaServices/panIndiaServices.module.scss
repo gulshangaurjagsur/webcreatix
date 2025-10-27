@@ -25,24 +25,28 @@
     gap: 15px;
     list-style: none;
     padding: 0;
+
+    li {
+      flex: 0 0 calc(33.33% - 15px);
+      box-sizing: border-box;
+      text-align: left;
+
+      @media (max-width: 768px) {
+        flex: 0 0 100%;
+      }
+    }
   }
 
   .cityList li a {
     display: inline-block;
-    padding: 8px 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
     color: #333;
     text-decoration: none;
-    background: #fff;
     font-size: 14px;
     transition: all 0.3s ease;
   }
 
   .cityList li a:hover {
-    background-color: #ff6600;
-    color: #fff;
-    border-color: #ff6600;
+    font-weight: bold;
   }
 
   @media screen and (max-width: 768px) {
