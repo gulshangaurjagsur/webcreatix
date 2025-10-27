@@ -11,15 +11,15 @@ module.exports = {
           }
         ]
       },
-      {
-        source: "/sitemap-0.xml",
-        headers: [
-          {
-            key: "Content-Type",
-            value: "application/xml"
-          }
-        ]
-      }
+      // {
+      //   source: "/sitemap-0.xml",
+      //   headers: [
+      //     {
+      //       key: "Content-Type",
+      //       value: "application/xml"
+      //     }
+      //   ]
+      // }
     ]
   }
 }
