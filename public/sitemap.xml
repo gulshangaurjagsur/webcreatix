@@ -1,4 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap><loc>https://www.webcreatix.com/sitemap-0.xml</loc></sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.webcreatix.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://www.webcreatix.com/about</loc><priority>0.9</priority></url>
+  <url><loc>https://www.webcreatix.com/services</loc><priority>0.9</priority></url>
+  <url><loc>https://www.webcreatix.com/industries</loc><priority>0.7</priority></url>
+  <url><loc>https://www.webcreatix.com/contact</loc><priority>0.8</priority></url>
+  <url><loc>https://www.webcreatix.com/privacy</loc><priority>0.6</priority></url>
+
+  <url><loc>https://www.webcreatix.com/services/web-design-development</loc><priority>0.8</priority></url>
+  <url><loc>https://www.webcreatix.com/services/mobile-app-development</loc><priority>0.8</priority></url>
+  <url><loc>https://www.webcreatix.com/services/graphic-designing</loc><priority>0.8</priority></url>
+  <url><loc>https://www.webcreatix.com/services/ui-ux-design</loc><priority>0.8</priority></url>
+  <url><loc>https://www.webcreatix.com/services/ecommerce-solutions</loc><priority>0.8</priority></url>
+  <url><loc>https://www.webcreatix.com/services/social-media-marketing</loc><priority>0.8</priority></url>
+  <url><loc>https://www.webcreatix.com/services/seo-services</loc><priority>0.8</priority></url>
+  <url><loc>https://www.webcreatix.com/services/branding</loc><priority>0.8</priority></url>
+  <url><loc>https://www.webcreatix.com/services/custom-software-development</loc><priority>0.8</priority></url>
+  <url><loc>https://www.webcreatix.com/services/maintenance-support</loc><priority>0.8</priority></url>
+
+  <url><loc>https://www.webcreatix.com/website-designing-company-in-delhi</loc><priority>0.9</priority></url>
+  <url><loc>https://www.webcreatix.com/website-designing-company-in-agra</loc><priority>0.8</priority></url>
+  <url><loc>https://www.webcreatix.com/website-designing-company-in-aligarh</loc><priority>0.8</priority></url>
+  <url><loc>https://www.webcreatix.com/website-designing-company-in-hathras</loc><priority>0.7</priority></url>
+  <url><loc>https://www.webcreatix.com/website-designing-company-in-mathura</loc><priority>0.7</priority></url>
+  <url><loc>https://www.webcreatix.com/website-designing-company-in-noida</loc><priority>0.9</priority></url>
+  <url><loc>https://www.webcreatix.com/website-designing-company-in-ghaziabad</loc><priority>0.8</priority></url>
+  <url><loc>https://www.webcreatix.com/website-designing-company-in-meerut</loc><priority>0.7</priority></url>
+  <url><loc>https://www.webcreatix.com/website-designing-company-in-gurugram</loc><priority>0.8</priority></url>
+  <url><loc>https://www.webcreatix.com/website-designing-company-in-manesar</loc><priority>0.7</priority></url>
+  <url><loc>https://www.webcreatix.com/website-designing-company-in-mumbai</loc><priority>0.7</priority></url>
+  <url><loc>https://www.webcreatix.com/website-designing-company-in-bangalore</loc><priority>0.8</priority></url>
+  <url><loc>https://www.webcreatix.com/website-designing-company-in-ayodhya</loc><priority>0.7</priority></url>
+  <url><loc>https://www.webcreatix.com/website-designing-company-in-lucknow</loc><priority>0.8</priority></url>
+  <url><loc>https://www.webcreatix.com/website-designing-company-in-goa</loc><priority>0.7</priority></url>
+</urlset>
