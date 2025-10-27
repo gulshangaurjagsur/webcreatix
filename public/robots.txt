@@ -1,9 +1,4 @@
-# *
 User-agent: *
 Allow: /
 
-# Host
-Host: https://www.webcreatix.com
-
-# Sitemaps
 Sitemap: https://www.webcreatix.com/sitemap.xml
