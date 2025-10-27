@@ -1,9 +1,6 @@
-# *
+# Allow all search engines to crawl all pages
 User-agent: *
-Allow: /
+Disallow:
 
-# Host
-Host: https://www.webcreatix.com
-
-# Sitemaps
+# Sitemap location
 Sitemap: https://www.webcreatix.com/sitemap.xml
