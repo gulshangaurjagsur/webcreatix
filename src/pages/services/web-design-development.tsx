@@ -22,6 +22,7 @@ export default function WebDesignDevelopment() {
           content="website development Delhi, web design company Delhi, responsive website services, Delhi website developers"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.webcreatix.com/services/web-design-development" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>

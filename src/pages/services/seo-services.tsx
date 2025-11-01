@@ -20,6 +20,7 @@ export default function SeoServices() {
           content="SEO services Delhi, search engine optimization, SEO agency in Delhi, local SEO experts"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.webcreatix.com/services/seo-services" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>

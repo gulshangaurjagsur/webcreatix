@@ -20,6 +20,7 @@ export default function EcommerceSolution() {
           content="ecommerce development Delhi, online store design, Shopify developer, ecommerce website Delhi"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.webcreatix.com/services/ecommerce-solutions" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>

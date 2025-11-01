@@ -39,6 +39,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="msvalidate.01" content="17BCDA0DB4C568BD36728FD7EECE8ABF" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://www.webcreatix.com" />
       </Head>
       <main>
         <Header compData={commonData?.header} />

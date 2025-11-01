@@ -23,8 +23,8 @@ export default function Contact() {
           name="keywords"
           content="Contact web agency Delhi, Talk to web developers Delhi, SEO agency contact Delhi, WebCreatix contact form, Delhi web consultants"
         />
-
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.webcreatix.com/contact" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>

@@ -25,6 +25,7 @@ export default function Industries() {
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.webcreatix.com/services" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>

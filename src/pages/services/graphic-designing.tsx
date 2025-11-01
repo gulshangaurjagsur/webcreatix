@@ -21,6 +21,7 @@ export default function GraphicDesigning() {
           content="graphic designing Delhi, logo design, brochure design, branding services"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.webcreatix.com/services/graphic-designing" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>

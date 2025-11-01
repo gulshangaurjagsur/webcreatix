@@ -23,6 +23,7 @@ export default function MobileAppDevelopment() {
           content="mobile app development Delhi, android app developers, iOS app company, mobile apps Delhi"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.webcreatix.com/services/mobile-app-development" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>

@@ -2,18 +2,18 @@ import fs from "fs";
 import path from "path";
 import Head from "next/head";
 import { GetStaticPaths, GetStaticProps } from "next";
+import { useRouter } from "next/router";  // <-- ADD THIS
 import commonData from "../assets/data/common.json";
-// import Header from "@component/components/header/header";
 import Footer from "@component/components/footer/footer";
 import ContactForm from "@component/components/form/contact";
 import CityBanner from "@component/components/cityBanner/cityBanner";
 import dynamic from "next/dynamic";
 import Breadcrumb from "@component/components/breadcrumb/breadcrumb";
 
-// Client-side only import
 const Header = dynamic(() => import("@component/components/header/header"), {
   ssr: false,
 });
+
 interface CityData {
   name: string;
   title: string;
@@ -29,15 +29,21 @@ interface Props {
 }
 
 export default function WebDesignPage({ cityData }: Props) {
+  const router = useRouter(); // ✅ get slug dynamically
+  const canonicalUrl = `https://www.webcreatix.com${router.asPath.split("?")[0]}`;
+
   return (
     <>
       <Head>
         <title>{cityData.title}</title>
         <meta name="description" content={cityData.meta} />
+        <link rel="canonical" href={canonicalUrl} />
       </Head>
+
       <Header compData={commonData?.header} />
       <CityBanner compData={cityData} />
       <Breadcrumb compData={cityData} />
+
       <div className="cityPages">
         <div className="container">
           <div className="row">
@@ -45,10 +51,10 @@ export default function WebDesignPage({ cityData }: Props) {
               <h1>{cityData.heading1}</h1>
               <h2>{cityData.heading2}</h2>
               <div
-              dangerouslySetInnerHTML={{
-                __html: cityData.description,
-              }}
-            />
+                dangerouslySetInnerHTML={{
+                  __html: cityData.description,
+                }}
+              />
             </div>
             <div className="commonContact col-sm-4 col-md-6 col-lg-4">
               <ContactForm />
@@ -56,6 +62,7 @@ export default function WebDesignPage({ cityData }: Props) {
           </div>
         </div>
       </div>
+
       <Footer compData={commonData?.footer} showContactSection={false} />
     </>
   );

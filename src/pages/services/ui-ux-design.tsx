@@ -20,6 +20,7 @@ export default function CRMSolution() {
           content="UI/UX design Delhi, user interface design, user experience design, Figma designer Delhi"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.webcreatix.com/services/ui-ux-design" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>

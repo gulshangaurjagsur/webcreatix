@@ -23,6 +23,7 @@ export default function Privacy() {
           content="Privacy policy, WebCreatix privacy, data protection Delhi, website privacy policy, Delhi web company policy"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.webcreatix.com/privacy" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>

@@ -21,6 +21,7 @@ export default function CustomSoftwareDevelopment() {
           content="software development Delhi, custom software Delhi, ERP systems, business automation tools"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.webcreatix.com/services/custom-software-development" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
