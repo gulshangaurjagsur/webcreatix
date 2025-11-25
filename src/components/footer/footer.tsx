@@ -31,8 +31,8 @@ const Footer = (props: { compData: any; showContactSection?: boolean }) => {
               <div className={styles.headingText}>
                 For quick information, connect to
               </div>
-              <a href="tel: +919999289454">
-                <i className="fa fa-solid fa-phone"></i> +91 9999289454
+              <a href="tel: +919625791723">
+                <i className="fa fa-solid fa-phone"></i> +91 9625791723
               </a>
               <br />
               <a href="mailto:info@webcreatix.com">
@@ -94,7 +94,7 @@ const Footer = (props: { compData: any; showContactSection?: boolean }) => {
         </div>
       </div>
       <a
-        href="https://api.whatsapp.com/send?phone=919999289454&amp;text=Hello! I have a Question?"
+        href="https://api.whatsapp.com/send?phone=919625791723&amp;text=Hello! I have a Question?"
         id="whatsapp"
         className={`${styles.whatsapp} fa fa-whatsapp`}
         rel="nofollow"
