@@ -86,7 +86,7 @@ const ContactForm = (props: any) => {
       });
 
       if (response.ok) {
-        router.push("/thank-you"); // ✅ redirect
+        router.push("/thank-you?success=true"); // ✅ redirect
       } else {
         console.error("Form submission error");
       }
