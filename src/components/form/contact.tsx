@@ -1,8 +1,10 @@
 import styles from "./form.module.scss";
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 
 const ContactForm = (props: any) => {
   const { compData } = props;
+  const router = useRouter();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -20,12 +22,15 @@ const ContactForm = (props: any) => {
     agreement: "",
   });
 
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
   // Input change handler
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value, type } = e.target;
-    const newValue = type === "checkbox" ? (e.target as HTMLInputElement).checked : value;
+    const newValue =
+      type === "checkbox"
+        ? (e.target as HTMLInputElement).checked
+        : value;
 
     setFormData({
       ...formData,
@@ -38,23 +43,27 @@ const ContactForm = (props: any) => {
     const newErrors = { name: "", email: "", phone: "", agreement: "" };
 
     if (!formData.name) newErrors.name = "Name is required";
+
     if (!formData.email) {
       newErrors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "Email is invalid";
     }
+
     if (!formData.phone) {
       newErrors.phone = "Phone is required";
     } else if (!/^\d{10}$/.test(formData.phone)) {
       newErrors.phone = "Phone must be 10 digits";
     }
-    if (!formData.agreement) newErrors.agreement = "You must agree to the terms";
+
+    if (!formData.agreement)
+      newErrors.agreement = "You must agree to the terms";
 
     setErrors(newErrors);
     return Object.values(newErrors).every((error) => !error);
   };
 
-  // Submit handler with fetch (AJAX)
+  // Submit handler
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -77,7 +86,7 @@ const ContactForm = (props: any) => {
       });
 
       if (response.ok) {
-        setIsSubmitted(true);
+        router.push("/thank-you"); // ✅ redirect
       } else {
         console.error("Form submission error");
       }
@@ -86,24 +95,14 @@ const ContactForm = (props: any) => {
     }
   };
 
-  // Success message
-  if (isSubmitted) {
-    return (
-      <div className={styles.thankYou}>
-        <h1>Thank You!</h1>
-        <p>Your form has been submitted successfully.</p>
-      </div>
-    );
-  }
-
   return (
     <form onSubmit={handleSubmit}>
       <div className={styles.compWrapper}>
         <div className="container">
-        <strong>Enquire Now</strong>
-        <p>Please fill in your contact information.</p>
+          <strong>Enquire Now</strong>
+          <p>Please fill in your contact information.</p>
+
           <div className={styles.formContainer}>
-            
             {/* Name */}
             <div className="form-floating">
               <input
@@ -116,7 +115,9 @@ const ContactForm = (props: any) => {
                 onChange={handleInputChange}
               />
               <label htmlFor="name">Name</label>
-              {errors.name && <div className="invalid-feedback">{errors.name}</div>}
+              {errors.name && (
+                <div className="invalid-feedback">{errors.name}</div>
+              )}
             </div>
 
             {/* Email */}
@@ -131,7 +132,9 @@ const ContactForm = (props: any) => {
                 onChange={handleInputChange}
               />
               <label htmlFor="email">E-mail</label>
-              {errors.email && <div className="invalid-feedback">{errors.email}</div>}
+              {errors.email && (
+                <div className="invalid-feedback">{errors.email}</div>
+              )}
             </div>
 
             {/* Phone */}
@@ -146,7 +149,9 @@ const ContactForm = (props: any) => {
                 onChange={handleInputChange}
               />
               <label htmlFor="phone">Phone Number</label>
-              {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
+              {errors.phone && (
+                <div className="invalid-feedback">{errors.phone}</div>
+              )}
             </div>
 
             {/* Company */}
@@ -164,12 +169,12 @@ const ContactForm = (props: any) => {
             </div>
 
             {/* Description */}
-            <div className={`form-floating textArea`}>
+            <div className="form-floating">
               <textarea
                 className="form-control"
-                placeholder="Leave a comment here"
                 id="description"
                 name="description"
+                placeholder="How can we help you?"
                 value={formData.description}
                 onChange={handleInputChange}
               ></textarea>
@@ -179,7 +184,9 @@ const ContactForm = (props: any) => {
             {/* Agreement */}
             <div className={`form-check ${styles.agreement}`}>
               <input
-                className={`form-check-input ${errors.agreement ? "is-invalid" : ""}`}
+                className={`form-check-input ${
+                  errors.agreement ? "is-invalid" : ""
+                }`}
                 type="checkbox"
                 name="agreement"
                 id="agreement"
@@ -187,9 +194,14 @@ const ContactForm = (props: any) => {
                 onChange={handleInputChange}
               />
               <label className="form-check-label" htmlFor="agreement">
-                I agree with the terms & conditions and privacy policy of WebCreatix
+                I agree with the terms & conditions and privacy policy of
+                WebCreatix
               </label>
-              {errors.agreement && <div className="invalid-feedback">{errors.agreement}</div>}
+              {errors.agreement && (
+                <div className="invalid-feedback">
+                  {errors.agreement}
+                </div>
+              )}
             </div>
 
             {/* Submit */}
