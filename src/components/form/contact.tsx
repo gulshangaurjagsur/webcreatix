@@ -64,36 +64,45 @@ const ContactForm = (props: any) => {
   };
 
   // Submit handler
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
 
-    if (!validateForm()) return;
+  if (!validateForm()) return;
 
-    try {
-      const response = await fetch("https://formspree.io/f/mdkeydbz", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          company: formData.company,
-          description: formData.description,
-        }),
-      });
+  try {
+    const response = await fetch("https://formspree.io/f/mdkeydbz", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        company: formData.company,
+        description: formData.description,
+      }),
+    });
 
-      if (response.ok) {
-        router.push("/thank-you?success=true"); // ✅ redirect
-      } else {
-        console.error("Form submission error");
+    if (response.ok) {
+      // ✅ 1️⃣ Google Ads conversion (OPTION 1)
+      if (typeof window !== "undefined" && (window as any).gtag) {
+        (window as any).gtag("event", "conversion", {
+          send_to: "AW-17818948467/R9m_COmC--YbEPOm3rBC",
+        });
       }
-    } catch (error) {
-      console.error("Submission failed:", error);
+
+      // ✅ 2️⃣ Redirect after conversion fire
+      router.push("/thank-you?success=true");
+    } else {
+      console.error("Form submission error");
     }
-  };
+  } catch (error) {
+    console.error("Submission failed:", error);
+  }
+};
+
 
   return (
     <form onSubmit={handleSubmit}>
