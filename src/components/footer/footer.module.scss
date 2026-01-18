@@ -151,3 +151,27 @@
     }
   }
 }
+.phoneCall{
+  position: fixed;
+  right: 21px;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  background-color: #f05f02;
+  border-radius: 100%;
+  bottom: 20px;
+  z-index: 100000000000;
+  line-height: 1.85;
+  &::before{
+    color:#fff;
+    font-size: 22px;
+    
+  }
+  &:hover{
+    text-decoration: none;
+    color:#f05f02;
+    &::before{
+      color: #000;      
+    }
+  }
+}

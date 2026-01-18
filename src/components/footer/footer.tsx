@@ -103,6 +103,14 @@ const Footer = (props: { compData: any; showContactSection?: boolean }) => {
       >
         <span className="sr-only">Chat on WhatsApp</span>
       </a>
+      <a
+        href="tel:919625791723"
+        className={`${styles.phoneCall} fa fa-phone`}
+        rel="nofollow"
+        target="_blank"
+      >
+        <span className="sr-only">Chat on WhatsApp</span>
+      </a>
     </div>
   );
 };
