@@ -17,7 +17,7 @@ const Offers = (props: any) => {
         <h2>Professional Responsive Website Designing Starting from ₹3,999</h2>
       <p>WebCreatix helps you design professional, mobile-friendly websites that not only look great but also attract, engage, and convert customers, helping your business grow online with confidence.</p>
       <div className="text-center mt-5">
-      <a href="https://wa.me/919625791723" className={styles.discountBtn}>
+      <a href="https://wa.me/919625791723" target="_blank" className={styles.discountBtn}>
       <span className={styles.clickText}>Click Here For</span>
         <span className={styles.blinkText}>20% DISCOUNT</span>
         
@@ -40,6 +40,7 @@ const Offers = (props: any) => {
             <li>Logo Design</li>
             <li>Mobile Friendly Website</li>
             <li>Responsive Website</li>
+            <li className="mt-4"><a href="https://wa.me/919625791723" target="_blank" className={styles.discountBtn}>Get This Package</a></li>
           </ul>
         </div>
 
@@ -61,6 +62,7 @@ const Offers = (props: any) => {
             <li>Social Media Integration</li>
             <li>Live Chat Integration</li>
             <li>Responsive Website</li>
+            <li className="mt-4"><a href="https://wa.me/919625791723" target="_blank" className={styles.discountBtn}>Get This Package</a></li>
           </ul>
         </div>
 
@@ -84,14 +86,10 @@ const Offers = (props: any) => {
             <li>Social Media Integration</li>
             <li>Live Chat Integration</li>
             <li>Responsive Website</li>
+            <li className="mt-4"><a href="https://wa.me/919625791723" target="_blank" className={styles.discountBtn}>Get This Package</a></li>
           </ul>
         </div>
 
-      </div>
-      <div className="text-center">
-      <a href="https://wa.me/919625791723" className={styles.discountBtn}>
-      <span className={styles.clickText}>Click Here</span>
-      </a>
       </div>
     </section>
     </>
