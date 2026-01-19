@@ -10,37 +10,30 @@ const ContactForm = (props: any) => {
     name: "",
     email: "",
     phone: "",
-    company: "",
     description: "",
-    agreement: false,
   });
 
   const [errors, setErrors] = useState({
     name: "",
     email: "",
     phone: "",
-    agreement: "",
   });
 
   // Input change handler
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value, type } = e.target;
-    const newValue =
-      type === "checkbox"
-        ? (e.target as HTMLInputElement).checked
-        : value;
+    const { name, value } = e.target;
 
     setFormData({
       ...formData,
-      [name]: newValue,
+      [name]: value,
     });
   };
 
   // Validation
   const validateForm = () => {
-    const newErrors = { name: "", email: "", phone: "", agreement: "" };
+    const newErrors = { name: "", email: "", phone: "" };
 
     if (!formData.name) newErrors.name = "Name is required";
 
@@ -56,53 +49,48 @@ const ContactForm = (props: any) => {
       newErrors.phone = "Phone must be 10 digits";
     }
 
-    if (!formData.agreement)
-      newErrors.agreement = "You must agree to the terms";
-
     setErrors(newErrors);
     return Object.values(newErrors).every((error) => !error);
   };
 
   // Submit handler
- const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-  if (!validateForm()) return;
+    if (!validateForm()) return;
 
-  try {
-    const response = await fetch("https://formspree.io/f/mdkeydbz", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        company: formData.company,
-        description: formData.description,
-      }),
-    });
+    try {
+      const response = await fetch("https://formspree.io/f/mdkeydbz", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          description: formData.description,
+        }),
+      });
 
-    if (response.ok) {
-      // ✅ 1️⃣ Google Ads conversion (OPTION 1)
-      if (typeof window !== "undefined" && (window as any).gtag) {
-        (window as any).gtag("event", "conversion", {
-          send_to: "AW-17818948467/R9m_COmC--YbEPOm3rBC",
-        });
+      if (response.ok) {
+        // ✅ Google Ads conversion
+        if (typeof window !== "undefined" && (window as any).gtag) {
+          (window as any).gtag("event", "conversion", {
+            send_to: "AW-17818948467/R9m_COmC--YbEPOm3rBC",
+          });
+        }
+
+        // Redirect after success
+        router.push("/thank-you?success=true");
+      } else {
+        console.error("Form submission error");
       }
-
-      // ✅ 2️⃣ Redirect after conversion fire
-      router.push("/thank-you?success=true");
-    } else {
-      console.error("Form submission error");
+    } catch (error) {
+      console.error("Submission failed:", error);
     }
-  } catch (error) {
-    console.error("Submission failed:", error);
-  }
-};
-
+  };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -163,20 +151,6 @@ const ContactForm = (props: any) => {
               )}
             </div>
 
-            {/* Company */}
-            <div className="form-floating">
-              <input
-                type="text"
-                className="form-control"
-                id="company"
-                name="company"
-                placeholder="Enter Company/Organization"
-                value={formData.company}
-                onChange={handleInputChange}
-              />
-              <label htmlFor="company">Company/Organization</label>
-            </div>
-
             {/* Description */}
             <div className="form-floating">
               <textarea
@@ -188,29 +162,6 @@ const ContactForm = (props: any) => {
                 onChange={handleInputChange}
               ></textarea>
               <label htmlFor="description">How can we help you?</label>
-            </div>
-
-            {/* Agreement */}
-            <div className={`form-check ${styles.agreement}`}>
-              <input
-                className={`form-check-input ${
-                  errors.agreement ? "is-invalid" : ""
-                }`}
-                type="checkbox"
-                name="agreement"
-                id="agreement"
-                checked={formData.agreement}
-                onChange={handleInputChange}
-              />
-              <label className="form-check-label" htmlFor="agreement">
-                I agree with the terms & conditions and privacy policy of
-                WebCreatix
-              </label>
-              {errors.agreement && (
-                <div className="invalid-feedback">
-                  {errors.agreement}
-                </div>
-              )}
             </div>
 
             {/* Submit */}

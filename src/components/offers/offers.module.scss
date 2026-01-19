@@ -1,0 +1,197 @@
+.pricingSection {
+  // background: #f6f6f6;
+  // padding: 80px 0;
+  color: #5f6f7e;
+  margin: 30px 0;
+  @media (min-width: 768px) {
+  margin: 60px 0;
+  }
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    color:#5f6f7e;;
+    span {
+      color: #f05f02;
+      font-weight: 500;
+    }
+  }
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.pricingCard {
+  // background: #061b32;
+  text-align: center;
+}
+
+.pricingCard h3 {
+  color: #f05f02;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.price {
+  color: #061b32;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.pricingCard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricingCard ul li {
+  margin: 8px 0;
+  font-size: 14px;
+  position: relative;
+  padding-left: 22px;
+  color:#5f6f7e;
+  text-align: left;
+}
+
+.pricingCard ul li::before {
+  content: "✔";
+  color: #fff;
+  position: absolute;
+  left: 0;
+}
+
+.pricingCta {
+  text-align: center;
+  margin-top: 50px;
+  a{
+        background-color: #f05f02;
+        border: none;
+        text-decoration: none;
+        font-size: 12px;
+        &:hover{
+          background-color: #cc3304;
+        }
+      }
+}
+
+
+  
+
+
+/* Responsive */
+@media (max-width: 991px) {
+  .pricingGrid {
+    grid-template-columns: 1fr;
+  }
+}
+.discountBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 28px;
+  background-color: #f05f02;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(255, 75, 92, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discountBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(255, 75, 92, 0.6);
+}
+
+/* Blinking animation */
+.blinkText {
+  background: #061b32;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.clickText {
+  font-size: 16px;
+}
+.textContainer{
+  margin-bottom: 5rem;
+  h2{
+    font-size: 18px;
+    color: #061b32;
+    font-weight: bold;
+  }
+}
+
+.ctaStrip {
+  background: #f05f02;
+  padding: 18px 0;
+}
+
+.ctaContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ctaContainer h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.ctaBtn {
+  padding: 12px 28px;
+  border: 2px solid #061b32;
+  color: #061b32;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  i{
+    margin-top: 1px;
+  }
+}
+
+.ctaBtn:hover {
+  background: #061b32;
+  color: #fff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .ctaContainer {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .ctaContainer h2 {
+    font-size: 20px;
+  }
+}
