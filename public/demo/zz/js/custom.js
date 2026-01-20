@@ -1,3 +1,32 @@
+"use strict";
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  function loadComponent(id, url, callback) {
+    fetch(url)
+      .then(res => {
+        if (!res.ok) throw new Error("Failed to load " + url);
+        return res.text();
+      })
+      .then(data => {
+        document.querySelector(id).innerHTML = data;
+        if (callback) callback();
+      })
+      .catch(err => console.error(err));
+  }
+
+  loadComponent("#header", "components/header.html", function () {
+    window.dispatchEvent(new Event("scroll"));
+  });
+
+  loadComponent("#footer", "components/footer.html");
+  loadComponent("#form", "components/form.html");
+
+});
+
+
+
+
 function openNav() {
     document.getElementById("myNav").classList.toggle("menu_width")
     document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
@@ -94,7 +123,12 @@ function openNav() {
 
       <div class="detail-box">
         <h5>${product.name}</h5>
-        <h4><span>$</span>${product.price}</h4>
+        <h4 class="single-price">
+              <span>$</span>${product.price} <small>each</small>
+            </h4>
+        <p class="pack-price">
+              Full Pack (5 pcs) : <strong>$500</strong>
+            </p>
         <a href="#" class="buy-btn">Buy Now</a>
       </div>
     `;
