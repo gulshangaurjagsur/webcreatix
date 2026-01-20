@@ -1471,7 +1471,7 @@ a:focus {
 .navbar-brand h1 i{
   display: inline-block;
   font-size: 50px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 .navbar-brand h1 .logoTxt{
 display: inline-block;
