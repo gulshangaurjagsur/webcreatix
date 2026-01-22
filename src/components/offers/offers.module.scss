@@ -1,14 +1,18 @@
 .pricingSection {
   color: #5f6f7e;
   margin: 30px 0;
+
   @media (min-width: 768px) {
-  margin: 60px 0;
+    margin: 60px 0;
   }
+
   h1 {
     font-size: 30px;
     text-align: center;
     line-height: 1.5;
-    color:#5f6f7e;;
+    color: #5f6f7e;
+    ;
+
     span {
       color: #f05f02;
       font-weight: 500;
@@ -24,10 +28,10 @@
 
 .pricingCard {
   text-align: center;
-    border: 1px solid #afadad;
-    padding-top: 20px;
-    border-radius: 10px;
-    background-color: #f6f6f6;
+  border: 1px solid #afadad;
+  padding-top: 20px;
+  border-radius: 10px;
+  background-color: #f6f6f6;
 }
 
 .pricingCard h3 {
@@ -54,13 +58,15 @@
   font-size: 14px;
   position: relative;
   padding-left: 30px;
-  color:#5f6f7e;
+  color: #5f6f7e;
   text-align: left;
-  &:last-child{
-text-align: center;
-&::before{
- content: none;
-}
+
+  &:last-child {
+    text-align: center;
+
+    &::before {
+      content: none;
+    }
   }
 }
 
@@ -74,19 +80,21 @@ text-align: center;
 .pricingCta {
   text-align: center;
   margin-top: 50px;
-  a{
-        background-color: #f05f02;
-        border: none;
-        text-decoration: none;
-        font-size: 12px;
-        &:hover{
-          background-color: #cc3304;
-        }
-      }
+
+  a {
+    background-color: #f05f02;
+    border: none;
+    text-decoration: none;
+    font-size: 12px;
+
+    &:hover {
+      background-color: #cc3304;
+    }
+  }
 }
 
 
-  
+
 
 
 /* Responsive */
@@ -95,6 +103,7 @@ text-align: center;
     grid-template-columns: 1fr;
   }
 }
+
 .discountBtn {
   display: inline-flex;
   align-items: center;
@@ -128,9 +137,11 @@ text-align: center;
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.2;
   }
+
   100% {
     opacity: 1;
   }
@@ -139,14 +150,17 @@ text-align: center;
 .clickText {
   font-size: 16px;
 }
-.textContainer{
+
+.textContainer {
   margin-bottom: 5rem;
-  h2{
+
+  h2 {
     font-size: 18px;
     color: #061b32;
     font-weight: bold;
   }
-  p{
+
+  p {
     font-size: 14px;
   }
 }
@@ -163,6 +177,23 @@ text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .logoBox {
+    width: 200px;
+    background: #fff;
+    height: 50px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    a{
+      display: flex;
+    }
+
+    img {
+      width: 160px;
+      text-align: center;
+    }
+  }
 }
 
 .ctaContainer h2 {
@@ -182,7 +213,8 @@ text-align: center;
   border-radius: 6px;
   transition: all 0.3s ease;
   background-color: #fff;
-  i{
+
+  i {
     margin-top: 1px;
   }
 }

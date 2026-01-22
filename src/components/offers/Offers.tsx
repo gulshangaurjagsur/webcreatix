@@ -6,6 +6,7 @@ const Offers = (props: any) => {
     <>
       <section className={styles.ctaStrip}>
         <div className={styles.ctaContainer}>
+          <div className={styles.logoBox}><a href="/"><img src="../../../images/logo-webcreatix.svg" /></a></div>
           <h2>Need a Professional Website for Your Business?</h2>
           <a href="tel: +919625791723" className={styles.ctaBtn}><i className="fa fa-solid fa-phone"></i> +91 9625791723</a>
         </div>
