@@ -1,12 +1,17 @@
+import Link from "next/link";
 import styles from "./offers.module.scss";
 import React from "react";
+import { Image } from "react-bootstrap";
 const Offers = (props: any) => {
   const { compData } = props;
   return (
     <>
       <section className={styles.ctaStrip}>
         <div className={styles.ctaContainer}>
-          <div className={styles.logoBox}><a href="/"><img src="../../../images/logo-webcreatix.svg" /></a></div>
+          <div className={styles.logoBox}>
+            <Link href="/">
+              <Image src="../../../images/logo-webcreatix.svg" alt="WebCreatix Logo, website design services in delhi" /></Link>
+          </div>
           <h2>Need a Professional Website for Your Business?</h2>
           <a href="tel: +919625791723" className={styles.ctaBtn}><i className="fa fa-solid fa-phone"></i> +91 9625791723</a>
         </div>
@@ -16,7 +21,7 @@ const Offers = (props: any) => {
         <div className={`${styles.textContainer} container`}>
           <h2>Professional Responsive Website Designing Starting from ₹3,999</h2>
           <p>WebCreatix helps you design professional, mobile-friendly websites that not only look great but are built for performance. We focus on clean design, fast loading speed, and user-friendly layouts to ensure your visitors get a smooth experience across all devices.</p>
-            <p>Our websites are thoughtfully designed to attract the right audience, engage them with clear messaging, and convert them into real customers. With transparent pricing, fast delivery, and no hidden charges, WebCreatix makes it easy for your business to build a strong and trustworthy online presence.</p>
+          <p>Our websites are thoughtfully designed to attract the right audience, engage them with clear messaging, and convert them into real customers. With transparent pricing, fast delivery, and no hidden charges, WebCreatix makes it easy for your business to build a strong and trustworthy online presence.</p>
           <h1 className="mt-5"><span>Special </span>Offers</h1>
           <div className="text-center">
             <a href="https://wa.me/919625791723" target="_blank" className={styles.discountBtn}>
