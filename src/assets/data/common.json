@@ -106,11 +106,25 @@
           {
             "label": "Branding",
             "url": "/services/branding"
+          }
+      ]
+    },
+    "mainLink": {
+      "heading": "Links",
+      "links": [
+        {
+            "label": "Write a Review",
+            "url": "/review"
           },
-          {
+        {
             "label": "Offers",
             "url": "/offers"
+          },
+          {
+            "label": "Privacy",
+            "url": "/privacy"
           }
+          
       ]
     },
     "contact": {

@@ -50,7 +50,7 @@ const Footer = (props: { compData: any; showContactSection?: boolean }) => {
       )}
       <div className={`container ${styles.footerMain} `}>
         <div className="row">
-          <div className={`col-md-4 col-sm-6 ${styles.footerWrapperCol}`}>
+          <div className={`col-md-3 col-sm-6 ${styles.footerWrapperCol}`}>
             <div className={styles.heading}>{compData?.about?.heading}</div>
             <div
               dangerouslySetInnerHTML={{
@@ -59,7 +59,7 @@ const Footer = (props: { compData: any; showContactSection?: boolean }) => {
             />
           </div>
           <div
-            className={`col-md-4 col-sm-6 ${styles.footerWrapperCol} ${styles.servicesFooter} `}
+            className={`col-md-3 col-sm-6 ${styles.footerWrapperCol} ${styles.servicesFooter} `}
           >
             <div className={styles.heading}>{compData?.service?.heading}</div>
             {compData?.service?.links?.map((item: any, index: number) => (
@@ -68,7 +68,17 @@ const Footer = (props: { compData: any; showContactSection?: boolean }) => {
               </a>
             ))}
           </div>
-          <div className={`col-md-4 col-sm-6 ${styles.footerWrapperCol} `}>
+          <div
+            className={`col-md-3 col-sm-6 ${styles.footerWrapperCol} ${styles.servicesFooter} `}
+          >
+            <div className={styles.heading}>{compData?.mainLink?.heading}</div>
+            {compData?.mainLink?.links?.map((item: any, index: number) => (
+              <a href={item?.url} key={index}>
+                {item?.label}
+              </a>
+            ))}
+          </div>
+          <div className={`col-md-3 col-sm-6 ${styles.footerWrapperCol} `}>
             <div className={styles.heading}>{compData?.contact?.heading}</div>
             <address
               dangerouslySetInnerHTML={{
@@ -86,10 +96,6 @@ const Footer = (props: { compData: any; showContactSection?: boolean }) => {
                 __html: compData?.copyRight,
               }}
             />
-            <div>
-              {/* <a href="#">Sitemap</a>&nbsp;&nbsp;|&nbsp;&nbsp; */}
-              <a href="privacy">Privacy</a>
-            </div>
           </div>
         </div>
       </div>
