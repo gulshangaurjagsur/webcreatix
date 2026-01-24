@@ -114,7 +114,8 @@
       "links": [
         {
             "label": "Write a Review",
-            "url": "/review"
+            "url": "/review",
+            "target": "_blank"
           },
         {
             "label": "Offers",

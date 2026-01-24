@@ -73,7 +73,7 @@ const Footer = (props: { compData: any; showContactSection?: boolean }) => {
           >
             <div className={styles.heading}>{compData?.mainLink?.heading}</div>
             {compData?.mainLink?.links?.map((item: any, index: number) => (
-              <a href={item?.url} key={index}>
+              <a href={item?.url} key={index} target={item?.target}>
                 {item?.label}
               </a>
             ))}
