@@ -45,14 +45,18 @@ const Offers = (props: any) => {
               <li>Free Hosting</li>
               <li>Free SSL Certificate (https)</li>
               <li>Logo Design</li>
+              <li>Social Media Integration</li>
               <li>Mobile Friendly Website</li>
               <li>Responsive Website</li>
               <li className="mt-4"><a href="https://wa.me/919625791723" target="_blank" className={styles.discountBtn}>Get This Package</a></li>
+              
             </ul>
+            <p>No Hidden Charges | Free Support After Delivery | 100% Client Satisfaction</p>
           </div>
 
           {/* BUSINESS PACKAGE */}
-          <div className={` ${styles.pricingCard} ${styles.featured} `}>
+          <div className={` ${styles.pricingCard} ${styles.popular} ${styles.featured} `}>
+            <span className={styles.badge}>Most Popular</span>
             <h3>BUSINESS PACKAGE</h3>
             <div className={styles.price}>₹5,999/-</div>
             <ul>
@@ -66,11 +70,13 @@ const Offers = (props: any) => {
               <li>Unlimited Images and Videos</li>
               <li>Unlimited (Bandwidth/Space)</li>
               <li>24/7 Support (Phone/Email/Chat)</li>
+              <li>Google Map Integration</li>
               <li>Social Media Integration</li>
-              <li>Live Chat Integration</li>
+              <li>WhatsApp Chat Integration</li>
               <li>Responsive Website</li>
               <li className="mt-4"><a href="https://wa.me/919625791723" target="_blank" className={styles.discountBtn}>Get This Package</a></li>
             </ul>
+            <p>No Hidden Charges | Free Support After Delivery | 100% Client Satisfaction</p>
           </div>
 
           {/* E-COMMERCE PACKAGE */}
@@ -90,11 +96,13 @@ const Offers = (props: any) => {
               <li>Unlimited Product Listing</li>
               <li>24/7 Support (Phone/Email/Chat)</li>
               <li>Payment Gateway Integration</li>
+              <li>Google Map Integration</li>
               <li>Social Media Integration</li>
-              <li>Live Chat Integration</li>
+              <li>WhatsApp Chat Integration</li>
               <li>Responsive Website</li>
               <li className="mt-4"><a href="https://wa.me/919625791723" target="_blank" className={styles.discountBtn}>Get This Package</a></li>
             </ul>
+            <p>No Hidden Charges | Free Support After Delivery | 100% Client Satisfaction</p>
           </div>
 
         </div>

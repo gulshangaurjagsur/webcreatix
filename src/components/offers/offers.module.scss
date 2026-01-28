@@ -32,13 +32,35 @@
   padding-top: 20px;
   border-radius: 10px;
   background-color: #f6f6f6;
-}
-
-.pricingCard h3 {
-  color: #f05f02;
+  position: relative;
+  &.popular{
+    border: 2px solid #ff6a00;
+  box-shadow: 0 10px 30px rgba(255,106,0,0.25);
+  }
+  .badge{
+    position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #ff6a00;
+  color: #fff;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(255,106,0,0.4);
+  }
+  h3{
+color: #f05f02;
   font-size: 22px;
   margin-bottom: 10px;
   font-weight: bold;
+  }
+  p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #061b32;
+  }
 }
 
 .price {
