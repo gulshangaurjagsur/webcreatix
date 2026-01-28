@@ -82,6 +82,7 @@ color: #f05f02;
   padding-left: 30px;
   color: #5f6f7e;
   text-align: left;
+  font-weight: bold;
 
   &:last-child {
     text-align: center;
@@ -257,4 +258,10 @@ color: #f05f02;
   .ctaContainer h2 {
     font-size: 20px;
   }
+}
+.note{
+  text-align: center;
+  margin-top: 32px;
+  color: #000;
+  font-weight: bold;
 }

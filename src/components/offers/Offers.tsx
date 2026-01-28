@@ -40,18 +40,20 @@ const Offers = (props: any) => {
             <div className={styles.price}>₹3,999/-</div>
             <ul>
               <li>Single Page Website</li>
-              <li>SEO Ready Website</li>
-              <li>Content Writing Work</li>
-              <li>Free Hosting</li>
-              <li>Free SSL Certificate (https)</li>
-              <li>Logo Design</li>
-              <li>Social Media Integration</li>
-              <li>Mobile Friendly Website</li>
-              <li>Responsive Website</li>
-              <li className="mt-4"><a href="https://wa.me/919625791723" target="_blank" className={styles.discountBtn}>Get This Package</a></li>
+<li>SEO Ready Website</li>
+<li>Content Writing Work</li>
+<li>Free Hosting</li>
+<li>Free SSL Certificate (HTTPS)</li>
+<li>Basic Logo Design</li>
+<li>Contact Us Form Integration</li>
+<li>Email Notification Setup (Enquiry)</li>
+<li>Mobile Friendly Website</li>
+<li>Responsive Website</li>
+<li>Domain Name (Not Included)</li>
+
+              <li className="mt-4"><a href="https://wa.me/919625791723" target="_blank" className={styles.discountBtn}>Get Started</a></li>
               
             </ul>
-            <p>No Hidden Charges | Free Support After Delivery | 100% Client Satisfaction</p>
           </div>
 
           {/* BUSINESS PACKAGE */}
@@ -60,23 +62,26 @@ const Offers = (props: any) => {
             <h3>BUSINESS PACKAGE</h3>
             <div className={styles.price}>₹5,999/-</div>
             <ul>
-              <li>5 Pages</li>
-              <li>1 Business Email Id</li>
-              <li>SEO Ready Website</li>
-              <li>Content Writing Work</li>
-              <li>Free Hosting</li>
-              <li>Free SSL Certificate (https)</li>
-              <li>Logo Design</li>
-              <li>Unlimited Images and Videos</li>
-              <li>Unlimited (Bandwidth/Space)</li>
-              <li>24/7 Support (Phone/Email/Chat)</li>
-              <li>Google Map Integration</li>
-              <li>Social Media Integration</li>
-              <li>WhatsApp Chat Integration</li>
-              <li>Responsive Website</li>
-              <li className="mt-4"><a href="https://wa.me/919625791723" target="_blank" className={styles.discountBtn}>Get This Package</a></li>
+              <li>5 Pages Business Website</li>
+<li>1 Business Email ID</li>
+<li>SEO Ready Website</li>
+<li>Content Writing Work</li>
+<li>Free Hosting</li>
+<li>Free SSL Certificate (HTTPS)</li>
+<li>Logo Design</li>
+<li>Unlimited Images and Videos</li>
+<li>Unlimited Bandwidth & Storage</li>
+<li>Google Map Integration</li>
+<li>Order / Enquiry Form Integration</li>
+<li>Email Notification Setup (Enquiry)</li>
+<li>Social Media Integration</li>
+<li>WhatsApp Chat Integration</li>
+<li>Responsive Website</li>
+<li>Domain Name Assistance (Client Purchase)</li>
+
+
+              <li className="mt-4"><a href="https://wa.me/919625791723" target="_blank" className={styles.discountBtn}>Choose Most Popular</a></li>
             </ul>
-            <p>No Hidden Charges | Free Support After Delivery | 100% Client Satisfaction</p>
           </div>
 
           {/* E-COMMERCE PACKAGE */}
@@ -84,29 +89,39 @@ const Offers = (props: any) => {
             <h3>E-COMMERCE PACKAGE</h3>
             <div className={styles.price}>₹9,999/-</div>
             <ul>
-              <li>5 Pages</li>
-              <li>1 Business Email Id</li>
-              <li>SEO Ready Website</li>
-              <li>Content Writing Work</li>
-              <li>Free Hosting</li>
-              <li>Free SSL Certificate (https)</li>
-              <li>Logo Design</li>
-              <li>Unlimited Images and Videos</li>
-              <li>Unlimited (Bandwidth/Space)</li>
-              <li>Unlimited Product Listing</li>
-              <li>24/7 Support (Phone/Email/Chat)</li>
-              <li>Payment Gateway Integration</li>
-              <li>Google Map Integration</li>
-              <li>Social Media Integration</li>
-              <li>WhatsApp Chat Integration</li>
-              <li>Responsive Website</li>
-              <li className="mt-4"><a href="https://wa.me/919625791723" target="_blank" className={styles.discountBtn}>Get This Package</a></li>
+              <li>Product Showcase Website</li>
+<li>Unlimited Product Listing</li>
+<li>1 Business Email ID</li>
+<li>SEO Ready Website</li>
+<li>Content Writing Work</li>
+<li>Free Hosting</li>
+<li>Free SSL Certificate (HTTPS)</li>
+<li>Logo Design</li>
+<li>Unlimited Images and Videos</li>
+<li>Unlimited Bandwidth & Storage</li>
+<li>Razorpay Payment Integration (Basic)</li>
+<li>Order / Enquiry Form Integration</li>
+<li>Email Notification Setup (Order / Enquiry)</li>
+<li>Google Map Integration</li>
+<li>Social Media Integration</li>
+<li>WhatsApp Order / Chat Integration</li>
+<li>Responsive Website</li>
+<li>Domain Name Included(.in)</li>
+
+
+              <li className="mt-4"><a href="https://wa.me/919625791723" target="_blank" className={styles.discountBtn}>Start Selling</a></li>
             </ul>
-            <p>No Hidden Charges | Free Support After Delivery | 100% Client Satisfaction</p>
+            <p>
+Note: This is a product showcase website with enquiry / WhatsApp order system and basic Razorpay payment integration. Advanced e-commerce features require backend upgrade.
+</p>
           </div>
 
         </div>
+        <p className={styles.note}>No Hidden Charges | Free Support After Delivery | 100% Client Satisfaction</p>
       </section>
+                  
+
+
     </>
   );
 };
