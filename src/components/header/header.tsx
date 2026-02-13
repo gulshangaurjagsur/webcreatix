@@ -62,7 +62,7 @@ const Header = (props: any) => {
           </label>
         </div>
       </nav>
-      <a href="/offers" className={styles.offer}>Special Offer</a>
+      <Link href="/offers" className={styles.offer}>Special Offer</Link>
     </div>
   );
 };
