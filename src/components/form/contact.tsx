@@ -25,10 +25,10 @@ const ContactForm = (props: any) => {
   ) => {
     const { name, value } = e.target;
 
-    setFormData({
-      ...formData,
+    setFormData((prev) => ({
+      ...prev,
       [name]: value,
-    });
+    }));
   };
 
   // Validation
@@ -66,23 +66,11 @@ const ContactForm = (props: any) => {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          description: formData.description,
-        }),
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        // ✅ Google Ads conversion
-        if (typeof window !== "undefined" && (window as any).gtag) {
-          (window as any).gtag("event", "conversion", {
-            send_to: "AW-17818948467/R9m_COmC--YbEPOm3rBC",
-          });
-        }
-
-        // Redirect after success
+        // ✅ Only redirect (conversion will fire on thank-you page)
         router.push("/thank-you?success=true");
       } else {
         console.error("Form submission error");
