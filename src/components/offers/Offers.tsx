@@ -337,58 +337,59 @@ const Offers = (props: any) => {
           <div className={styles.slider}>
             <div className={styles.slideTrack}>
 
-              {/* Repeat images twice for smooth infinite scroll */}
-
+              <div className={styles.slide}>
+                <Image src="../../../images/client0.png" className="img-fluid" alt="WebCreatix" />
+              </div>
               <div className={styles.slide}>
                 <Image src="../../../images/client1.png" className="img-fluid" alt="WebCreatix" />
-            </div>
+              </div>
 
-            <div className={styles.slide}>
-              <Image src="../../../images/client2.png" className="img-fluid" alt="WebCreatix" />
-            </div>
+              <div className={styles.slide}>
+                <Image src="../../../images/client2.png" className="img-fluid" alt="WebCreatix" />
+              </div>
 
-            <div className={styles.slide}>
-              <Image src="../../../images/client3.png" className="img-fluid" alt="WebCreatix" />
-            </div>
+              <div className={styles.slide}>
+                <Image src="../../../images/client3.png" className="img-fluid" alt="WebCreatix" />
+              </div>
 
-            <div className={styles.slide}>
-              <Image src="../../../images/client4.png" className="img-fluid" alt="WebCreatix" />
-            </div>
+              <div className={styles.slide}>
+                <Image src="../../../images/client4.png" className="img-fluid" alt="WebCreatix" />
+              </div>
 
-            <div className={styles.slide}>
-              <Image src="../../../images/client5.png" className="img-fluid" alt="WebCreatix" />
-            </div>
+              <div className={styles.slide}>
+                <Image src="../../../images/client5.png" className="img-fluid" alt="WebCreatix" />
+              </div>
 
-            {/* Duplicate */}
-            <div className={styles.slide}>
-              <Image src="../../../images/client6.png" className="img-fluid" alt="WebCreatix" />
-            </div>
+              {/* Duplicate */}
+              <div className={styles.slide}>
+                <Image src="../../../images/client6.png" className="img-fluid" alt="WebCreatix" />
+              </div>
 
-            <div className={styles.slide}>
-              <Image src="../../../images/client7.png" className="img-fluid" alt="WebCreatix" />
-            </div>
+              <div className={styles.slide}>
+                <Image src="../../../images/client7.png" className="img-fluid" alt="WebCreatix" />
+              </div>
 
-            <div className={styles.slide}>
-              <Image src="../../../images/client8.png" className="img-fluid" alt="WebCreatix" />
-            </div>
+              <div className={styles.slide}>
+                <Image src="../../../images/client8.png" className="img-fluid" alt="WebCreatix" />
+              </div>
 
-            <div className={styles.slide}>
-              <Image src="../../../images/client9.png" className="img-fluid" alt="WebCreatix" />
-            </div>
+              <div className={styles.slide}>
+                <Image src="../../../images/client9.png" className="img-fluid" alt="WebCreatix" />
+              </div>
 
-            <div className={styles.slide}>
-              <Image src="../../../images/client10.png" className="img-fluid" alt="WebCreatix" />
-            </div>
-            <div className={styles.slide}>
-              <Image src="../../../images/client11.png" className="img-fluid" alt="WebCreatix" />
-            </div>
-            <div className={styles.slide}>
-              <Image src="../../../images/client12.png" className="img-fluid" alt="WebCreatix" />
-            </div>
+              <div className={styles.slide}>
+                <Image src="../../../images/client10.png" className="img-fluid" alt="WebCreatix" />
+              </div>
+              <div className={styles.slide}>
+                <Image src="../../../images/client11.png" className="img-fluid" alt="WebCreatix" />
+              </div>
+              <div className={styles.slide}>
+                <Image src="../../../images/client12.png" className="img-fluid" alt="WebCreatix" />
+              </div>
 
+            </div>
           </div>
         </div>
-</div>
       </section >
 
 
