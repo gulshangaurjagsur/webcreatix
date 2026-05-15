@@ -10,7 +10,7 @@ const Offers = (props: any) => {
         <div className={styles.ctaContainer}>
           <div className={styles.logoBox}>
             <Link href="/">
-              <img src="../../../images/logo-webcreatix.svg" alt="WebCreatix Logo, website design services in delhi" /></Link>
+              <Image src="../../../images/logo-webcreatix.svg" alt="WebCreatix Logo, website design services in delhi" /></Link>
           </div>
           <h2>Need a Professional Website for Your Business?</h2>
           <a href="tel: +919625791723" className={styles.ctaBtn}><i className="fa fa-solid fa-phone"></i> +91 9625791723</a>
@@ -329,7 +329,7 @@ const Offers = (props: any) => {
               Our portfolio showcases a diverse range of projects that highlight our
               expertise in web development and design. From eCommerce solutions and
               responsive websites to custom interfaces and seamless user experiences,
-              we bring our clients' visions to life with innovative technology and
+              we bring our clients visions to life with innovative technology and
               creative design.
             </p>
           </div>
