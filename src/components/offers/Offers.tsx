@@ -340,50 +340,50 @@ const Offers = (props: any) => {
               {/* Repeat images twice for smooth infinite scroll */}
 
               <div className={styles.slide}>
-                <img src="../../../images/client1.png" alt="WebCreatix" />
+                <Image src="../../../images/client1.png" className="img-fluid" alt="WebCreatix" />
             </div>
 
             <div className={styles.slide}>
-              <img src="../../../images/client2.png" alt="WebCreatix" />
+              <Image src="../../../images/client2.png" className="img-fluid" alt="WebCreatix" />
             </div>
 
             <div className={styles.slide}>
-              <img src="../../../images/client3.png" alt="WebCreatix" />
+              <Image src="../../../images/client3.png" className="img-fluid" alt="WebCreatix" />
             </div>
 
             <div className={styles.slide}>
-              <img src="../../../images/client4.png" alt="WebCreatix" />
+              <Image src="../../../images/client4.png" className="img-fluid" alt="WebCreatix" />
             </div>
 
             <div className={styles.slide}>
-              <img src="../../../images/client5.png" alt="WebCreatix" />
+              <Image src="../../../images/client5.png" className="img-fluid" alt="WebCreatix" />
             </div>
 
             {/* Duplicate */}
             <div className={styles.slide}>
-              <img src="../../../images/client6.png" alt="WebCreatix" />
+              <Image src="../../../images/client6.png" className="img-fluid" alt="WebCreatix" />
             </div>
 
             <div className={styles.slide}>
-              <img src="../../../images/client7.png" alt="WebCreatix" />
+              <Image src="../../../images/client7.png" className="img-fluid" alt="WebCreatix" />
             </div>
 
             <div className={styles.slide}>
-              <img src="../../../images/client8.png" alt="WebCreatix" />
+              <Image src="../../../images/client8.png" className="img-fluid" alt="WebCreatix" />
             </div>
 
             <div className={styles.slide}>
-              <img src="../../../images/client9.png" alt="WebCreatix" />
+              <Image src="../../../images/client9.png" className="img-fluid" alt="WebCreatix" />
             </div>
 
             <div className={styles.slide}>
-              <img src="../../../images/client10.png" alt="WebCreatix" />
+              <Image src="../../../images/client10.png" className="img-fluid" alt="WebCreatix" />
             </div>
             <div className={styles.slide}>
-              <img src="../../../images/client11.png" alt="WebCreatix" />
+              <Image src="../../../images/client11.png" className="img-fluid" alt="WebCreatix" />
             </div>
             <div className={styles.slide}>
-              <img src="../../../images/client12.png" alt="WebCreatix" />
+              <Image src="../../../images/client12.png" className="img-fluid" alt="WebCreatix" />
             </div>
 
           </div>
