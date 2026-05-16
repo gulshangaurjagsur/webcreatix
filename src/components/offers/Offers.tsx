@@ -2,6 +2,8 @@ import Link from "next/link";
 import styles from "./offers.module.scss";
 import React from "react";
 import { Image } from "react-bootstrap";
+import homeData from "../../assets/data/homePage.json";
+import Achievements from "../achievements/achievements";
 const Offers = (props: any) => {
   const { compData } = props;
   return (
@@ -338,59 +340,60 @@ const Offers = (props: any) => {
             <div className={styles.slideTrack}>
 
               <div className={styles.slide}>
-                <Image src="../../../images/client0.png" className="img-fluid" alt="WebCreatix" />
+                <Image src="../../../images/client0.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
               </div>
               <div className={styles.slide}>
-                <Image src="../../../images/client1.png" className="img-fluid" alt="WebCreatix" />
-              </div>
-
-              <div className={styles.slide}>
-                <Image src="../../../images/client2.png" className="img-fluid" alt="WebCreatix" />
+                <Image src="../../../images/client1.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
               </div>
 
               <div className={styles.slide}>
-                <Image src="../../../images/client3.png" className="img-fluid" alt="WebCreatix" />
+                <Image src="../../../images/client2.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
               </div>
 
               <div className={styles.slide}>
-                <Image src="../../../images/client4.png" className="img-fluid" alt="WebCreatix" />
+                <Image src="../../../images/client3.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
               </div>
 
               <div className={styles.slide}>
-                <Image src="../../../images/client5.png" className="img-fluid" alt="WebCreatix" />
+                <Image src="../../../images/client4.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
+              </div>
+
+              <div className={styles.slide}>
+                <Image src="../../../images/client5.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
               </div>
 
               {/* Duplicate */}
               <div className={styles.slide}>
-                <Image src="../../../images/client6.png" className="img-fluid" alt="WebCreatix" />
+                <Image src="../../../images/client6.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
               </div>
 
               <div className={styles.slide}>
-                <Image src="../../../images/client7.png" className="img-fluid" alt="WebCreatix" />
+                <Image src="../../../images/client7.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
               </div>
 
               <div className={styles.slide}>
-                <Image src="../../../images/client8.png" className="img-fluid" alt="WebCreatix" />
+                <Image src="../../../images/client8.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
               </div>
 
               <div className={styles.slide}>
-                <Image src="../../../images/client9.png" className="img-fluid" alt="WebCreatix" />
+                <Image src="../../../images/client9.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
               </div>
 
               <div className={styles.slide}>
-                <Image src="../../../images/client10.png" className="img-fluid" alt="WebCreatix" />
+                <Image src="../../../images/client10.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
               </div>
               <div className={styles.slide}>
-                <Image src="../../../images/client11.png" className="img-fluid" alt="WebCreatix" />
+                <Image src="../../../images/client11.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
               </div>
               <div className={styles.slide}>
-                <Image src="../../../images/client12.png" className="img-fluid" alt="WebCreatix" />
+                <Image src="../../../images/client12.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
               </div>
 
             </div>
           </div>
         </div>
       </section >
+        <Achievements compData={homeData?.achievements} />
 
 
 
