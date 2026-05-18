@@ -362,7 +362,6 @@ const Offers = (props: any) => {
                 <Image src="../../../images/client5.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
               </div>
 
-              {/* Duplicate */}
               <div className={styles.slide}>
                 <Image src="../../../images/client6.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
               </div>
@@ -387,6 +386,9 @@ const Offers = (props: any) => {
               </div>
               <div className={styles.slide}>
                 <Image src="../../../images/client12.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
+              </div>
+              <div className={styles.slide}>
+                <Image src="../../../images/client14.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
               </div>
 
             </div>
