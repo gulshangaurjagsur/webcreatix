@@ -28,7 +28,7 @@ const Offers = (props: any) => {
           <div className="text-center">
             <a href="https://wa.me/919625791723" target="_blank" className={styles.discountBtn}>
               <span className={styles.clickText}>Click Here For</span>
-              <span className={styles.blinkText}>20% DISCOUNT</span>
+              <span className={styles.blinkText}>10% DISCOUNT</span>
 
             </a>
           </div>
@@ -337,62 +337,36 @@ const Offers = (props: any) => {
           </div>
 
           <div className={styles.slider}>
-            <div className={styles.slideTrack}>
+  <div className={styles.slideTrack}>
 
-              <div className={styles.slide}>
-                <Image src="../../../images/client0.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
-              </div>
-              <div className={styles.slide}>
-                <Image src="../../../images/client1.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
-              </div>
+    {/* Original Slides */}
+    {[0,1,2,3,4,5,6,7,8,9,10,11,12,14].map((item, index) => (
+      <div className={styles.slide} key={`first-${index}`}>
+        <Image
+          src={`/images/client${item}.png`}
+          width={300}
+          height={200}
+          alt="WebCreatix"
+          loading="lazy"
+        />
+      </div>
+    ))}
 
-              <div className={styles.slide}>
-                <Image src="../../../images/client2.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
-              </div>
+    {/* Duplicate Slides */}
+    {[0,1,2,3,4,5,6,7,8,9,10,11,12,14].map((item, index) => (
+      <div className={styles.slide} key={`second-${index}`}>
+        <Image
+          src={`/images/client${item}.png`}
+          width={300}
+          height={200}
+          alt="WebCreatix"
+          loading="lazy"
+        />
+      </div>
+    ))}
 
-              <div className={styles.slide}>
-                <Image src="../../../images/client3.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
-              </div>
-
-              <div className={styles.slide}>
-                <Image src="../../../images/client4.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
-              </div>
-
-              <div className={styles.slide}>
-                <Image src="../../../images/client5.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
-              </div>
-
-              <div className={styles.slide}>
-                <Image src="../../../images/client6.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
-              </div>
-
-              <div className={styles.slide}>
-                <Image src="../../../images/client7.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
-              </div>
-
-              <div className={styles.slide}>
-                <Image src="../../../images/client8.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
-              </div>
-
-              <div className={styles.slide}>
-                <Image src="../../../images/client9.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
-              </div>
-
-              <div className={styles.slide}>
-                <Image src="../../../images/client10.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
-              </div>
-              <div className={styles.slide}>
-                <Image src="../../../images/client11.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
-              </div>
-              <div className={styles.slide}>
-                <Image src="../../../images/client12.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
-              </div>
-              <div className={styles.slide}>
-                <Image src="../../../images/client14.png" className="img-fluid" alt="WebCreatix" loading="lazy"  />
-              </div>
-
-            </div>
-          </div>
+  </div>
+</div>
         </div>
       </section >
         <Achievements compData={homeData?.achievements} />
