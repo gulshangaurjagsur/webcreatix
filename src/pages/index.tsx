@@ -26,15 +26,17 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Best Web Development & Digital Agency in Delhi | WebCreatix
+          Web Design & Development Company in Uttam Nagar, Delhi | WebCreatix
         </title>
+
         <meta
           name="description"
-          content="WebCreatix is a top-rated Delhi-based web design, development, and digital marketing company helping businesses grow online with smart, scalable solutions."
+          content="WebCreatix is a professional web design and development company in Uttam Nagar, Delhi offering responsive websites, e-commerce solutions, landing pages, SEO-friendly development, and digital services for businesses and startups."
         />
+
         <meta
           name="keywords"
-          content="Web development Delhi, Digital agency Delhi, SEO services Delhi, Web design company in Delhi NCR, Delhi website designers, WebCreatix"
+          content="web design company in Uttam Nagar, web development company Delhi, website designer near me, ecommerce website development Delhi, responsive website design Delhi, WebCreatix"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="msvalidate.01" content="17BCDA0DB4C568BD36728FD7EECE8ABF" />
