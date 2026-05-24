@@ -5,25 +5,8 @@ import React from "react";
 import { Image } from "react-bootstrap";
 import homeData from "../../assets/data/homePage.json";
 import Achievements from "../achievements/achievements";
-import Script from "next/script";
-import { useEffect } from "react";
 const Offers = (props: any) => {
   const { compData } = props;
-   useEffect(() => {
-
-    const script = document.createElement("script");
-
-    script.src = "https://cdn.trustindex.io/loader.js";
-
-    script.async = true;
-
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-
-  }, []);
   return (
     <>
       <section className={styles.ctaStrip}>
@@ -139,36 +122,24 @@ const Offers = (props: any) => {
         </div>
         <p className={styles.note}>No Hidden Charges | Free Support After Delivery | 100% Client Satisfaction</p>
       </section>
-      import Script from "next/script";
 
       <section className={styles.wcReviewsSection}>
-        <div className="container">
+  <div className="container">
 
-          <div className={styles.sectionTitle}>
-            <h2>
-              Our Customer <span>Reviews</span>
-            </h2>
+    <div className={styles.sectionTitle}>
+      <h2>
+        Our Customer <span>Reviews</span>
+      </h2>
 
-            <p>
-              We take pride in delivering high-quality website development services
-              with fast support, modern design, and client satisfaction.
-            </p>
-          </div>
+      <p>
+        We take pride in delivering high-quality website development services
+        with fast support, modern design, and client satisfaction.
+      </p>
+    </div>
+<script defer async src='https://cdn.trustindex.io/loader.js?f970cfb72ff0665e018685e2834'></script>
 
-          {/* Trustindex Widget */}
-
-          <div className="container">
-
-            <div
-          className="trustindex-widget"
-          data-widget-id="f970cfb72ff0665e018685e2834"
-        ></div>
-
-
-          </div>
-
-        </div>
-      </section>
+  </div>
+</section>
       <section className={styles.portfolioSection}>
         <div className={styles.container}>
 
