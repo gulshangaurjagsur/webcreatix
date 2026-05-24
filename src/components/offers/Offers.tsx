@@ -124,22 +124,19 @@ const Offers = (props: any) => {
       </section>
 
       <section className={styles.wcReviewsSection}>
-  <div className="container">
+        <div className="container">
 
-    <div className={styles.sectionTitle}>
-      <h2>
-        Our Customer <span>Reviews</span>
-      </h2>
+          <div className={styles.sectionTitle}>
+            <h2>
+              Our Customer <span>Reviews</span>
+            </h2>
 
-      <p>
-        We take pride in delivering high-quality website development services
-        with fast support, modern design, and client satisfaction.
-      </p>
-    </div>
-<script defer async src='https://cdn.trustindex.io/loader.js?f970cfb72ff0665e018685e2834'></script>
+            <p>From startups to growing businesses, our clients trust WebCreatix for professional website development, fast communication, modern UI, and dependable long-term support.</p>
+          </div>
+          <script defer async src='https://cdn.trustindex.io/loader.js?f970cfb72ff0665e018685e2834'></script>
 
-  </div>
-</section>
+        </div>
+      </section>
       <section className={styles.portfolioSection}>
         <div className={styles.container}>
 
