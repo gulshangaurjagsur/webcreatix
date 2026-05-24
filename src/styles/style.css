@@ -2,3 +2,6 @@ strong{
   color: #f05f02;
     font-weight: 500;
 }
+.ti-inner {
+  border: 2px solid #ff6600 !important;
+}
