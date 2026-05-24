@@ -1,11 +1,29 @@
+"use client";
 import Link from "next/link";
 import styles from "./offers.module.scss";
 import React from "react";
 import { Image } from "react-bootstrap";
 import homeData from "../../assets/data/homePage.json";
 import Achievements from "../achievements/achievements";
+import Script from "next/script";
+import { useEffect } from "react";
 const Offers = (props: any) => {
   const { compData } = props;
+   useEffect(() => {
+
+    const script = document.createElement("script");
+
+    script.src = "https://cdn.trustindex.io/loader.js";
+
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+
+  }, []);
   return (
     <>
       <section className={styles.ctaStrip}>
@@ -121,202 +139,34 @@ const Offers = (props: any) => {
         </div>
         <p className={styles.note}>No Hidden Charges | Free Support After Delivery | 100% Client Satisfaction</p>
       </section>
+      import Script from "next/script";
+
       <section className={styles.wcReviewsSection}>
         <div className="container">
 
           <div className={styles.sectionTitle}>
-            <h2>Our Customer <span>Reviews</span></h2>
+            <h2>
+              Our Customer <span>Reviews</span>
+            </h2>
+
             <p>
               We take pride in delivering high-quality website development services
               with fast support, modern design, and client satisfaction.
             </p>
           </div>
 
-          <div className={styles.reviewsGrid}>
+          {/* Trustindex Widget */}
 
-            <div className={styles.reviewCard}>
-              <div className={styles.stars}>★★★★★</div>
+          <div className="container">
 
-              <p className={styles.reviewText}>
-                “Great experience with WebCreatix! Professional, responsive, and
-                delivered a clean, SEO-friendly website on time. Highly recommended
-                for anyone looking for quality web development services.”
-              </p>
+            <div
+          className="trustindex-widget"
+          data-widget-id="f970cfb72ff0665e018685e2834"
+        ></div>
 
-              <div className={styles.reviewUser}>
-                <h4>Khatu Shyam Builders</h4>
-              </div>
-            </div>
 
-            <div className={styles.reviewCard}>
-              <div className={styles.stars}>★★★★★</div>
-
-              <p className={styles.reviewText}>
-                “Great Website Development Company! They did an amazing job on our
-                website. The team was friendly, fast, and highly professional
-                throughout the project.”
-              </p>
-
-              <div className={styles.reviewUser}>
-                <h4>Shankar Yadav</h4>
-              </div>
-            </div>
-
-            <div className={styles.reviewCard}>
-              <div className={styles.stars}>★★★★★</div>
-
-              <p className={styles.reviewText}>
-                “Excellent services for website design in a very short timeframe.
-                Highly satisfied with the quality and support provided by WebCreatix.”
-              </p>
-
-              <div className={styles.reviewUser}>
-                <h4>Hardesh Gupta</h4>
-              </div>
-            </div>
-
-            <div className={styles.reviewCard}>
-              <div className={styles.stars}>★★★★★</div>
-
-              <p className={styles.reviewText}>
-                “WebCreatix created a customised website for my business with a very
-                professional and creative approach. Loved the final output.”
-              </p>
-
-              <div className={styles.reviewUser}>
-                <h4>Pankaj Gaur</h4>
-              </div>
-            </div>
-
-            <div className={styles.reviewCard}>
-              <div className={styles.stars}>★★★★★</div>
-
-              <p className={styles.reviewText}>
-                “Fast, friendly, and result-oriented services. The communication was
-                smooth and the project delivery was excellent.”
-              </p>
-
-              <div className={styles.reviewUser}>
-                <h4>Suman God</h4>
-              </div>
-            </div>
-
-            <div className={styles.reviewCard}>
-              <div className={styles.stars}>★★★★</div>
-
-              <p className={styles.reviewText}>
-                “Delivered a beautiful website before the deadline. Really appreciate
-                the creativity, speed, and support from the team.”
-              </p>
-
-              <div className={styles.reviewUser}>
-                <h4>Vijay Kumar Gaur</h4>
-              </div>
-            </div>
-
-            <div className={styles.reviewCard}>
-              <div className={styles.stars}>★★★★★</div>
-
-              <p className={styles.reviewText}>
-                “Excellent service at a very reasonable price. My website was live in
-                just 2 days with a modern and professional design.”
-              </p>
-
-              <div className={styles.reviewUser}>
-                <h4>Jyoti Sharma</h4>
-              </div>
-            </div>
-
-            <div className={styles.reviewCard}>
-              <div className={styles.stars}>★★★★★</div>
-
-              <p className={styles.reviewText}>
-                “Amazing experience working with WebCreatix. Professional support,
-                beautiful design quality, and timely delivery made everything smooth.”
-              </p>
-
-              <div className={styles.reviewUser}>
-                <h4>Aarti Chauhan</h4>
-              </div>
-            </div>
-            <div className={styles.reviewCard}>
-              <div className={styles.stars}>★★★★★</div>
-
-              <p className={styles.reviewText}>
-                “Fantastic job on our website! Clean design, fast delivery, and great
-                support from the team. Really happy with the overall service and professionalism.”
-              </p>
-
-              <div className={styles.reviewUser}>
-                <h4>Roshan Tiwari</h4>
-              </div>
-            </div>
-
-            <div className={styles.reviewCard}>
-              <div className={styles.stars}>★★★★★</div>
-
-              <p className={styles.reviewText}>
-                “Great experience with WebCreatix! They designed a modern and responsive
-                website for our business and provided excellent support throughout the project.”
-              </p>
-
-              <div className={styles.reviewUser}>
-                <h4>Anand Shukla</h4>
-              </div>
-            </div>
-
-            <div className={styles.reviewCard}>
-              <div className={styles.stars}>★★★★★</div>
-
-              <p className={styles.reviewText}>
-                “Very satisfied with the services provided by WebCreatix. They designed a
-                professional and fast website for our business with great attention to detail.”
-              </p>
-
-              <div className={styles.reviewUser}>
-                <h4>Abhay Kumar</h4>
-              </div>
-            </div>
-
-            <div className={styles.reviewCard}>
-              <div className={styles.stars}>★★★★★</div>
-
-              <p className={styles.reviewText}>
-                “WebCreatix delivered a clean, modern, and user-friendly website for our
-                business. Their team was responsive and easy to work with.”
-              </p>
-
-              <div className={styles.reviewUser}>
-                <h4>Babusahaspur</h4>
-              </div>
-            </div>
-
-            <div className={styles.reviewCard}>
-              <div className={styles.stars}>★★★★★</div>
-
-              <p className={styles.reviewText}>
-                “Amazing experience with WebCreatix! They created a professional, fast, and
-                modern website exactly as we wanted. Highly recommended.”
-              </p>
-
-              <div className={styles.reviewUser}>
-                <h4>AKS SHUKLA JI</h4>
-              </div>
-            </div>
-
-            <div className={styles.reviewCard}>
-              <div className={styles.stars}>★★★★★</div>
-
-              <p className={styles.reviewText}>
-                “WebCreatix did an excellent job developing our startup website. The design
-                is modern, fast, and perfectly aligned with our business goals.”
-              </p>
-
-              <div className={styles.reviewUser}>
-                <h4>Jyoti Kumari</h4>
-              </div>
-            </div>
           </div>
+
         </div>
       </section>
       <section className={styles.portfolioSection}>
@@ -337,39 +187,39 @@ const Offers = (props: any) => {
           </div>
 
           <div className={styles.slider}>
-  <div className={styles.slideTrack}>
+            <div className={styles.slideTrack}>
 
-    {/* Original Slides */}
-    {[0,1,2,3,4,5,6,7,8,9,10,11,12,14].map((item, index) => (
-      <div className={styles.slide} key={`first-${index}`}>
-        <Image
-          src={`/images/client${item}.png`}
-          width={300}
-          height={200}
-          alt="WebCreatix"
-          loading="lazy"
-        />
-      </div>
-    ))}
+              {/* Original Slides */}
+              {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14].map((item, index) => (
+                <div className={styles.slide} key={`first-${index}`}>
+                  <Image
+                    src={`/images/client${item}.png`}
+                    width={300}
+                    height={200}
+                    alt="WebCreatix"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
 
-    {/* Duplicate Slides */}
-    {[0,1,2,3,4,5,6,7,8,9,10,11,12,14].map((item, index) => (
-      <div className={styles.slide} key={`second-${index}`}>
-        <Image
-          src={`/images/client${item}.png`}
-          width={300}
-          height={200}
-          alt="WebCreatix"
-          loading="lazy"
-        />
-      </div>
-    ))}
+              {/* Duplicate Slides */}
+              {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14].map((item, index) => (
+                <div className={styles.slide} key={`second-${index}`}>
+                  <Image
+                    src={`/images/client${item}.png`}
+                    width={300}
+                    height={200}
+                    alt="WebCreatix"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
 
-  </div>
-</div>
+            </div>
+          </div>
         </div>
       </section >
-        <Achievements compData={homeData?.achievements} />
+      <Achievements compData={homeData?.achievements} />
 
 
 
