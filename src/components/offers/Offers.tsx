@@ -5,6 +5,7 @@ import React from "react";
 import { Image } from "react-bootstrap";
 import homeData from "../../assets/data/homePage.json";
 import Achievements from "../achievements/achievements";
+import TrustIndex from "../trustIndex/trustIndex";
 const Offers = (props: any) => {
   const { compData } = props;
   return (
@@ -123,20 +124,7 @@ const Offers = (props: any) => {
         <p className={styles.note}>No Hidden Charges | Free Support After Delivery | 100% Client Satisfaction</p>
       </section>
 
-      <section className={styles.wcReviewsSection}>
-        <div className="container">
-
-          <div className={styles.sectionTitle}>
-            <h2>
-              Our Customer <span>Reviews</span>
-            </h2>
-
-            <p>From startups to growing businesses, our clients trust WebCreatix for professional website development, fast communication, modern UI, and dependable long-term support.</p>
-          </div>
-          <script defer async src='https://cdn.trustindex.io/loader.js?f970cfb72ff0665e018685e2834'></script>
-
-        </div>
-      </section>
+      <TrustIndex />
       <section className={styles.portfolioSection}>
         <div className={styles.container}>
 
