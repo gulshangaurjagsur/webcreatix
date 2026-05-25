@@ -2,6 +2,7 @@ import { Image } from "react-bootstrap";
 import ContactForm from "../form/contact";
 import styles from "./footer.module.scss";
 import React from "react";
+import TrustIndex from "../trustIndex/trustIndex";
 const Footer = (props: { compData: any; showContactSection?: boolean }) => {
   const { compData, showContactSection = true,  } = props;
   interface FooterProps {
@@ -48,6 +49,7 @@ const Footer = (props: { compData: any; showContactSection?: boolean }) => {
         </div>
       </div>
       )}
+      <TrustIndex />
       <div className={`container ${styles.footerMain} `}>
         <div className="row">
           <div className={`col-md-3 col-sm-6 ${styles.footerWrapperCol}`}>

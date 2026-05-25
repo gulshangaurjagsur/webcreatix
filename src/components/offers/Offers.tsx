@@ -123,8 +123,6 @@ const Offers = (props: any) => {
         </div>
         <p className={styles.note}>No Hidden Charges | Free Support After Delivery | 100% Client Satisfaction</p>
       </section>
-
-      <TrustIndex />
       <section className={styles.portfolioSection}>
         <div className={styles.container}>
 
