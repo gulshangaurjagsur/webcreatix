@@ -577,3 +577,6 @@ color: #f05f02;
     max-width: 100%;
   }
 }
+.swiper-slide {
+  transition-timing-function: ease-in-out !important;
+}
