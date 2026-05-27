@@ -22,7 +22,7 @@ const Offers = (props: any) => {
           loop={true}
           speed={900}
           autoplay={{
-            delay: 4000,
+            delay: 40000000000,
             disableOnInteraction: false,
           }}
           pagination={{ clickable: true }}
@@ -107,6 +107,77 @@ const Offers = (props: any) => {
               </div>
             </div>
           </SwiperSlide>
+          {/* Slide 3 */}
+{/* Slide 3 */}
+<SwiperSlide>
+  <div className={styles.heroSlide}>
+    
+    {/* LEFT CONTENT */}
+    <div className={styles.heroContent}>
+      <span className={styles.tag}>
+        ⭐ Trusted by Businesses Across India
+      </span>
+
+      <h2>
+        100+ Websites Delivered <br />
+        With Fast & Professional Service
+      </h2>
+
+      {/* Trust Stats */}
+      <div className={styles.trustGrid}>
+        <div className={styles.trustCard}>
+          <strong>100+</strong>
+          <span>Websites Delivered</span>
+        </div>
+
+        <div className={styles.trustCard}>
+          <strong>4.9★</strong>
+          <span>Google Reviews</span>
+        </div>
+
+        <div className={styles.trustCard}>
+          <strong>5 Days</strong>
+          <span>Fast Delivery</span>
+        </div>
+
+        <div className={styles.trustCard}>
+          <strong>24/7</strong>
+          <span>Support Available</span>
+        </div>
+      </div>
+
+      {/* <div className={styles.heroButtons}>
+        <Link
+          href="/contact-us"
+          className={styles.primaryBtn}
+        >
+          Start Your Project
+        </Link>
+
+        <Link
+          href="/offers"
+          className={styles.secondaryBtn}
+        >
+          View Packages
+        </Link>
+      </div> */}
+    </div>
+
+    {/* RIGHT CLIENT LOGOS */}
+    <div className={styles.clientLogoSection}>
+      {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14].map(
+        (item, index) => (
+          <div className={styles.clientLogoCard} key={index}>
+            <Image
+              src={`/images/client${item}.png`}
+              alt="WebCreatix Client Website"
+            />
+          </div>
+        )
+      )}
+    </div>
+  </div>
+</SwiperSlide>
         </Swiper>
       </section>
 

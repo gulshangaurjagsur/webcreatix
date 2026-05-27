@@ -580,3 +580,104 @@ color: #f05f02;
 .swiper-slide {
   transition-timing-function: ease-in-out !important;
 }
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.trustCard {
+  background: #fff;
+  padding: 5px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.trustCard strong {
+  display: block;
+  font-size: 28px;
+  color: #2563eb;
+  margin-bottom: 5px;
+}
+
+.trustCard span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.clientLogos {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.clientLogos img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+  .trustGrid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+  .trustCard strong {
+  font-size: 18px;
+}
+
+  .clientLogos {
+    justify-content: center;
+  }
+}
+.clientLogoSection {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  align-items: center;
+}
+
+.clientLogoCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // min-height: 110px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.clientLogoCard:hover {
+  transform: translateY(-5px);
+}
+
+.clientLogoCard img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .clientLogoSection {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 0;
+  }
+
+  .clientLogoCard {
+    padding: 0;
+  }
+}
