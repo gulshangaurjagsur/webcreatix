@@ -25,6 +25,7 @@ export default function DiscountOffers() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <Header compData={commonData?.header} />
         <Offers />
         <Footer compData={commonData?.footer} />
       </main>

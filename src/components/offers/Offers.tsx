@@ -5,12 +5,16 @@ import React from "react";
 import { Image } from "react-bootstrap";
 import homeData from "../../assets/data/homePage.json";
 import Achievements from "../achievements/achievements";
-import TrustIndex from "../trustIndex/trustIndex";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
 const Offers = (props: any) => {
   const { compData } = props;
   return (
     <>
-      <section className={styles.ctaStrip}>
+      {/* <section className={styles.ctaStrip}>
         <div className={styles.ctaContainer}>
           <div className={styles.logoBox}>
             <Link href="/">
@@ -19,13 +23,106 @@ const Offers = (props: any) => {
           <h2>Need a Professional Website for Your Business?</h2>
           <a href="tel: +919625791723" className={styles.ctaBtn}><i className="fa fa-solid fa-phone"></i> +91 9625791723</a>
         </div>
-      </section>
+      </section> */}
+      <section className={styles.heroSlider}>
+  <Swiper
+    modules={[Autoplay, Pagination]}
+    spaceBetween={30}
+    slidesPerView={1}
+    loop={true}
+    autoplay={{
+      delay: 5000,
+      disableOnInteraction: false,
+    }}
+    pagination={{ clickable: true }}
+  >
+    {/* Slide 1 */}
+    <SwiperSlide>
+      <div className={styles.heroSlide}>
+        <div className={styles.heroContent}>
+          <span className={styles.tag}>
+            ⭐ Trusted Website Designing Company
+          </span>
+
+          <h1>
+            Professional Business Websites <br />
+            Starting from ₹3,999
+          </h1>
+
+          <p>
+            Responsive, fast-loading and mobile-friendly websites
+            designed to grow your business online.
+          </p>
+
+          <div className={styles.heroButtons}>
+            <Link
+              href="/contact-us"
+              className={styles.primaryBtn}
+            >
+              Get Free Quote
+            </Link>
+
+            <Link
+              href="https://wa.me/919625791723"
+              className={styles.secondaryBtn}
+            >
+              WhatsApp Now
+            </Link>
+          </div>
+        </div>
+
+        <div className={styles.heroImage}>
+          <Image src="../../../images/web-design.png" alt="WebCreatix Logo, website design services in delhi" />
+        </div>
+      </div>
+    </SwiperSlide>
+
+    {/* Slide 2 */}
+    <SwiperSlide>
+      <div className={styles.heroSlide}>
+        <div className={styles.heroContent}>
+          <span className={styles.tag}>
+            🚀 Grow Your Business Online
+          </span>
+
+          <h2>
+            Modern Websites That Convert <br />
+            Visitors into Customers
+          </h2>
+
+          <p>
+            SEO-friendly, responsive and premium business websites
+            designed to help your brand stand out online.
+          </p>
+
+          <div className={styles.heroButtons}>
+            <Link
+              href="#portfolio"
+              className={styles.primaryBtn}
+            >
+              View Portfolio
+            </Link>
+
+            <Link
+              href="tel:+919625791723"
+              className={styles.secondaryBtn}
+            >
+              Call Now
+            </Link>
+          </div>
+        </div>
+
+        <div className={styles.heroImage}>
+          <Image src="../../../images/business-growth.png" alt="WebCreatix Logo, website design services in delhi" />
+        </div>
+      </div>
+    </SwiperSlide>
+  </Swiper>
+</section>
 
       <section className={styles.pricingSection} >
         <div className={`${styles.textContainer} container`}>
-          <h2>Professional Responsive Website Designing Starting from ₹3,999</h2>
-          <p>WebCreatix helps you design professional, mobile-friendly websites that not only look great but are built for performance. We focus on clean design, fast loading speed, and user-friendly layouts to ensure your visitors get a smooth experience across all devices.</p>
-          <p>Our websites are thoughtfully designed to attract the right audience, engage them with clear messaging, and convert them into real customers. With transparent pricing, fast delivery, and no hidden charges, WebCreatix makes it easy for your business to build a strong and trustworthy online presence.</p>
+          
           <h1 className="mt-5"><span>Special </span>Offers</h1>
           <div className="text-center">
             <a href="https://wa.me/919625791723" target="_blank" className={styles.discountBtn}>
@@ -123,7 +220,7 @@ const Offers = (props: any) => {
         </div>
         <p className={styles.note}>No Hidden Charges | Free Support After Delivery | 100% Client Satisfaction</p>
       </section>
-      <section className={styles.portfolioSection}>
+      <section className={styles.portfolioSection} id="portfolio">
         <div className={styles.container}>
 
           <div className={styles.sectionTitle}>

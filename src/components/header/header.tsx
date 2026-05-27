@@ -1,12 +1,14 @@
 import styles from "./header.module.scss";
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Image } from "react-bootstrap";
 const Header = (props: any) => {
   const { compData } = props;
   const [click, setClick] = React.useState(false);
   const handleClick = () => setClick(!click);
   const Close = () => setClick(false);
+  const pathname = usePathname();
   return (
     <div className={styles.compWrapper}>
       <nav>
@@ -34,7 +36,7 @@ const Header = (props: any) => {
         <div className="container">
           <input type="checkbox" id="nav-toggle" style={{ display: "none" }} />
           <div className={styles.logo}><Link href="/">
-          <Image src="../../../images/logo-webcreatix.svg" alt="WebCreatix Logo, website design services in delhi" /></Link></div>
+            <Image src="../../../images/logo-webcreatix.svg" alt="WebCreatix Logo, website design services in delhi" /></Link></div>
           <ul className={styles.links}>
             {compData?.items?.map((item: any, index: number) => (
               <li key={index}>
@@ -62,7 +64,11 @@ const Header = (props: any) => {
           </label>
         </div>
       </nav>
-      <Link href="/offers" className={styles.offer}>Special Offer</Link>
+      {pathname !== "/offers" && (
+        <Link href="/offers" className={styles.offer}>
+          Special Offer
+        </Link>
+      )}
     </div>
   );
 };
