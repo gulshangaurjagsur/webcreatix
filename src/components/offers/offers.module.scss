@@ -554,7 +554,7 @@ color: #f05f02;
 
   .heroContent h1,
   .heroContent h2 {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .heroContent p {
@@ -562,15 +562,15 @@ color: #f05f02;
   }
 
   .heroButtons {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
+
   .primaryBtn,
   .secondaryBtn {
-    width: 100%;
-    max-width: 280px;
     text-align: center;
+    padding: 10px 20px;
   }
 
   .heroImage img {

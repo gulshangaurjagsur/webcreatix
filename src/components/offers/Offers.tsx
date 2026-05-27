@@ -39,11 +39,6 @@ const Offers = (props: any) => {
                   Starting from ₹3,999
                 </h1>
 
-                <p>
-                  Responsive, fast-loading and mobile-friendly websites
-                  designed to grow your business online.
-                </p>
-
                 <div className={styles.heroButtons}>
                   <Link
                     href="/contact-us"
@@ -79,11 +74,6 @@ const Offers = (props: any) => {
                   Modern Websites That Convert <br />
                   Visitors into Customers
                 </h2>
-
-                <p>
-                  SEO-friendly, responsive and premium business websites
-                  designed to help your brand stand out online.
-                </p>
 
                 <div className={styles.heroButtons}>
                   <Link
