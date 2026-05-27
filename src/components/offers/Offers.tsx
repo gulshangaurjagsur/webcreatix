@@ -22,7 +22,7 @@ const Offers = (props: any) => {
           loop={true}
           speed={900}
           autoplay={{
-            delay: 40000000000,
+            delay: 4000,
             disableOnInteraction: false,
           }}
           pagination={{ clickable: true }}
