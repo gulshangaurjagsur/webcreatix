@@ -10,9 +10,9 @@ import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/effect-fade";
 const Offers = (props: any) => {
   const { compData } = props;
+  const clients = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14];
   return (
     <>
       <section className={styles.heroSlider}>
@@ -155,7 +155,7 @@ const Offers = (props: any) => {
 
     {/* RIGHT CLIENT LOGOS */}
     <div className={styles.clientLogoSection}>
-      {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14].map(
+      {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map(
         (item, index) => (
           <div className={styles.clientLogoCard} key={index}>
             <Image
@@ -289,36 +289,22 @@ const Offers = (props: any) => {
           </div>
 
           <div className={styles.slider}>
-            <div className={styles.slideTrack}>
+      <div className={styles.slideTrack}>
 
-              {/* Original Slides */}
-              {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14].map((item, index) => (
-                <div className={styles.slide} key={`first-${index}`}>
-                  <Image
-                    src={`/images/client${item}.png`}
-                    width={300}
-                    height={200}
-                    alt="WebCreatix"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
-
-              {/* Duplicate Slides */}
-              {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14].map((item, index) => (
-                <div className={styles.slide} key={`second-${index}`}>
-                  <Image
-                    src={`/images/client${item}.png`}
-                    width={300}
-                    height={200}
-                    alt="WebCreatix"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
-
-            </div>
+        {[...clients, ...clients].map((item, index) => (
+          <div className={styles.slide} key={index}>
+            <Image
+              src={`/images/client${item}.png`}
+              width={300}
+              height={250}
+              alt="WebCreatix"
+              loading="lazy"
+            />
           </div>
+        ))}
+
+      </div>
+    </div>
         </div>
       </section >
       <Achievements compData={homeData?.achievements} />
