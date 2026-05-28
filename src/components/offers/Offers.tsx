@@ -57,7 +57,7 @@ const Offers = (props: any) => {
               </div>
 
               <div className={styles.heroImage}>
-                <Image src="../../../images/web-design.png" alt="WebCreatix website design company in delhi" />
+                <Image src="../../../images/web-design.png" loading="lazy" alt="WebCreatix website design company in delhi" />
               </div>
             </div>
           </SwiperSlide>
@@ -93,7 +93,7 @@ const Offers = (props: any) => {
               </div>
 
               <div className={styles.heroImage}>
-                <Image src="../../../images/business-growth.png" alt="Groy your business online with WebCreatix" />
+                <Image src="../../../images/business-growth.png" loading="lazy" alt="Groy your business online with WebCreatix" />
               </div>
             </div>
           </SwiperSlide>
@@ -161,6 +161,7 @@ const Offers = (props: any) => {
             <Image
               src={`/images/client${item}.png`}
               alt="WebCreatix Client Website"
+              loading="lazy"
             />
           </div>
         )
