@@ -49,7 +49,7 @@ const Footer = (props: { compData: any; showContactSection?: boolean }) => {
         </div>
       </div>
       )}
-      <TrustIndex />
+      {/* <TrustIndex /> */}
       <div className={`container ${styles.footerMain} `}>
         <div className="row">
           <div className={`col-md-3 col-sm-6 ${styles.footerWrapperCol}`}>
