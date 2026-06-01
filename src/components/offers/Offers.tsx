@@ -3,8 +3,6 @@ import Link from "next/link";
 import styles from "./offers.module.scss";
 import React from "react";
 import { Image } from "react-bootstrap";
-import homeData from "../../assets/data/homePage.json";
-import Achievements from "../achievements/achievements";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 
@@ -12,7 +10,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 const Offers = (props: any) => {
   const { compData } = props;
-  const clients = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14];
+  const clients = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+
   return (
     <>
       <section className={styles.heroSlider}>
@@ -98,45 +97,45 @@ const Offers = (props: any) => {
             </div>
           </SwiperSlide>
           {/* Slide 3 */}
-{/* Slide 3 */}
-<SwiperSlide>
-  <div className={styles.heroSlide}>
-    
-    {/* LEFT CONTENT */}
-    <div className={styles.heroContent}>
-      <span className={styles.tag}>
-        ⭐ Trusted by Businesses Across India
-      </span>
+          {/* Slide 3 */}
+          <SwiperSlide>
+            <div className={styles.heroSlide}>
 
-      <h2>
-        100+ Websites Delivered <br />
-        With Fast & Professional Service
-      </h2>
+              {/* LEFT CONTENT */}
+              <div className={styles.heroContent}>
+                <span className={styles.tag}>
+                  ⭐ Trusted by Businesses Across India
+                </span>
 
-      {/* Trust Stats */}
-      <div className={styles.trustGrid}>
-        <div className={styles.trustCard}>
-          <strong>100+</strong>
-          <span>Websites Delivered</span>
-        </div>
+                <h2>
+                  100+ Websites Delivered <br />
+                  With Fast & Professional Service
+                </h2>
 
-        <div className={styles.trustCard}>
-          <strong>4.9★</strong>
-          <span>Google Reviews</span>
-        </div>
+                {/* Trust Stats */}
+                <div className={styles.trustGrid}>
+                  <div className={styles.trustCard}>
+                    <strong>100+</strong>
+                    <span>Websites Delivered</span>
+                  </div>
 
-        <div className={styles.trustCard}>
-          <strong>5 Days</strong>
-          <span>Fast Delivery</span>
-        </div>
+                  <div className={styles.trustCard}>
+                    <strong>4.9★</strong>
+                    <span>Google Reviews</span>
+                  </div>
 
-        <div className={styles.trustCard}>
-          <strong>24/7</strong>
-          <span>Support Available</span>
-        </div>
-      </div>
+                  <div className={styles.trustCard}>
+                    <strong>5 Days</strong>
+                    <span>Fast Delivery</span>
+                  </div>
 
-      {/* <div className={styles.heroButtons}>
+                  <div className={styles.trustCard}>
+                    <strong>24/7</strong>
+                    <span>Support Available</span>
+                  </div>
+                </div>
+
+                {/* <div className={styles.heroButtons}>
         <Link
           href="/contact-us"
           className={styles.primaryBtn}
@@ -151,24 +150,24 @@ const Offers = (props: any) => {
           View Packages
         </Link>
       </div> */}
-    </div>
+              </div>
 
-    {/* RIGHT CLIENT LOGOS */}
-    <div className={styles.clientLogoSection}>
-      {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map(
-        (item, index) => (
-          <div className={styles.clientLogoCard} key={index}>
-            <Image
-              src={`/images/client${item}.png`}
-              alt="WebCreatix Client Website"
-              loading="lazy"
-            />
-          </div>
-        )
-      )}
-    </div>
-  </div>
-</SwiperSlide>
+              {/* RIGHT CLIENT LOGOS */}
+              <div className={styles.clientLogoSection}>
+                {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map(
+                  (item, index) => (
+                    <div className={styles.clientLogoCard} key={index}>
+                      <Image
+                        src={`/images/client${item}.png`}
+                        alt="WebCreatix Client Website"
+                        loading="lazy"
+                      />
+                    </div>
+                  )
+                )}
+              </div>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </section>
 
@@ -290,25 +289,25 @@ const Offers = (props: any) => {
           </div>
 
           <div className={styles.slider}>
-      <div className={styles.slideTrack}>
+            <div className={styles.slideTrack}>
 
-        {[...clients, ...clients].map((item, index) => (
-          <div className={styles.slide} key={index}>
-            <Image
-              src={`/images/client${item}.png`}
-              width={300}
-              height={250}
-              alt="WebCreatix"
-              loading="lazy"
-            />
+              {[...clients, ...clients].map((item, index) => (
+                <div className={styles.slide} key={index}>
+                  <Image
+                    src={`/images/client${item}.png`}
+                    width={300}
+                    height={250}
+                    alt="WebCreatix"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+
+            </div>
           </div>
-        ))}
-
-      </div>
-    </div>
         </div>
       </section >
-      <Achievements compData={homeData?.achievements} />
+      
 
 
 

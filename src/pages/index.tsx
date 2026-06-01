@@ -12,6 +12,7 @@ import Achievements from "@component/components/achievements/achievements";
 import Footer from "@component/components/footer/footer";
 import dynamic from "next/dynamic";
 import PanIndiaServices from "@component/components/panIndiaServices/PanIndiaServices";
+import TrustIndex from "@component/components/trustIndex/trustIndex";
 export default function Home() {
   const Header = dynamic(() => import("@component/components/header/header"), {
     ssr: false,
@@ -52,6 +53,7 @@ export default function Home() {
         <Portfolio compData={homeData?.portfolio} />
         <ChooseUs compData={homeData?.chooseUs} />
         <Achievements compData={homeData?.achievements} />
+        <TrustIndex />
         <PanIndiaServices data={cityData} />
         <Footer
           compData={commonData?.footer}
