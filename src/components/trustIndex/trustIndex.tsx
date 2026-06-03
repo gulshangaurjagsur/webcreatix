@@ -137,6 +137,16 @@ const TrustIndex = () => {
       text: "Very delighted with the services of WebCreatix, quality work, affordable prices and smooth project execution👍",
       user: "sumit gupta",
     },
+    {
+      stars: "★★★★★",
+      text: "Very Nice",
+      user: "Vinod kumar",
+    },
+    {
+      stars: "★★★★★",
+      text: "I’ve been extremely impressed with the quality of work and customer service provided by WebCreatix. They take the time to understand requirements, provide practical recommendations, and deliver high-quality results. Their responsiveness and ongoing support make them a trusted partner for any web design or development project. Highly recommend their services !!",
+      user: "Gunjan gupta",
+    },
   ];
 
   const getInitial = (name: string) => {

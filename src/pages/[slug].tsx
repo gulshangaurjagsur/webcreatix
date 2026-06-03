@@ -1,25 +1,31 @@
 import fs from "fs";
 import path from "path";
 import Head from "next/head";
+import Link from "next/link";
 import { GetStaticPaths, GetStaticProps } from "next";
-import { useRouter } from "next/router";  // <-- ADD THIS
+import { useRouter } from "next/router";
 import commonData from "../assets/data/common.json";
 import Footer from "@component/components/footer/footer";
 import ContactForm from "@component/components/form/contact";
 import CityBanner from "@component/components/cityBanner/cityBanner";
 import dynamic from "next/dynamic";
 import Breadcrumb from "@component/components/breadcrumb/breadcrumb";
-
+import locationClusters from "../data/location-clusters.json";
+import TrustIndex from "@component/components/trustIndex/trustIndex";
 const Header = dynamic(() => import("@component/components/header/header"), {
   ssr: false,
 });
 
 interface CityData {
-  name: string;
+  slug?: string;
+  city?: string;
+  name?: string;
   title: string;
   meta: string;
   description: string;
-  banner: string;
+  banner?: string;
+  imageSource?: string;
+  imageAlt?: string;
   heading1: string;
   heading2: string;
 }
@@ -29,8 +35,14 @@ interface Props {
 }
 
 export default function WebDesignPage({ cityData }: Props) {
-  const router = useRouter(); // ✅ get slug dynamically
-  const canonicalUrl = `https://www.webcreatix.com${router.asPath.split("?")[0]}`;
+  const router = useRouter();
+  const canonicalUrl = `https://www.webcreatix.com${(router.asPath || "").split("?")[0]}`;
+  const citySlug = cityData.city
+    ? `/website-designing-company-in-${cityData.city.toLowerCase()}`
+    : "/";
+  const areas = cityData.city
+    ? locationClusters[cityData.city as keyof typeof locationClusters]
+    : [];
 
   return (
     <>
@@ -49,16 +61,41 @@ export default function WebDesignPage({ cityData }: Props) {
           <div className="row">
             <div className="col-sm-8 col-md-6 col-lg-8">
               <h1>{cityData.heading1}</h1>
+              {cityData.city && (
+                <div className="mb-4">
+                  <Link href={citySlug}>
+                    ← View All Services in {cityData.city}
+                  </Link>
+                </div>
+              )}
               <h2>{cityData.heading2}</h2>
               <div
                 dangerouslySetInnerHTML={{
                   __html: cityData.description,
                 }}
               />
+              {areas?.length > 0 && (
+                <div className="mt-5">
+                  <h2>Areas We Serve in {cityData.city}</h2>
+
+                  <ul>
+                    {areas.map((area) => (
+                      <li key={area.slug}>
+                        <Link href={`/${area.slug}`}>
+                          Website Designing Company in {area.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
             <div className="commonContact col-sm-4 col-md-6 col-lg-4">
               <ContactForm />
             </div>
+          </div>
+          <div className="col-sm-12 col-md-12 col-lg-12">
+            <TrustIndex />
           </div>
         </div>
       </div>
@@ -97,9 +134,30 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     };
   }
 
+  let enhancedCityData: CityData = {
+    ...cityData,
+    slug,
+  };
+
+  if (!enhancedCityData.name) {
+    for (const [parentCity, areas] of Object.entries(
+      locationClusters
+    ) as [string, { name: string; slug: string }[]][]) {
+      const matchedArea = areas.find((area) => area.slug === slug);
+      if (matchedArea) {
+        enhancedCityData = {
+          ...enhancedCityData,
+          name: matchedArea.name,
+          city: parentCity,
+        };
+        break;
+      }
+    }
+  }
+
   return {
     props: {
-      cityData,
+      cityData: enhancedCityData,
     },
   };
 };
