@@ -1,0 +1,31 @@
+{
+  "banner": {
+    "imageSource": "images/portfoliobanner.jpg",
+    "imageAlt": "WebCreatix Portfolio"
+  },
+  "customers": {
+    "description": "Our portfolio reflects the quality, creativity, and technical expertise we bring to every project. From business websites and eCommerce platforms to custom web applications and user-focused digital experiences, we deliver solutions that are visually appealing, highly functional, and tailored to meet our clients' unique goals. Each project showcases our commitment to innovation, performance, and long-term success.",
+    "clients": [
+      { "imageSource": "images/client0.png", "imageAlt": "Jagsur website", "url": "https://www.jagsur.com" },
+      { "imageSource": "images/client1.png", "imageAlt": "Go Shop fari website", "url": "https://goshopfari.com/" },
+      { "imageSource": "images/client2.png", "imageAlt": "Jitender Rathore website", "url": "https://jitenderrathore.com" },
+      { "imageSource": "images/client3.png", "imageAlt": "Learned Beings website", "url": "https://www.learnedbeings.com" },
+      { "imageSource": "images/client4.png", "imageAlt": "Ganga Glory website", "url": "https://www.gangaglory.com/" },
+      { "imageSource": "images/client5.png", "imageAlt": "Ram Ram Ji Placement website", "url": "https://www.ramramjiplacement.in/" },
+      { "imageSource": "images/client6.png", "imageAlt": "Blitz Events website", "url": "https://www.blitzevents.in/" },
+      { "imageSource": "images/client7.png", "imageAlt": "Narain Industries website", "url": "https://www.narainindustries.in/" },
+      { "imageSource": "images/client8.png", "imageAlt": "Royal Weave Clothing website", "url": "https://www.royalweaveclothing.com/" },
+      { "imageSource": "images/client9.png", "imageAlt": "Green Line Express website", "url": "https://www.greenlineexpress.in/" },
+      { "imageSource": "images/client10.png", "imageAlt": "Basnal Law website", "url": "https://basnallaw.com/" },
+      { "imageSource": "images/client11.png", "imageAlt": "Yuvraj Associates website", "url": "https://yuvrajassociates.in/" },
+      { "imageSource": "images/client12.png", "imageAlt": "Housework Maid website", "url": "https://houseworkmaid.in/" },
+      { "imageSource": "images/client13.png", "imageAlt": "Incore Vision website", "url": "https://www.incorevision.in/" },
+      { "imageSource": "images/client14.png", "imageAlt": "18 Builders website", "url": "https://18builders.in/" },
+      { "imageSource": "images/client15.png", "imageAlt": "Sanvi Holidays website", "url": "https://sanviholidays.com/" },
+      { "imageSource": "images/client16.png", "imageAlt": "WebCreatix client 16", "url": "" },
+      { "imageSource": "images/client17.png", "imageAlt": "Poonam Logistics website", "url": "https://poonamlogistics.co.in/" },
+      { "imageSource": "images/client18.png", "imageAlt": "Sweety Home Spa website", "url": "https://sweetyhomespa.in/" },
+      { "imageSource": "images/client19.png", "imageAlt": "Simple Loans India website", "url": "https://www.simpleloansindia.in" }
+    ]
+  }
+}
