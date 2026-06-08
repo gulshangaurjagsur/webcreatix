@@ -51,7 +51,7 @@ const Customers = ({ compData }: CustomersProps) => {
 
               return (
                 <div className={styles.clientCard} key={index}>
-                  <a href={href} target={target} rel={client.url ? "noopener noreferrer" : undefined}>
+                  <a href={href} target={target} rel={client.url ? "nofollow noopener noreferrer" : undefined}>
                     <Image
                       src={`/${client.imageSource}`}
                       alt={client.imageAlt ?? "Webcreatix clients"}
