@@ -81,92 +81,105 @@ const Offers = (props: any) => {
       <section className={styles.heroSlider}>
         <div className="container">
           <Swiper
-          modules={[Autoplay, Pagination]}
-          slidesPerView={1}
-          loop={true}
-          speed={900}
-          autoplay={{
-            delay: 4000,
-            disableOnInteraction: false,
-          }}
-          pagination={{ clickable: true }}
-        >
-          <SwiperSlide>
-            <div className={styles.heroSlide}>
-              <div className={styles.heroContent}>
-                <span className={styles.tag}>
-                  ⭐ Trusted Website Designing Company
-                </span>
+            modules={[Autoplay, Pagination]}
+            slidesPerView={1}
+            loop={true}
+            speed={900}
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+            }}
+            pagination={{ clickable: true }}
+          >
+            <SwiperSlide>
+              <div className={styles.heroSlide}>
+                <div className={styles.heroContent}>
+                  <span className={styles.tag}>
+                    ⭐ Trusted Website Designing Company
+                  </span>
 
-                <h1>
-                  Professional Business Websites <br />
-                  Starting from ₹3,999
-                </h1>
+                  <h1>
+                    Professional Business Websites <br />
+                    Starting from ₹3,999
+                  </h1>
 
-                <div className={styles.heroButtons}>
-                  <Link
-                    href="/contact-us"
-                    className={styles.primaryBtn}
-                  >
-                    Get Free Quote
-                  </Link>
+                  <div className={styles.heroButtons}>
+                    <Link
+                      href="/contact-us"
+                      className={styles.primaryBtn}
+                    >
+                      Get Free Quote
+                    </Link>
 
-                  <Link
-                    href="https://wa.me/919625791723"
-                    className={styles.secondaryBtn}
-                  >
-                    WhatsApp Now
-                  </Link>
+                    <Link
+                      href="https://wa.me/919625791723?text=Hello!%20I%20am%20interested%20in%20website%20development."
+                      id="whatsapp-btn"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="Chat on WhatsApp"
+                      onClick={() => {
+                        window.gtag?.("event", "whatsapp_click");
+                      }}
+                      className={styles.secondaryBtn}
+                    >
+                      WhatsApp Now
+                    </Link>
+                  </div>
+                  <div className={styles.features}>100+ Websites Delivered | Free SSL & Hosting | Delivery in 3-5 Days | No Hidden Charges</div>
                 </div>
-                <div className={styles.features}>100+ Websites Delivered | Free SSL & Hosting | Delivery in 3-5 Days | No Hidden Charges</div>
-              </div>
 
-              <div className={styles.heroImage}>
-                <Image src="../../../images/web-design.png" loading="lazy" alt="WebCreatix website design company in delhi" />
-              </div>
-            </div>
-          </SwiperSlide>
-
-          {/* Slide 2 */}
-          <SwiperSlide>
-            <div className={styles.heroSlide}>
-              <div className={styles.heroContent}>
-                <span className={styles.tag}>
-                  🚀 Grow Your Business Online
-                </span>
-
-                <h2>
-                  Modern Websites That Convert <br />
-                  Visitors into Customers
-                </h2>
-
-                <div className={styles.heroButtons}>
-                  <Link
-                    href="portfolio"
-                    className={styles.primaryBtn}
-                  >
-                    View Portfolio
-                  </Link>
-
-                  <Link
-                    href="tel:+919625791723"
-                    className={styles.secondaryBtn}
-                  >
-                    Call Now
-                  </Link>
-                  
+                <div className={styles.heroImage}>
+                  <Image src="../../../images/web-design.png" loading="lazy" alt="WebCreatix website design company in delhi" />
                 </div>
-                <div className={styles.features}>100+ Websites Delivered | Free SSL & Hosting | Delivery in 3-5 Days | No Hidden Charges</div>
               </div>
+            </SwiperSlide>
 
-              <div className={styles.heroImage}>
-                <Image src="../../../images/business-growth.png" loading="lazy" alt="Groy your business online with WebCreatix" />
+            {/* Slide 2 */}
+            <SwiperSlide>
+              <div className={styles.heroSlide}>
+                <div className={styles.heroContent}>
+                  <span className={styles.tag}>
+                    🚀 Grow Your Business Online
+                  </span>
+
+                  <h2>
+                    Modern Websites That Convert <br />
+                    Visitors into Customers
+                  </h2>
+
+                  <div className={styles.heroButtons}>
+                    <Link
+                      href="portfolio"
+                      className={styles.primaryBtn}
+                    >
+                      View Portfolio
+                    </Link>
+
+                    <Link
+                      href="tel:+919625791723"
+                      id="call-btn"
+                      rel="nofollow"
+                      aria-label="Call Now"
+                      onClick={() => {
+                        window.gtag?.("event", "phone_click");
+                      }}
+                      className={styles.secondaryBtn}
+                    >
+                      Call Now
+                    </Link>
+
+                  </div>
+                  <div className={styles.features}>100+ Websites Delivered | Free SSL & Hosting | Delivery in 3-5 Days | No Hidden Charges</div>
+                </div>
+
+                <div className={styles.heroImage}>
+                  <Image src="../../../images/business-growth.png" loading="lazy" alt="Groy your business online with WebCreatix" />
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+            </SwiperSlide>
+          </Swiper>
         </div>
-        
+
       </section>
 
       <section className={styles.pricingSection} >
@@ -349,7 +362,7 @@ const Offers = (props: any) => {
           </div>
         </div>
       </section >
-      
+
 
 
 

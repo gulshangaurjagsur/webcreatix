@@ -20,7 +20,13 @@ const Header = (props: any) => {
                   <i className="fa fa-sharp fa-regular fa-envelope"></i>
                   info@webcreatix.com
                 </a>
-                <a href="tel: +919625791723">
+                <a href="tel:+919625791723"
+                  id="call-btn"
+                  rel="nofollow"
+                  aria-label="Call Now"
+                  onClick={() => {
+                    window.gtag?.("event", "phone_click");
+                  }}>
                   <i className="fa fa-solid fa-phone"></i>+91 9625791723
                 </a>
               </div>
