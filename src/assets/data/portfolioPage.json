@@ -27,7 +27,9 @@
       { "imageSource": "images/client18.png", "imageAlt": "Sweety Home Spa website", "url": "https://sweetyhomespa.in/" },
       { "imageSource": "images/client19.png", "imageAlt": "Simple Loans India website", "url": "https://www.simpleloansindia.in" },
       { "imageSource": "images/client20.png", "imageAlt": "Ram Ram Ji Placement website", "url": "https://www.ramramjiplacement.in/" },
-      { "imageSource": "images/client21.png", "imageAlt": "Banjara market Delhi website", "url": "https://www.banjaramarketdelhi.in/" }
+      { "imageSource": "images/client21.png", "imageAlt": "Banjara market Delhi website", "url": "https://www.banjaramarketdelhi.in/" },
+      { "imageSource": "images/client22.png", "imageAlt": "Pandit ji Online Puja website", "url": "https://panditjionlinepuja.com/" },
+      { "imageSource": "images/client23.png", "imageAlt": "Sir Archie Law Chamber website", "url": "https://sirarchielawchamber.com/" }
     ]
   }
 }

@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 const Offers = (props: any) => {
   const { compData } = props;
-  const clients = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
+  const clients = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
   const [loadingPayment, setLoadingPayment] = useState(false);
   const [paymentMessage, setPaymentMessage] = useState<string>("");
 
@@ -79,7 +79,8 @@ const Offers = (props: any) => {
   return (
     <>
       <section className={styles.heroSlider}>
-        <Swiper
+        <div className="container">
+          <Swiper
           modules={[Autoplay, Pagination]}
           slidesPerView={1}
           loop={true}
@@ -117,6 +118,7 @@ const Offers = (props: any) => {
                     WhatsApp Now
                   </Link>
                 </div>
+                <div className={styles.features}>100+ Websites Delivered | Free SSL & Hosting | Delivery in 3-5 Days | No Hidden Charges</div>
               </div>
 
               <div className={styles.heroImage}>
@@ -140,7 +142,7 @@ const Offers = (props: any) => {
 
                 <div className={styles.heroButtons}>
                   <Link
-                    href="#portfolio"
+                    href="portfolio"
                     className={styles.primaryBtn}
                   >
                     View Portfolio
@@ -152,7 +154,9 @@ const Offers = (props: any) => {
                   >
                     Call Now
                   </Link>
+                  
                 </div>
+                <div className={styles.features}>100+ Websites Delivered | Free SSL & Hosting | Delivery in 3-5 Days | No Hidden Charges</div>
               </div>
 
               <div className={styles.heroImage}>
@@ -161,6 +165,8 @@ const Offers = (props: any) => {
             </div>
           </SwiperSlide>
         </Swiper>
+        </div>
+        
       </section>
 
       <section className={styles.pricingSection} >

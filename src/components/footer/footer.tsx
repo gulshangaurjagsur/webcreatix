@@ -102,23 +102,25 @@ const Footer = (props: { compData: any; showContactSection?: boolean }) => {
         </div>
       </div>
       <a
-        href="https://api.whatsapp.com/send?phone=919625791723&amp;text=Hello! I have a Question?"
-        id="whatsapp"
-        className={`${styles.whatsapp} fa fa-whatsapp`}
-        rel="nofollow"
-        target="_blank"
-        aria-label="Chat on WhatsApp"
-      >
-        <span className="sr-only">Chat on WhatsApp</span>
-      </a>
-      <a
-        href="tel:919625791723"
-        className={`${styles.phoneCall} fa fa-phone`}
-        rel="nofollow"
-        target="_blank"
-      >
-        <span className="sr-only">Chat on WhatsApp</span>
-      </a>
+  href="https://wa.me/919625791723?text=Hello!%20I%20am%20interested%20in%20website%20development."
+  id="whatsapp-btn"
+  className={`${styles.whatsapp} fa fa-whatsapp`}
+  rel="nofollow"
+  target="_blank"
+  aria-label="Chat on WhatsApp"
+>
+  <span className="sr-only">Chat on WhatsApp</span>
+</a>
+
+<a
+  href="tel:+919625791723"
+  id="call-btn"
+  className={`${styles.phoneCall} fa fa-phone`}
+  rel="nofollow"
+  aria-label="Call Now"
+>
+  <span className="sr-only">Call Now</span>
+</a>
     </div>
   );
 };

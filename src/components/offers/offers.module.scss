@@ -501,7 +501,7 @@ color: #f05f02;
 }
 
 .heroSlide {
-  max-width: 1200px;
+  // max-width: 1200px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -512,7 +512,7 @@ color: #f05f02;
 
 .heroContent {
   flex: 1;
-  max-width: 600px;
+  // max-width: 600px;
 }
 
 .heroContent h1,
@@ -604,7 +604,7 @@ color: #f05f02;
   .heroButtons {
     flex-direction: row;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
 
@@ -723,5 +723,21 @@ color: #f05f02;
 
   .clientLogoCard {
     padding: 0;
+  }
+}
+.features{
+  font-size: 16px;
+  margin-top: 20px;
+  color: #2563eb;
+  font-weight: 600;
+animation: blink 0.8s infinite;
+margin-bottom: 30px;
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
   }
 }
