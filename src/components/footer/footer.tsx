@@ -108,6 +108,9 @@ const Footer = (props: { compData: any; showContactSection?: boolean }) => {
   rel="nofollow"
   target="_blank"
   aria-label="Chat on WhatsApp"
+  onClick={() => {
+    window.gtag?.("event", "whatsapp_click");
+  }}
 >
   <span className="sr-only">Chat on WhatsApp</span>
 </a>
@@ -118,6 +121,9 @@ const Footer = (props: { compData: any; showContactSection?: boolean }) => {
   className={`${styles.phoneCall} fa fa-phone`}
   rel="nofollow"
   aria-label="Call Now"
+  onClick={() => {
+    window.gtag?.("event", "phone_click");
+  }}
 >
   <span className="sr-only">Call Now</span>
 </a>
