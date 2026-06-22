@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import styles from "./offers.module.scss";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Image } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
@@ -10,7 +10,71 @@ import "swiper/css";
 import "swiper/css/pagination";
 const Offers = (props: any) => {
   const { compData } = props;
-  const clients = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+  const clients = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
+  const [loadingPayment, setLoadingPayment] = useState(false);
+  const [paymentMessage, setPaymentMessage] = useState<string>("");
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://checkout.razorpay.com/v1/checkout.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  const handleBookWebsite = async () => {
+    setLoadingPayment(true);
+    setPaymentMessage("");
+
+    try {
+      const response = await fetch("/api/razorpay-order", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          amount: 99900,
+          receipt: `book-website-advance-${Date.now()}`,
+        }),
+      });
+
+      const order = await response.json();
+      if (!response.ok) {
+        throw new Error(order.error || "Unable to create payment order.");
+      }
+
+      const options = {
+        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "",
+        amount: order.amount,
+        currency: order.currency,
+        name: "WebCreatix",
+        description: "Book Website Advance Payment",
+        order_id: order.id,
+        handler: (paymentResponse: any) => {
+          setPaymentMessage(
+            `Payment successful! Payment ID: ${paymentResponse.razorpay_payment_id}`
+          );
+        },
+        theme: {
+          color: "#f05f02",
+        },
+      };
+
+      if (typeof window !== "undefined" && (window as any).Razorpay) {
+        const rzp = new (window as any).Razorpay(options);
+        rzp.open();
+      } else {
+        throw new Error("Razorpay checkout failed to load.");
+      }
+    } catch (error: any) {
+      setPaymentMessage(error?.message || "Payment initialization failed.");
+    } finally {
+      setLoadingPayment(false);
+    }
+  };
 
   return (
     <>
@@ -93,78 +157,6 @@ const Offers = (props: any) => {
 
               <div className={styles.heroImage}>
                 <Image src="../../../images/business-growth.png" loading="lazy" alt="Groy your business online with WebCreatix" />
-              </div>
-            </div>
-          </SwiperSlide>
-          {/* Slide 3 */}
-          {/* Slide 3 */}
-          <SwiperSlide>
-            <div className={styles.heroSlide}>
-
-              {/* LEFT CONTENT */}
-              <div className={styles.heroContent}>
-                <span className={styles.tag}>
-                  ⭐ Trusted by Businesses Across India
-                </span>
-
-                <h2>
-                  100+ Websites Delivered <br />
-                  With Fast & Professional Service
-                </h2>
-
-                {/* Trust Stats */}
-                <div className={styles.trustGrid}>
-                  <div className={styles.trustCard}>
-                    <strong>100+</strong>
-                    <span>Websites Delivered</span>
-                  </div>
-
-                  <div className={styles.trustCard}>
-                    <strong>4.9★</strong>
-                    <span>Google Reviews</span>
-                  </div>
-
-                  <div className={styles.trustCard}>
-                    <strong>5 Days</strong>
-                    <span>Fast Delivery</span>
-                  </div>
-
-                  <div className={styles.trustCard}>
-                    <strong>24/7</strong>
-                    <span>Support Available</span>
-                  </div>
-                </div>
-
-                {/* <div className={styles.heroButtons}>
-        <Link
-          href="/contact-us"
-          className={styles.primaryBtn}
-        >
-          Start Your Project
-        </Link>
-
-        <Link
-          href="/offers"
-          className={styles.secondaryBtn}
-        >
-          View Packages
-        </Link>
-      </div> */}
-              </div>
-
-              {/* RIGHT CLIENT LOGOS */}
-              <div className={styles.clientLogoSection}>
-                {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map(
-                  (item, index) => (
-                    <div className={styles.clientLogoCard} key={index}>
-                      <Image
-                        src={`/images/client${item}.png`}
-                        alt="WebCreatix Client Website"
-                        loading="lazy"
-                      />
-                    </div>
-                  )
-                )}
               </div>
             </div>
           </SwiperSlide>
@@ -271,6 +263,50 @@ const Offers = (props: any) => {
         </div>
         <p className={styles.note}>No Hidden Charges | Free Support After Delivery | 100% Client Satisfaction</p>
       </section>
+
+      {/* <section className={styles.bookSection}>
+        <div className="container">
+          <div className={styles.bookCard}>
+            <div className={styles.bookContent}>
+              <h2>Book Your Website With ₹999 Advance</h2>
+              <p>
+                Reserve your website project today with a small advance payment.
+                Pay securely through Razorpay and our team will contact you to
+                finalize the design, content, and delivery timeline.
+              </p>
+
+              <div className={styles.bookDetails}>
+                <div>
+                  <strong>Advance Amount</strong>
+                  <span>₹999</span>
+                </div>
+                <div>
+                  <strong>Service</strong>
+                  <span>Book your business website</span>
+                </div>
+              </div>
+
+              <button
+                className={styles.bookButton}
+                onClick={handleBookWebsite}
+                disabled={loadingPayment}
+              >
+                {loadingPayment ? "Processing Payment..." : "Pay ₹999 Advance"}
+              </button>
+
+              {paymentMessage && (
+                <p className={styles.paymentMessage}>{paymentMessage}</p>
+              )}
+
+              <p className={styles.bookNote}>
+                Secure checkout with Razorpay. After payment, we will reach out to
+                begin your website booking.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
       <section className={styles.portfolioSection} id="portfolio">
         <div className={styles.container}>
 
