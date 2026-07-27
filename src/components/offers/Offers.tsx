@@ -223,7 +223,7 @@ const Offers = (props: any) => {
           <div className={` ${styles.pricingCard} ${styles.popular} ${styles.featured} `}>
             <span className={styles.badge}>Most Popular</span>
             <h3>BUSINESS PACKAGE</h3>
-            <div className={styles.price}>₹5,999/-</div>
+            <div className={styles.price}>₹7,999/-</div>
             <ul>
               <li>5 Pages Business Website</li>
               <li>1 Business Email ID</li>
@@ -250,7 +250,7 @@ const Offers = (props: any) => {
           {/* E-COMMERCE PACKAGE */}
           <div className={styles.pricingCard}>
             <h3>E-COMMERCE PACKAGE</h3>
-            <div className={styles.price}>₹9,999/-</div>
+            <div className={styles.price}>₹19,999/-</div>
             <ul>
               <li>Product Showcase Website</li>
               <li>Unlimited Product Listing</li>
