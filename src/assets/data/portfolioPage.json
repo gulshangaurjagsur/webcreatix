@@ -29,7 +29,10 @@
       { "imageSource": "images/client20.png", "imageAlt": "Ram Ram Ji Placement website", "url": "https://www.ramramjiplacement.in/" },
       { "imageSource": "images/client21.png", "imageAlt": "Banjara market Delhi website", "url": "https://www.banjaramarketdelhi.in/" },
       { "imageSource": "images/client22.png", "imageAlt": "Pandit ji Online Puja website", "url": "https://panditjionlinepuja.com/" },
-      { "imageSource": "images/client23.png", "imageAlt": "Sir Archie Law Chamber website", "url": "https://sirarchielawchamber.com/" }
+      { "imageSource": "images/client23.png", "imageAlt": "Sir Archie Law Chamber website", "url": "https://sirarchielawchamber.com/" },
+      { "imageSource": "images/client24.png", "imageAlt": "VayuVibe Holidays website", "url": "https://vayuvibeholidays.com/" },
+      { "imageSource": "images/client25.png", "imageAlt": "Akrai Mechtor website", "url": "https://akraimechtor.in/" },
+      { "imageSource": "images/client26.png", "imageAlt": "Encamrun Website website", "url": "https://encamrun.in/" }
     ]
   }
 }
