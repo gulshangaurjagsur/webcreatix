@@ -226,6 +226,7 @@ const Offers = (props: any) => {
             <div className={styles.price}>₹7,999/-</div>
             <ul>
               <li>5 Pages Business Website</li>
+              <li>Product Showcase Website</li>
               <li>1 Business Email ID</li>
               <li>SEO Ready Website</li>
               <li>Content Writing Work</li>
@@ -252,7 +253,7 @@ const Offers = (props: any) => {
             <h3>E-COMMERCE PACKAGE</h3>
             <div className={styles.price}>₹19,999/-</div>
             <ul>
-              <li>Product Showcase Website</li>
+              <li>Complete E-commerce Website</li>
               <li>Unlimited Product Listing</li>
               <li>1 Business Email ID</li>
               <li>SEO Ready Website</li>
