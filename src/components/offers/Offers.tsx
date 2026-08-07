@@ -546,7 +546,7 @@ const Offers = (props: any) => {
         <div className={styles.container}>
 
           <div className={styles.sectionTitle}>
-            <h2>Websites We've Built for Real Businesses</h2>
+            <h2>Websites We&apos;ve Built for Real Businesses</h2>
             <h4>See what your business website could look like.</h4>
 
             <p>
@@ -592,7 +592,7 @@ const Offers = (props: any) => {
       </h2>
 
       <p>
-        We don't just build a website. We give your business the tools
+        We don&apos;t just build a website. We give your business the tools
         it needs to build trust, attract customers and grow online.
       </p>
     </div>
