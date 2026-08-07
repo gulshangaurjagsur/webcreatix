@@ -5,12 +5,15 @@ import React, { useEffect, useState } from "react";
 import { Image } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
+import homeData from "../../assets/data/homePage.json";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import Achievements from "../achievements/achievements";
 const Offers = (props: any) => {
   const { compData } = props;
-  const clients = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
+  const clients = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26];
+  
   const [loadingPayment, setLoadingPayment] = useState(false);
   const [paymentMessage, setPaymentMessage] = useState<string>("");
 
@@ -91,28 +94,40 @@ const Offers = (props: any) => {
             }}
             pagination={{ clickable: true }}
           >
+            {/* Slide 1 */}
             <SwiperSlide>
               <div className={styles.heroSlide}>
                 <div className={styles.heroContent}>
                   <span className={styles.tag}>
-                    ⭐ Trusted Website Designing Company
+                    <i className="fa fa-star"></i>&nbsp;&nbsp;Trusted Website Development Company
                   </span>
 
                   <h1>
-                    Professional Business Websites <br />
-                    Starting from ₹3,999
+                    Get a Professional Website <br />
+                    for Your Business from ₹3,999
                   </h1>
+
+                  <p className={styles.heroDescription}>
+                    Get a modern, mobile-friendly website that helps your business
+                    build trust, reach more customers and generate enquiries online.
+                  </p>
 
                   <div className={styles.heroButtons}>
                     <Link
-                      href="/contact-us"
+                      href="tel:+919625791723"
+                      id="call-btn"
+                      rel="nofollow"
+                      aria-label="Call WebCreatix"
+                      onClick={() => {
+                        window.gtag?.("event", "phone_click");
+                      }}
                       className={styles.primaryBtn}
                     >
-                      Get Free Quote
+                      <i className="fa fa-phone"></i>&nbsp;&nbsp;Talk to a Website Expert
                     </Link>
 
                     <Link
-                      href="https://wa.me/919625791723?text=Hello!%20I%20am%20interested%20in%20website%20development."
+                      href="https://wa.me/919625791723?text=Hello!%20I%20want%20a%20professional%20website%20for%20my%20business.%20Please%20share%20the%20details."
                       id="whatsapp-btn"
                       rel="nofollow"
                       target="_blank"
@@ -122,58 +137,83 @@ const Offers = (props: any) => {
                       }}
                       className={styles.secondaryBtn}
                     >
-                      WhatsApp Now
+                      <i className="fa fa-whatsapp"></i>&nbsp;&nbsp;WhatsApp Us
                     </Link>
                   </div>
-                  <div className={styles.features}>100+ Websites Delivered | Free SSL & Hosting | Delivery in 3-5 Days | No Hidden Charges</div>
+
+                  <div className={styles.features}>
+                    ✓ 200+ Websites Delivered &nbsp; | &nbsp;
+                    ✓ Free SSL & Hosting &nbsp; | &nbsp;
+                    ✓ 3–5 Days Delivery
+                  </div>
                 </div>
 
                 <div className={styles.heroImage}>
-                  <Image src="../../../images/web-design.png" loading="lazy" alt="WebCreatix website design company in delhi" />
+                  <Image
+                    src="../../../images/web-design.png"
+                    loading="lazy"
+                    alt="Professional business website development by WebCreatix"
+                  />
                 </div>
               </div>
             </SwiperSlide>
 
             {/* Slide 2 */}
+            {/* Slide 2 */}
             <SwiperSlide>
               <div className={styles.heroSlide}>
                 <div className={styles.heroContent}>
                   <span className={styles.tag}>
-                    🚀 Grow Your Business Online
+                    <i className="fa fa-th-large"></i>&nbsp;&nbsp;Take Your Business Online
                   </span>
 
                   <h2>
-                    Modern Websites That Convert <br />
-                    Visitors into Customers
+                    Turn Your Online Visitors <br />
+                    into Real Customers
                   </h2>
+
+                  <p className={styles.heroDescription}>
+                    Your website is often the first impression of your business.
+                    We build fast, professional and mobile-friendly websites designed
+                    to make your customers trust and contact you.
+                  </p>
 
                   <div className={styles.heroButtons}>
                     <Link
-                      href="portfolio"
+                      href="/portfolio"
                       className={styles.primaryBtn}
                     >
-                      View Portfolio
+                      <i className="fa fa-line-chart"></i>&nbsp;&nbsp;View Our Work
                     </Link>
 
                     <Link
                       href="tel:+919625791723"
                       id="call-btn"
                       rel="nofollow"
-                      aria-label="Call Now"
+                      aria-label="Call WebCreatix"
                       onClick={() => {
                         window.gtag?.("event", "phone_click");
                       }}
                       className={styles.secondaryBtn}
                     >
-                      Call Now
+                      <i className="fa fa-phone"></i>&nbsp;&nbsp;Call Us Now
                     </Link>
-
                   </div>
-                  <div className={styles.features}>100+ Websites Delivered | Free SSL & Hosting | Delivery in 3-5 Days | No Hidden Charges</div>
+
+                  <div className={styles.features}>
+                    ✓ Mobile Responsive &nbsp; | &nbsp;
+                    ✓ SEO Ready &nbsp; | &nbsp;
+                    ✓ WhatsApp Integration &nbsp; | &nbsp;
+                    ✓ No Hidden Charges
+                  </div>
                 </div>
 
                 <div className={styles.heroImage}>
-                  <Image src="../../../images/business-growth.png" loading="lazy" alt="Groy your business online with WebCreatix" />
+                  <Image
+                    src="../../../images/business-growth.png"
+                    loading="lazy"
+                    alt="Grow your business online with a professional website"
+                  />
                 </div>
               </div>
             </SwiperSlide>
@@ -181,6 +221,179 @@ const Offers = (props: any) => {
         </div>
 
       </section>
+      <Achievements compData={homeData?.achievements} />
+      <section className={styles.missingOnlineSection}>
+  <div className="container">
+    <div className={styles.onlineGrid}>
+
+      {/* Left Content */}
+      <div className={styles.onlineContent}>
+
+        <span className={styles.sectionTag}>
+          <i className="fa fa-globe"></i>
+          Grow Your Business Online
+        </span>
+
+        <h2>
+          Is Your Business <span>Missing Online?</span>
+        </h2>
+
+        <p className={styles.onlineIntro}>
+          Your customers are searching online before they decide whom to
+          contact. Without a professional website, your business could be
+          losing valuable customers to competitors.
+        </p>
+
+        <div className={styles.onlinePoints}>
+
+          <div className={styles.onlinePoint}>
+            <div className={styles.pointIcon}>
+              <i className="fa fa-search"></i>
+            </div>
+            <div>
+              <h3>Be Found on Google</h3>
+              <p>
+                Help potential customers discover your business when they
+                search for your services online.
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.onlinePoint}>
+            <div className={styles.pointIcon}>
+              <i className="fa fa-shield"></i>
+            </div>
+            <div>
+              <h3>Build Customer Trust</h3>
+              <p>
+                A professional website makes your business look credible,
+                established and trustworthy.
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.onlinePoint}>
+            <div className={styles.pointIcon}>
+              <i className="fa fa-users"></i>
+            </div>
+            <div>
+              <h3>Reach More Customers</h3>
+              <p>
+                Showcase your services, products and work to customers
+                24 hours a day.
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.onlinePoint}>
+            <div className={styles.pointIcon}>
+              <i className="fa fa-comments"></i>
+            </div>
+            <div>
+              <h3>Get More Enquiries</h3>
+              <p>
+                Give customers an easy way to call, WhatsApp or enquire
+                about your business.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div className={styles.onlineCta}>
+
+          <Link
+            href="tel:+919625791723"
+            className={styles.onlinePrimaryBtn}
+            onClick={() => {
+              window.gtag?.("event", "phone_click");
+            }}
+          >
+            <i className="fa fa-phone"></i>
+            Talk to a Website Expert
+          </Link>
+
+          <Link
+            href="https://wa.me/919625791723?text=Hello!%20I%20want%20to%20build%20a%20professional%20website%20for%20my%20business."
+            target="_blank"
+            rel="nofollow"
+            className={styles.onlineSecondaryBtn}
+            onClick={() => {
+              window.gtag?.("event", "whatsapp_click");
+            }}
+          >
+            <i className="fa fa-whatsapp"></i>
+            WhatsApp Us
+          </Link>
+
+        </div>
+
+      </div>
+
+
+      {/* Right Side */}
+      <div className={styles.onlineVisual}>
+
+        <div className={styles.visualCard}>
+
+          <div className={styles.visualIcon}>
+            <i className="fa fa-laptop"></i>
+          </div>
+
+          <h3>
+            Your Business Deserves
+            <br />
+            a Professional Online Presence
+          </h3>
+
+          <p>
+            Let your customers find you, trust you and contact you —
+            all from one professional website.
+          </p>
+
+          <div className={styles.visualStats}>
+
+            <div>
+              <strong>24/7</strong>
+              <span>Online Presence</span>
+            </div>
+
+            <div>
+              <strong>3–5</strong>
+              <span>Days Delivery</span>
+            </div>
+
+            <div>
+              <strong>₹3,999</strong>
+              <span>Starting Price</span>
+            </div>
+
+          </div>
+
+          <div className={styles.visualBottom}>
+            <span>
+              <i className="fa fa-check-circle"></i>
+              Mobile Friendly
+            </span>
+
+            <span>
+              <i className="fa fa-check-circle"></i>
+              SEO Ready
+            </span>
+
+            <span>
+              <i className="fa fa-check-circle"></i>
+              WhatsApp Ready
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
 
       <section className={styles.pricingSection} >
         <div className={`${styles.textContainer} container`}>
@@ -199,6 +412,7 @@ const Offers = (props: any) => {
 
           {/* STARTER PACKAGE */}
           <div className={styles.pricingCard}>
+            <span className={styles.badge}>For individuals & small businesses</span>
             <h3>STARTER PACKAGE</h3>
             <div className={styles.price}>₹3,999/-</div>
             <ul>
@@ -221,7 +435,7 @@ const Offers = (props: any) => {
 
           {/* BUSINESS PACKAGE */}
           <div className={` ${styles.pricingCard} ${styles.popular} ${styles.featured} `}>
-            <span className={styles.badge}>Most Popular</span>
+            <span className={styles.badge}>For growing businesses ⭐ Most Popular</span>
             <h3>BUSINESS PACKAGE</h3>
             <div className={styles.price}>₹7,999/-</div>
             <ul>
@@ -250,6 +464,7 @@ const Offers = (props: any) => {
 
           {/* E-COMMERCE PACKAGE */}
           <div className={styles.pricingCard}>
+            <span className={styles.badge}>For businesses selling products online</span>
             <h3>E-COMMERCE PACKAGE</h3>
             <div className={styles.price}>₹19,999/-</div>
             <ul>
@@ -331,9 +546,8 @@ const Offers = (props: any) => {
         <div className={styles.container}>
 
           <div className={styles.sectionTitle}>
-            <h2>
-              Our <span>Portfolio</span>
-            </h2>
+            <h2>Websites We've Built for Real Businesses</h2>
+            <h4>See what your business website could look like.</h4>
 
             <p>
               Our portfolio showcases a diverse range of projects that highlight our
@@ -352,7 +566,7 @@ const Offers = (props: any) => {
                   <Image
                     src={`/images/client${item}.png`}
                     width={300}
-                    height={250}
+                    height={300}
                     alt="WebCreatix"
                     loading="lazy"
                   />
@@ -363,6 +577,252 @@ const Offers = (props: any) => {
           </div>
         </div>
       </section >
+      {/* What You Get With Your Website */}
+<section className={styles.websiteFeaturesSection}>
+  <div className="container">
+
+    <div className={styles.sectionHeading}>
+      <span className={styles.sectionTag}>
+        <i className="fa fa-check-circle"></i>
+        Everything You Need
+      </span>
+
+      <h2>
+        What You Get With Your <span>Website</span>
+      </h2>
+
+      <p>
+        We don't just build a website. We give your business the tools
+        it needs to build trust, attract customers and grow online.
+      </p>
+    </div>
+
+    <div className={styles.featuresGrid}>
+
+      {/* Feature 1 */}
+      <div className={styles.featureCard}>
+        <div className={styles.featureIcon}>
+          <i className="fa fa-mobile"></i>
+        </div>
+
+        <h3>Mobile Responsive</h3>
+
+        <p>
+          Your website will look great and work smoothly on mobile,
+          tablet and desktop devices.
+        </p>
+      </div>
+
+      {/* Feature 2 */}
+      <div className={styles.featureCard}>
+        <div className={styles.featureIcon}>
+          <i className="fa fa-bolt"></i>
+        </div>
+
+        <h3>Fast Loading</h3>
+
+        <p>
+          Optimized for speed so your visitors can access your website
+          quickly without unnecessary waiting.
+        </p>
+      </div>
+
+      {/* Feature 3 */}
+      <div className={styles.featureCard}>
+        <div className={styles.featureIcon}>
+          <i className="fa fa-search"></i>
+        </div>
+
+        <h3>SEO Ready</h3>
+
+        <p>
+          Built with a search-friendly structure to help your business
+          establish a strong presence on Google.
+        </p>
+      </div>
+
+      {/* Feature 4 */}
+      <div className={styles.featureCard}>
+        <div className={styles.featureIcon}>
+          <i className="fa fa-lock"></i>
+        </div>
+
+        <h3>Free SSL</h3>
+
+        <p>
+          Your website comes with secure HTTPS protection to keep your
+          website and visitors safe.
+        </p>
+      </div>
+
+      {/* Feature 5 */}
+      <div className={styles.featureCard}>
+        <div className={styles.featureIcon}>
+          <i className="fa fa-whatsapp"></i>
+        </div>
+
+        <h3>WhatsApp Integration</h3>
+
+        <p>
+          Let customers contact your business instantly through WhatsApp
+          with an easy-to-use contact option.
+        </p>
+      </div>
+
+      {/* Feature 6 */}
+      <div className={styles.featureCard}>
+        <div className={styles.featureIcon}>
+          <i className="fa fa-headphones"></i>
+        </div>
+
+        <h3>Ongoing Support</h3>
+
+        <p>
+          Get reliable assistance whenever you need help with your
+          website after it goes live.
+        </p>
+      </div>
+
+    </div>
+
+    <div className={styles.featuresBottomCta}>
+      <p>
+        <i className="fa fa-check-circle"></i>
+        Ready to build your business website?
+      </p>
+
+      <Link
+        href="tel:+919625791723"
+        className={styles.featuresCtaBtn}
+        onClick={() => {
+          window.gtag?.("event", "phone_click");
+        }}
+      >
+        <i className="fa fa-phone"></i>
+        Talk to a Website Expert
+      </Link>
+    </div>
+
+  </div>
+</section>
+{/* How It Works */}
+<section className={styles.howItWorksSection}>
+  <div className="container">
+
+    <div className={styles.sectionHeading}>
+      <span className={styles.sectionTag}>
+        <i className="fa fa-cogs"></i>
+        Simple & Hassle-Free
+      </span>
+
+      <h2>
+        Get Your Website in <span>3 Simple Steps</span>
+      </h2>
+
+      <p>
+        From your first conversation to going live, we make the entire
+        website development process simple and hassle-free.
+      </p>
+    </div>
+
+    <div className={styles.stepsWrapper}>
+
+      {/* Step 1 */}
+      <div className={styles.stepItem}>
+
+        <div className={styles.stepNumber}>
+          01
+        </div>
+
+        <div className={styles.stepIcon}>
+          <i className="fa fa-comments"></i>
+        </div>
+
+        <h3>Tell Us About Your Business</h3>
+
+        <p>
+          Call or WhatsApp us and tell us about your business,
+          services and what you need from your website.
+        </p>
+
+      </div>
+
+      {/* Connector */}
+      <div className={styles.stepConnector}>
+        <i className="fa fa-long-arrow-right"></i>
+      </div>
+
+      {/* Step 2 */}
+      <div className={styles.stepItem}>
+
+        <div className={styles.stepNumber}>
+          02
+        </div>
+
+        <div className={styles.stepIcon}>
+          <i className="fa fa-pencil-square-o"></i>
+        </div>
+
+        <h3>We Build Your Website</h3>
+
+        <p>
+          Our team designs and develops a professional website
+          tailored to your business and brand.
+        </p>
+
+      </div>
+
+      {/* Connector */}
+      <div className={styles.stepConnector}>
+        <i className="fa fa-long-arrow-right"></i>
+      </div>
+
+      {/* Step 3 */}
+      <div className={styles.stepItem}>
+
+        <div className={styles.stepNumber}>
+          03
+        </div>
+
+        <div className={styles.stepIcon}>
+          <i className="fa fa-rocket"></i>
+        </div>
+
+        <h3>Review & Go Live</h3>
+
+        <p>
+          Review your website, share your feedback and once everything
+          looks good, your website goes live.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div className={styles.howItWorksCta}>
+
+      <div>
+        <h3>Ready to take your business online?</h3>
+        <p>
+          Talk to us today and get a free consultation for your website.
+        </p>
+      </div>
+
+      <Link
+        href="tel:+919625791723"
+        className={styles.howItWorksBtn}
+        onClick={() => {
+          window.gtag?.("event", "phone_click");
+        }}
+      >
+        <i className="fa fa-phone"></i>
+        Call Us Now
+      </Link>
+
+    </div>
+
+  </div>
+</section>
 
 
 

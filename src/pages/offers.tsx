@@ -5,7 +5,6 @@ import dynamic from "next/dynamic";
 import Offers from "@component/components/offers/Offers";
 import TrustIndex from "@component/components/trustIndex/trustIndex";
 import Achievements from "@component/components/achievements/achievements";
-import homeData from "../assets/data/homePage.json";
 
 export default function DiscountOffers() {
   const Header = dynamic(() => import("@component/components/header/header"), {
@@ -31,7 +30,7 @@ export default function DiscountOffers() {
         <Header compData={commonData?.header} />
         <Offers />
         <TrustIndex />
-        <Achievements compData={homeData?.achievements} />
+        
         <Footer compData={commonData?.footer} />
       </main>
     </>

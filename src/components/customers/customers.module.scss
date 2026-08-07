@@ -360,7 +360,7 @@ color: #f05f02;
   max-width: 100%;
   max-height: 90px;
   object-fit: contain;
-  filter: grayscale(80%) brightness(0.95);
+  // filter: grayscale(80%) brightness(0.95);
   transition: filter 0.25s ease;
   // border-radius: 12px;
 }
