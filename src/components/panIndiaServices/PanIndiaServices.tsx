@@ -8,7 +8,14 @@ interface PanIndiaProps {
 }
 
 const PanIndiaServices = ({ data }: PanIndiaProps) => {
-  const entries = Object.entries(data);
+  const entries = Object.entries(data).filter(([slug, city], index, allEntries) => {
+    const isDuplicateCity = allEntries.some(
+      ([otherSlug, otherCity], otherIndex) =>
+        otherIndex < index && otherCity.city === city.city
+    );
+
+    return !isDuplicateCity;
+  });
 
   return (
     <section className={styles.panIndiaServices}>
