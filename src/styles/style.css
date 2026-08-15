@@ -1,7 +1,30 @@
-strong{
+strong {
   color: #f05f02;
-    font-weight: 500;
+  font-weight: 500;
 }
+
 .ti-inner {
   box-shadow: 0 0 0 1px #5f6f7e;
+}
+
+.cityRightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  .panIndiaWrapper {
+    border: 1px solid #c2c2c2;
+    border-radius: 8px;
+    padding: 2px;
+    >section {
+      padding: 20px;
+    }
+
+    ul {
+      gap: 2px !important;
+      li {
+        flex-basis: 100% !important;
+      }
+    }
+  }
 }

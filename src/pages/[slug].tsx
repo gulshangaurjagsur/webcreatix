@@ -5,6 +5,7 @@ import Link from "next/link";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";
 import commonData from "../assets/data/common.json";
+import citiesData from "../data/cities.json";
 import Footer from "@component/components/footer/footer";
 import ContactForm from "@component/components/form/contact";
 import CityBanner from "@component/components/cityBanner/cityBanner";
@@ -12,6 +13,7 @@ import dynamic from "next/dynamic";
 import Breadcrumb from "@component/components/breadcrumb/breadcrumb";
 import locationClusters from "../data/location-clusters.json";
 import TrustIndex from "@component/components/trustIndex/trustIndex";
+import PanIndiaServices from "@component/components/panIndiaServices/PanIndiaServices";
 const Header = dynamic(() => import("@component/components/header/header"), {
   ssr: false,
 });
@@ -90,8 +92,10 @@ export default function WebDesignPage({ cityData }: Props) {
                 </div>
               )}
             </div>
-            <div className="commonContact col-sm-4 col-md-6 col-lg-4">
-              <ContactForm />
+            <div className="col-sm-4 col-md-6 col-lg-4 cityRightCol">
+              <div className="commonContact"><ContactForm /></div>
+              <div className="panIndiaWrapper"><PanIndiaServices data={citiesData} /></div>
+              
             </div>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-12">
